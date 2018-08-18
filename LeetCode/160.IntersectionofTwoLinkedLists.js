@@ -34,4 +34,4 @@ var getIntersectionNode = function (headA, headB) {
     patrolB = patrolB.next
   }
   return null
-};
+}
