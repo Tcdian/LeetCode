@@ -10,6 +10,7 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
 var mergeTwoLists = function (l1, l2) {
   if (l1 === null || l2 === null) {
     return l1 || l2
