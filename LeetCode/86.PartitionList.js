@@ -30,4 +30,4 @@ var partition = function (head, x) {
   lessPatrol.next = moreHead.next
   morePatrol.next = null
   return lessHead.next
-};
+}
