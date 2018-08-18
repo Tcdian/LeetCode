@@ -6,4 +6,4 @@ LeetCode 经典题目汇总 (javascript实现)
 ![Alt text](./img/accepted.png)
 
 ### LeetCode题目
-- [206.Reverse Linked List]('./LeetCode/206.ReverseLinkedList.js')
+- [206.Reverse Linked List](./LeetCode/206.ReverseLinkedList.js)
