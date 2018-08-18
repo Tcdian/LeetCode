@@ -11,6 +11,7 @@
  * @return {ListNode}
  */
 
+ // 快慢指针
 var detectCycle = function (head) {
   let slow = head
   let fast = head
@@ -35,3 +36,6 @@ var detectCycle = function (head) {
     meetingPlace = meetingPlace.next
   }
 };
+
+// hash
+// 依次将节点放入hash中,如果出现重复节点,则说明有环, 代码较简单, 需要 O(n) 空间
