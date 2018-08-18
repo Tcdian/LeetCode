@@ -22,7 +22,7 @@ var reverseList = function (head) {
     oldHead = nextHead
   }
   return newHead
-};
+}
 
 // 方法二: 头插法
 var reverseList = function (head) {
@@ -34,4 +34,4 @@ var reverseList = function (head) {
     newHead.next.next = tmp
   }
   return newHead.next
-};
+}
