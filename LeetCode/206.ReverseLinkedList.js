@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 
-
+// 方法一: 就地逆置法
 var reverseList = function (head) {
   let oldHead = head
   let newHead = null
@@ -22,4 +22,16 @@ var reverseList = function (head) {
     oldHead = nextHead
   }
   return newHead
+};
+
+// 方法二: 头插法
+var reverseList = function (head) {
+  let newHead = new ListNode(0)
+  while (head !== null) {
+    let tmp = newHead.next
+    newHead.next = head
+    head = head.next
+    newHead.next.next = tmp
+  }
+  return newHead.next
 };
