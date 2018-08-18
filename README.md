@@ -7,11 +7,11 @@ LeetCode 经典题目汇总 (javascript实现)
 
 ### LeetCode题目
 
-##### 链表
-- [206.Reverse Linked List](./LeetCode/206.ReverseLinkedList.js)
-- [92. Reverse Linked List II](./LeetCode/92.ReverseLinkedListII.js)
-- [21. Merge Two Sorted Lists](./LeetCode/21.MergeTwoSortedLists.js)
+#### 链表
+- [206. Reverse Linked List](./LeetCode/206.ReverseLinkedList.js)
+- [92.  Reverse Linked List II](./LeetCode/92.ReverseLinkedListII.js)
+- [21.  Merge Two Sorted Lists](./LeetCode/21.MergeTwoSortedLists.js)
 - [160. Intersection of Two Linked Lists](./LeetCode/160.IntersectionofTwoLinkedLists.js)
 - [142. Linked List Cycle II](./LeetCode/142.LinkedListCycleII.js)
-- [86. Partition List](./LeetCode/86.PartitionList.js)
+- [86.  Partition List](./LeetCode/86.PartitionList.js)
 - [138. Copy List with Random Pointer](./LeetCode/138.CopyListWithRandomPointer.js)
