@@ -9,3 +9,4 @@ LeetCode 经典题目汇总 (javascript实现)
 
 ##### 链表
 - [206.Reverse Linked List](./LeetCode/206.ReverseLinkedList.js)
+- [92. Reverse Linked List II](./LeetCode/92.ReverseLinkedListII.js)
