@@ -30,4 +30,4 @@ var mergeTwoLists = function (l1, l2) {
   }
   newHead.next = l1 || l2
   return guard.next
-};
+}
