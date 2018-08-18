@@ -1,18 +1,9 @@
 # LeetCode
 LeetCode 经典题目汇总 (javascript实现)
 
-- 1.206. Reverse Linked List
-```
-var reverseList = function(head) {
-  let oldHead = head
-  let newHead = null
-  let nextHead
-  while(oldHead !== null) {
-      nextHead = oldHead.next
-      oldHead.next = newHead
-      newHead = oldHead
-      oldHead = nextHead
-  }
-    return newHead
-};
-```
+刷LeetCode有一段时间了,下面记录一些经典的题目, 用来以后复习回顾使用.
+
+![Alt text](./img/accepted.png)
+
+### LeetCode题目
+- [206.Reverse Linked List](./images/icon.png)
