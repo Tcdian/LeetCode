@@ -29,4 +29,4 @@ var copyRandomList = function (head) {
     patrol = patrol.next
   }
   return hashMap.get(head) || null
-};
+}
