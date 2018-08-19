@@ -26,3 +26,4 @@ LeetCode 经典题目汇总 (javascript实现)
 #### 贪心算法
 - [455. Assign Cookies](./LeetCode/455.AssignCookies.js)
 - [376. Wiggle Subsequence](./LeetCode/376.WiggleSubsequence.js)
+- [402. Remove K Digits](./LeetCode/402.RemoveKDigits.js)
