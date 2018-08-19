@@ -2,6 +2,8 @@
  * initialize your data structure here.
  */
 
+// 利用两个stack, 一个dataStack存储基础的数据, 另一个minStack存储从stack底部到当前元素的最小值.
+
 var MinStack = function () {
   this.dataStack = []
   this.minStack = []
