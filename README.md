@@ -22,3 +22,6 @@ LeetCode 经典题目汇总 (javascript实现)
 - [155. Min Stack](./LeetCode/155.MinStack.js)
 - [215. Kth Largest Element in an Array](./LeetCode/215.KthLargestElementInAnArray.js)
 - [295. Find Median from Data Stream](./LeetCode/295.FindMedianFromDataStream.js)
+
+#### 贪心算法
+- [455. Assign Cookies](./LeetCode/455.AssignCookies.js)
