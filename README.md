@@ -32,9 +32,12 @@ LeetCode 经典题目汇总 (javascript实现)
 - [452. Minimum Number of Arrows to Burst Balloons](./LeetCode/Greedy/452.MinimumNumberOfArrowsToBurstBalloons.js)
 
 #### 递归与回溯
-- [78. Subsets](./LeetCode/78.Subsets.js)
-- [90. Subsets II](./LeetCode/90.SubsetsII.js)
-- [40. Combination Sum II](./LeetCode/40.CombinationSumII.js)
-- [22. Generate Parentheses](./LeetCode/22.GenerateParentheses.js)
-- [51. N-Queens](./LeetCode/51.N-Queens.js)
-- [473. Matchsticks to Square](./LeetCode/473.MatchsticksToSquare.js)
+- [78. Subsets](./LeetCode/Recursion&Backtracking/78.Subsets.js)
+- [90. Subsets II](./LeetCode/Recursion&Backtracking/90.SubsetsII.js)
+- [40. Combination Sum II](./LeetCode/Recursion&Backtracking/40.CombinationSumII.js)
+- [22. Generate Parentheses](./LeetCode/Recursion&Backtracking/22.GenerateParentheses.js)
+- [51. N-Queens](./LeetCode/Recursion&Backtracking/51.N-Queens.js)
+- [473. Matchsticks to Square](./LeetCode/Recursion&Backtracking/473.MatchsticksToSquare.js)
+
+####深度优先搜索
+- [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
