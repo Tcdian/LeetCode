@@ -14,7 +14,7 @@ var combinationSum2 = function (candidates, target) {
 
   function backtracking(i = 0) {
     if (sum > target || i >= candidates.length) {
-      return
+      return result
     }
     item.push(candidates[i])
     sum += candidates[i]
@@ -26,6 +26,7 @@ var combinationSum2 = function (candidates, target) {
     sum -= candidates[i]
     item.pop()
     backtracking(i + 1)
+    return result
   }
-  return backtracking() || result
+  return backtracking()
 }
