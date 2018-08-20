@@ -12,7 +12,7 @@ var subsetsWithDup = function (nums) {
 
   function backtracking(i = 0) {
     if (i >= nums.length) {
-      return
+      return result
     }
     item.push(nums[i])
     if (!hashMap.has(item.join(','))) {
@@ -24,5 +24,5 @@ var subsetsWithDup = function (nums) {
     backtracking(i + 1)
     return result
   }
-  return backtracking() || result
+  return backtracking()
 }
