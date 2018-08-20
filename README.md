@@ -17,11 +17,11 @@ LeetCode 经典题目汇总 (javascript实现)
 - [138. Copy List with Random Pointer](./LeetCode/LinkedList/138.CopyListWithRandomPointer.js)
 
 #### 栈 队列 堆
-- [225. Implement Stack using Queues](./LeetCode/225.ImplementStackUsingQueues.js)
-- [232. Implement Queue using Stacks](./LeetCode/232.ImplementQueueUsingStacks.js)
-- [155. Min Stack](./LeetCode/155.MinStack.js)
-- [215. Kth Largest Element in an Array](./LeetCode/215.KthLargestElementInAnArray.js)
-- [295. Find Median from Data Stream](./LeetCode/295.FindMedianFromDataStream.js)
+- [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
+- [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
+- [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)
+- [215. Kth Largest Element in an Array](./LeetCode/Stack&Queue&Heap/215.KthLargestElementInAnArray.js)
+- [295. Find Median from Data Stream](./LeetCode/Stack&Queue&Heap/295.FindMedianFromDataStream.js)
 
 #### 贪心算法
 - [455. Assign Cookies](./LeetCode/455.AssignCookies.js)
