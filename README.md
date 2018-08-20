@@ -24,12 +24,12 @@ LeetCode 经典题目汇总 (javascript实现)
 - [295. Find Median from Data Stream](./LeetCode/Stack&Queue&Heap/295.FindMedianFromDataStream.js)
 
 #### 贪心算法
-- [455. Assign Cookies](./LeetCode/455.AssignCookies.js)
-- [376. Wiggle Subsequence](./LeetCode/376.WiggleSubsequence.js)
-- [402. Remove K Digits](./LeetCode/402.RemoveKDigits.js)
-- [55. Jump Game](./LeetCode/55.JumpGame.js)
-- [45. Jump Game II](./LeetCode/45.JumpGameII.js)
-- [452. Minimum Number of Arrows to Burst Balloons](./LeetCode/452.MinimumNumberOfArrowsToBurstBalloons.js)
+- [455. Assign Cookies](./LeetCode/Greedy/455.AssignCookies.js)
+- [376. Wiggle Subsequence](./LeetCode/Greedy/376.WiggleSubsequence.js)
+- [402. Remove K Digits](./LeetCode/Greedy/402.RemoveKDigits.js)
+- [55. Jump Game](./LeetCode/Greedy/55.JumpGame.js)
+- [45. Jump Game II](./LeetCode/Greedy/45.JumpGameII.js)
+- [452. Minimum Number of Arrows to Burst Balloons](./LeetCode/Greedy/452.MinimumNumberOfArrowsToBurstBalloons.js)
 
 #### 递归与回溯
 - [78. Subsets](./LeetCode/78.Subsets.js)
