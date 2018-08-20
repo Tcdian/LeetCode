@@ -44,6 +44,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [34. Find First and Last Position of Element in Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/34.FindFirstAndLastPositionOfElementInSortedArray.js)
 - [33. Search in Rotated Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/33.SearchInRotatedSortedArray.js)
 - [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
+- [23. Merge k Sorted Lists](./LeetCode/BinarySearch&DivideAndConquer/23.MergeKSortedLists.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
