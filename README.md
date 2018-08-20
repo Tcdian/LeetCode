@@ -39,5 +39,8 @@ LeetCode 经典题目汇总 (javascript实现)
 - [51. N-Queens](./LeetCode/Recursion&Backtracking/51.N-Queens.js)
 - [473. Matchsticks to Square](./LeetCode/Recursion&Backtracking/473.MatchsticksToSquare.js)
 
-####深度优先搜索
+#### 二分查找与分治算法
+- [35. Search Insert Position](./LeetCode/BinarySearch&DivideAndConquer/35.SearchInsertPosition.js)
+
+#### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
