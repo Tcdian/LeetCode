@@ -57,6 +57,7 @@ LeetCode 经典题目汇总 (javascript实现)
 #### 哈希表和字符串
 - [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 - [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
+- [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
