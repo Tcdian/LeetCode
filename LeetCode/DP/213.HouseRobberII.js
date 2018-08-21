@@ -16,7 +16,7 @@ var rob = function (nums) {
 
   function houseRob(nums) {
     let dp = []
-    for (var i = 0; i < nums.length; i++) {
+    for (var i = 0; i < nums.length; i++) {21
       if (i === 0) {
         dp[i] = nums[i]
       } else if (i === 1) {
