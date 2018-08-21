@@ -20,6 +20,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
 - [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 - [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)
+- [300. Longest Increasing Subsequence](./LeetCode/DP/300.LongestIncreasingSubsequence.js)
 - [215. Kth Largest Element in an Array](./LeetCode/Stack&Queue&Heap/215.KthLargestElementInAnArray.js)
 - [295. Find Median from Data Stream](./LeetCode/Stack&Queue&Heap/295.FindMedianFromDataStream.js)
 
@@ -68,6 +69,6 @@ LeetCode 经典题目汇总 (javascript实现)
 - [53. Maximum Subarray](./LeetCode/DP/53.MaximumSubarray.js)
 - [322. Coin Change](./LeetCode/DP/322.CoinChange.js)
 - [120. Triangle](./LeetCode/DP/120.Triangle.js)
-
+- [300. Longest Increasing Subsequence](./LeetCode/DP/300.LongestIncreasingSubsequence.js)
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
