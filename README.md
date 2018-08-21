@@ -63,6 +63,7 @@ LeetCode 经典题目汇总 (javascript实现)
 
 #### 动态规划
 - [70. Climbing Stairs](./LeetCode/DP/70.ClimbingStairs.js)
+- [198. House Robber](./LeetCode/DP/198.HouseRobber.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
