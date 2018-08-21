@@ -46,7 +46,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 - [23. Merge k Sorted Lists](./LeetCode/BinarySearch&DivideAndConquer/23.MergeKSortedLists.js)
 
-#### 二叉树与图
+#### 二叉树
 - [113. Path Sum II](./LeetCode/Tree&Graph/113.PathSumII.js)
 - [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree&Graph/236.LowestCommonAncestorOfABinaryTree.js)
 - [114. Flatten Binary Tree to Linked List](./LeetCode/Tree&Graph/114.FlattenBinaryTreeToLinkedList.js)
@@ -54,6 +54,8 @@ LeetCode 经典题目汇总 (javascript实现)
 - [144. Binary Tree Preorder Traversal](./LeetCode/Tree&Graph/144.BinaryTreePreorderTraversal.js)
 - [687. Longest Univalue Path](./LeetCode/Tree&Graph/687.LongestUnivaluePath.js)
 
+####　哈希表和字符串
+- [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
