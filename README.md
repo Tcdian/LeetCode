@@ -70,5 +70,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [322. Coin Change](./LeetCode/DP/322.CoinChange.js)
 - [120. Triangle](./LeetCode/DP/120.Triangle.js)
 - [300. Longest Increasing Subsequence](./LeetCode/DP/300.LongestIncreasingSubsequence.js)
+- [64. Minimum Path Sum](./LeetCode/DP/64.MinimumPathSum.js)
+
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
