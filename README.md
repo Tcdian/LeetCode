@@ -59,6 +59,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
 - [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
 - [3. Longest Substring Without Repeating Characters](./LeetCode/Hash&String/3.LongestSubstringWithoutRepeatingCharacters.js)
+- [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
