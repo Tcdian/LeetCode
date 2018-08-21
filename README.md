@@ -61,5 +61,8 @@ LeetCode 经典题目汇总 (javascript实现)
 - [3. Longest Substring Without Repeating Characters](./LeetCode/Hash&String/3.LongestSubstringWithoutRepeatingCharacters.js)
 - [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
 
+#### 动态规划
+- [70. Climbing Stairs](./LeetCode/DP/70.ClimbingStairs.js)
+
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
