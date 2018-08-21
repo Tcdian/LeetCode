@@ -66,6 +66,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [198. House Robber](./LeetCode/DP/198.HouseRobber.js)
 - [213. House Robber II](./LeetCode/DP/213.HouseRobberII.js)
 - [53. Maximum Subarray](./LeetCode/DP/53.MaximumSubarray.js)
+- [322. Coin Change](./LeetCode/DP/322.CoinChange.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
