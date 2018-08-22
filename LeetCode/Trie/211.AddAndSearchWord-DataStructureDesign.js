@@ -3,9 +3,11 @@
  */
 
 var WordDictionary = function () {
+
   this.TreeNode = function (isEnd) {
     this.isEnd = isEnd
   }
+
   this.root = new this.TreeNode(false)
 }
 
@@ -16,6 +18,7 @@ var WordDictionary = function () {
  */
 
 WordDictionary.prototype.addWord = function (word) {
+
   let patrol = this.root
 
   for (let i = 0; i < word.length; i++) {
