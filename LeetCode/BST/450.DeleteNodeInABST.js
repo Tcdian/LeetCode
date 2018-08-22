@@ -32,8 +32,8 @@ var deleteNode = function (root, key) {
       let left = root.left
       let right = deleteNode(root.right, tmp.val)
       root = tmp
-      tmp.left = left
-      tmp.right = right
+      root.left = left
+      root.right = right
     }
   }
   return root
