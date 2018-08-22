@@ -78,6 +78,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [64. Minimum Path Sum](./LeetCode/DP/64.MinimumPathSum.js)
 - [174. Dungeon Game](./LeetCode/DP/174.DungeonGame.js)
 - [96. Unique Binary Search Trees](./LeetCode/DP/96.UniqueBinarySearchTrees.js)
+- [329. Longest Increasing Path in a Matrix](./LeetCode/DP/329.LongestIncreasingPathInAMatrix.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
