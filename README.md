@@ -92,5 +92,8 @@ LeetCode 经典题目汇总 (javascript实现)
 - [208. Implement Trie (Prefix Tree)](./LeetCode/Trie/208.ImplementTrie(PrefixTree).js)
 - [211. Add and Search Word - Data structure design](./LeetCode/Trie/211.AddAndSearchWord-DataStructureDesign.js)
 
+#### 并查集
+- [547. Friend Circles](./LeetCode/UnionFind/547.FriendCircles.js)
+
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
