@@ -86,6 +86,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 - [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
 - [449. Serialize and Deserialize BST](./LeetCode/BST/449.SerializeAndDeserializeBST.js)
+- [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### 深度优先搜索
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)

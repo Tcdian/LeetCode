@@ -33,3 +33,36 @@ var countSmaller = function (nums) {
   merge(pairs)
   return count
 }
+
+//解法二: 倒序后插入 BST, BST节点上定义一个leftCount 记录左子树有多少个节点
+var countSmaller = function (nums) {
+
+  function TreeNode(val) {
+    this.val = val
+    this.leftCount = 0
+    this.left = this.right = null
+  }
+
+  function insert(root, val, result, index) {
+    if (root === null) {
+      return new TreeNode(val)
+    }
+    if (root.val >= val) {
+      // root 新添加了一个左子树, leftCount + 1
+      root.leftCount += 1
+      root.left = insert(root.left, val, result, index)
+    } else {
+      // 记录经过的节点有多少个左子树, 累加到计算结果中, 再加上 1 (当前节点)
+      result[index] += root.leftCount + 1
+      root.right = insert(root.right, val, result, index)
+    }
+    return root
+  }
+
+  let result = new Array(nums.length).fill(0)
+  let treeRoot = null
+  nums.reverse().forEach((num, index) => {
+    treeRoot = insert(treeRoot, num, result, index)
+  })
+  return result.reverse()
+}
