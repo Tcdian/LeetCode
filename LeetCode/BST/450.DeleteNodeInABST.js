@@ -29,8 +29,11 @@ var deleteNode = function (root, key) {
       while (tmp.left) {
         tmp = tmp.left
       }
-      root.val = tmp.val
-      root.right = deleteNode(root.right, tmp.val)
+      let left = root.left
+      let right = deleteNode(root.right, tmp.val)
+      root = tmp
+      tmp.left = left
+      tmp.right = right
     }
   }
   return root
