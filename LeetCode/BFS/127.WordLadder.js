@@ -35,11 +35,9 @@ var ladderLength = function (beginWord, endWord, wordList) {
     return graph
   }
 
-  function bfs(beginWord, endWord, graph, visited = new Map()) {
-    let queue = [
-      [beginWord, 1]
-    ]
-    visited.set(beginWord, 'visited')
+  function bfs(beginWord, endWord, graph, visited = new Set()) {
+    let queue = [[beginWord, 1]]
+    visited.add(beginWord)
     while (queue.length !== 0) {
       let tmpFront = queue.shift()
       let tmpWord = tmpFront[0]
@@ -50,7 +48,7 @@ var ladderLength = function (beginWord, endWord, wordList) {
       let connectWords = graph.get(tmpWord)
       for (let i = 0; i < connectWords.length; i++) {
         if (!visited.has(connectWords[i])) {
-          visited.set(connectWords[i], 'visited')
+          visited.add(connectWords[i])
           queue.push([connectWords[i], count + 1])
         }
       }
