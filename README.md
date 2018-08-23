@@ -61,6 +61,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
 - [3. Longest Substring Without Repeating Characters](./LeetCode/Hash&String/3.LongestSubstringWithoutRepeatingCharacters.js)
 - [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
+- [128. Longest Consecutive Sequence](./LeetCode/Hash&String/128.LongestConsecutiveSequence.js)
 
 #### 动态规划
 - [70. Climbing Stairs](./LeetCode/DP/70.ClimbingStairs.js)
