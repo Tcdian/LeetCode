@@ -35,8 +35,9 @@ var ladderLength = function (beginWord, endWord, wordList) {
     return graph
   }
 
-  function bfs(beginWord, endWord, graph, visited = new Set()) {
+  function bfs(beginWord, endWord, graph) {
     let queue = [[beginWord, 1]]
+    let visited = new Set()
     visited.add(beginWord)
     while (queue.length !== 0) {
       let tmpFront = queue.shift()
