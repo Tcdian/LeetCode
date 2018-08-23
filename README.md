@@ -48,12 +48,13 @@ LeetCode 经典题目汇总 (javascript实现)
 - [23. Merge k Sorted Lists](./LeetCode/BinarySearch&DivideAndConquer/23.MergeKSortedLists.js)
 
 #### 二叉树
-- [113. Path Sum II](./LeetCode/Tree&Graph/113.PathSumII.js)
-- [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree&Graph/236.LowestCommonAncestorOfABinaryTree.js)
-- [114. Flatten Binary Tree to Linked List](./LeetCode/Tree&Graph/114.FlattenBinaryTreeToLinkedList.js)
-- [199. Binary Tree Right Side View](./LeetCode/Tree&Graph/199.BinaryTreeRightSideView.js)
-- [144. Binary Tree Preorder Traversal](./LeetCode/Tree&Graph/144.BinaryTreePreorderTraversal.js)
-- [687. Longest Univalue Path](./LeetCode/Tree&Graph/687.LongestUnivaluePath.js)
+- [113. Path Sum II](./LeetCode/Tree/113.PathSumII.js)
+- [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree/236.LowestCommonAncestorOfABinaryTree.js)
+- [114. Flatten Binary Tree to Linked List](./LeetCode/Tree/114.FlattenBinaryTreeToLinkedList.js)
+- [199. Binary Tree Right Side View](./LeetCode/Tree/199.BinaryTreeRightSideView.js)
+- [144. Binary Tree Preorder Traversal](./LeetCode/Tree/144.BinaryTreePreorderTraversal.js)
+- [687. Longest Univalue Path](./LeetCode/Tree/687.LongestUnivaluePath.js)
+- [297. Serialize and Deserialize Binary Tree](./LeetCode/Tree/297.SerializeAndDeserializeBinaryTree.js)
 
 #### 哈希表和字符串
 - [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
