@@ -63,7 +63,7 @@ var numIslands = function (grid) {
       [i, j]
     ]
     while (queue.length !== 0) {
-      let position = queue.pop()
+      let position = queue.shift()
       let x = position[0]
       let y = position[1]
       for (let i = 0; i < 4; i++) {
