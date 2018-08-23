@@ -96,4 +96,5 @@ LeetCode 经典题目汇总 (javascript实现)
 - [547. Friend Circles](./LeetCode/UnionFind/547.FriendCircles.js)
 
 #### 深度优先搜索
+- [200. Number of Islands](./LeetCode/DFS/200.NumberOfIslands.js)
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
