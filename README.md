@@ -7,7 +7,8 @@ LeetCode 经典题目汇总 (javascript实现)
 
 ### 常用数据结构
 
-- #### [Stack](./DataStructure/Stack.js)
+- [Stack](./DataStructure/Stack.js)
+- [Queue](./DataStructure/Queue.js)
 
 ### LeetCode题目
 
