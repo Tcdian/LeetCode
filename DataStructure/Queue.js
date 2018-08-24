@@ -83,3 +83,43 @@ class LoopQueue {
     this.tail = this.size
   }
 }
+
+// LinkedListQueue 使用链表实现
+class LinkedListQueue {
+  constructor() {
+    this._listNode = function (val) {
+      this.val = val
+      this.next = null
+    }
+    this.head = new this._listNode('guard')
+    this.size = 0
+    this.tail = this.head
+  }
+  enqueue(val) {
+    let newListNode = new this._listNode(val)
+    this.tail.next = newListNode
+    this.tail = this.tail.next
+    this.size++
+  }
+  dequeue() {
+    if (this.isEmpty()) {
+      throw new Error('queue is empty')
+    }
+    let result = this.head.next.val
+    this.head.next = this.head.next.next
+    this.size--
+    return result
+  }
+  getFront() {
+    if (this.isEmpty()) {
+      throw new Error('queue is empty')
+    }
+    return this.head.next.val
+  }
+  getSize() {
+    return this.size
+  }
+  isEmpty() {
+    return this.getSize() === 0
+  }
+}
