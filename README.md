@@ -21,6 +21,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [138. Copy List with Random Pointer](./LeetCode/LinkedList/138.CopyListWithRandomPointer.js)
 
 #### 栈 队列 堆
+- [20. Valid Parentheses](./LeetCode/Stack&Queue&Heap/20.ValidParentheses.js)
 - [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
 - [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 - [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)

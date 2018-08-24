@@ -6,7 +6,7 @@ class Stack {
     this.stack.push(val)
   }
   pop() {
-    this.stack.pop()
+    return this.stack.pop()
   }
   peek() {
     if (this.isEmpty()) {
