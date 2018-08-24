@@ -2,8 +2,8 @@
 // 支持 enqueue dequeue getFront getSize isEmpty 方法
 
 class Queue {
-  constructor() {
-    this.queue = []
+  constructor(size = 0) {
+    this.queue = new Array(size)
   }
   enqueue(val) {
     this.queue.push(val)

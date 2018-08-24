@@ -2,8 +2,8 @@
 // 支持 push pop peek getSize isEmpty 方法
 
 class Stack {
-  constructor() {
-    this.stack = []
+  constructor(size = 0) {
+    this.stack = new Array(size)
   }
   push(val) {
     this.stack.push(val)
