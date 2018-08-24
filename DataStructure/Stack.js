@@ -1,3 +1,6 @@
+// Stack 实现
+// 支持 push pop peek getSize isEmpty 方法
+
 class Stack {
   constructor() {
     this.stack = []
