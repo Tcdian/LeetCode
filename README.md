@@ -69,6 +69,15 @@ LeetCode 经典题目汇总 (javascript实现)
 - [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
 - [128. Longest Consecutive Sequence](./LeetCode/Hash&String/128.LongestConsecutiveSequence.js)
 
+#### Two Pointers
+- [283. Move Zeroes](./LeetCode/TwoPointers/283.MoveZeroes.js)
+- [209. Minimum Size Subarray Sum](./LeetCode/TwoPointers/209.MinimumSizeSubarraySum.js)
+- [76. Minimum Window Substring](./LeetCode/TwoPointers/76.MinimumWindowSubstring.js)
+- [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
+- [3. Longest Substring Without Repeating Characters](./LeetCode/TwoPointers/3.LongestSubstringWithoutRepeatingCharacters.js)
+- [11. Container With Most Water](./LeetCode/TwoPointers/11.ContainerWithMostWater.js)
+- [42. Trapping Rain Water](./LeetCode/TwoPointers/42.TrappingRainWater.js)
+
 #### 动态规划
 - [70. Climbing Stairs](./LeetCode/DP/70.ClimbingStairs.js)
 - [198. House Robber](./LeetCode/DP/198.HouseRobber.js)
@@ -112,11 +121,3 @@ LeetCode 经典题目汇总 (javascript实现)
 - [126. Word Ladder II](./LeetCode/BFS/126.WordLadderII.js)
 - [407. Trapping Rain Water II](./LeetCode/BFS/407.TrappingRainWaterII.js)
 
-#### Two Pointers
-- [283. Move Zeroes](./LeetCode/TwoPointers/283.MoveZeroes.js)
-- [209. Minimum Size Subarray Sum](./LeetCode/TwoPointers/209.MinimumSizeSubarraySum.js)
-- [76. Minimum Window Substring](./LeetCode/TwoPointers/76.MinimumWindowSubstring.js)
-- [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
-- [3. Longest Substring Without Repeating Characters](./LeetCode/TwoPointers/3.LongestSubstringWithoutRepeatingCharacters.js)
-- [11. Container With Most Water](./LeetCode/TwoPointers/11.ContainerWithMostWater.js)
-- [42. Trapping Rain Water](./LeetCode/TwoPointers/42.TrappingRainWater.js)
