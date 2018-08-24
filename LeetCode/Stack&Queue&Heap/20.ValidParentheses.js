@@ -3,33 +3,32 @@
  * @return {boolean}
  */
 
-// 查看栈顶元素和 s[i] 是否匹配
 var isValid = function (s) {
-  class Stack {
-    constructor() {
-      this.stack = []
+  class ArrayStack {
+    constructor(size = 0) {
+      this.data = new Array(size)
     }
     push(val) {
-      this.stack.push(val)
+      this.data.push(val)
     }
     pop() {
-      return this.stack.pop()
+      return this.data.pop()
     }
     peek() {
       if (this.isEmpty()) {
         throw new Error('stack is empty')
       }
-      return this.stack[this.getSize() - 1]
+      return this.data[this.getSize() - 1]
     }
     getSize() {
-      return this.stack.length
+      return this.data.length
     }
     isEmpty() {
       return this.getSize() === 0
     }
   }
 
-  let stack = new Stack()
+  let stack = new ArrayStack()
   for (let i = 0; i < s.length; i++) {
     if (s[i] === '(' || s[i] === '[' || s[i] === '{') {
       stack.push(s[i])

@@ -1,7 +1,7 @@
 // Queue 使用数组实现
 // 支持 enqueue dequeue getFront getSize isEmpty 方法
 
-class Queue {
+class ArrayQueue {
   constructor(size = 0) {
     this.queue = new Array(size)
   }
@@ -23,4 +23,15 @@ class Queue {
   isEmpty() {
     return this.getSize() === 0
   }
+}
+
+// LoopQueue 使用数组实现
+
+class LoopQueue {
+  constructor(size = 0) {
+    this.queue = new Array(size)
+    this.front
+  }
+
+
 }
