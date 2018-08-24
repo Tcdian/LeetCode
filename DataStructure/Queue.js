@@ -1,6 +1,5 @@
 // Queue 使用数组实现
 // 支持 enqueue dequeue getFront getSize isEmpty 方法
-
 class ArrayQueue {
   constructor() {
     this.data = []
@@ -29,7 +28,6 @@ class ArrayQueue {
 }
 
 // LoopQueue 使用数组实现
-
 class LoopQueue {
   constructor(capacity = 10) {
     this.data = new Array(capacity + 1)
