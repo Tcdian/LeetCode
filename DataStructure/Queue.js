@@ -2,23 +2,23 @@
 // 支持 enqueue dequeue getFront getSize isEmpty 方法
 
 class ArrayQueue {
-  constructor(size = 0) {
-    this.queue = new Array(size)
+  constructor() {
+    this.data = []
   }
   enqueue(val) {
-    this.queue.push(val)
+    this.data.push(val)
   }
   dequeue() {
-    return this.queue.shift()
+    return this.data.shift()
   }
   getFront() {
     if (this.isEmpty()) {
       throw new Error('queue is empty')
     }
-    return this.queue[0]
+    return this.data[0]
   }
   getSize() {
-    return this.queue.length
+    return this.data.length
   }
   isEmpty() {
     return this.getSize() === 0
@@ -28,9 +28,10 @@ class ArrayQueue {
 // LoopQueue 使用数组实现
 
 class LoopQueue {
-  constructor(size = 0) {
-    this.queue = new Array(size)
-    this.front
+  constructor() {
+    this.data = []
+    this.front = 0
+    this.tail = 0
   }
 
 

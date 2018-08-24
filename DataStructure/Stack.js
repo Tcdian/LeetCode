@@ -2,8 +2,8 @@
 // 支持 push pop peek getSize isEmpty 方法
 
 class ArrayStack {
-  constructor(size = 0) {
-    this.data = new Array(size)
+  constructor() {
+    this.data = []
   }
   push(val) {
     this.data.push(val)
