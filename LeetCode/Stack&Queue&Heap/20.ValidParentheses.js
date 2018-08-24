@@ -4,40 +4,54 @@
  */
 
 var isValid = function (s) {
-  class ArrayStack {
+  class LinkedListStack {
     constructor() {
-      this.data = []
+      this._listNode = function (val) {
+        this.val = val
+        this.next = null
+      }
+      this.data = new this._listNode('guard')
+      this.size = 0
     }
     push(val) {
-      this.data.push(val)
+      let newListNode = new this._listNode(val)
+      newListNode.next = this.data.next
+      this.data.next = newListNode
+      this.size++
     }
     pop() {
-      return this.data.pop()
-    }
-    peek() {
-      if (this.isEmpty()) {
+      let result = this.peek()
+      if (this.size === 0) {
         throw new Error('stack is empty')
       }
-      return this.data[this.getSize() - 1]
+      this.data.next = this.data.next.next
+      this.size--
+        return result
+    }
+    peek() {
+      if (this.size === 0) {
+        throw new Error('stack is empty')
+      }
+      return this.data.next.val
     }
     getSize() {
-      return this.data.length
+      return this.size
     }
     isEmpty() {
       return this.getSize() === 0
     }
   }
 
-  let stack = new ArrayStack()
+  let stack = new LinkedListStack()
   for (let i = 0; i < s.length; i++) {
     if (s[i] === '(' || s[i] === '[' || s[i] === '{') {
       stack.push(s[i])
     } else {
-      if (s[i] === ')' && stack.pop() === '(') {
+      if (s[i] === ')' && !stack.isEmpty() && stack.pop() === '(') {
         continue
-      } else if (s[i] === ']' && stack.pop() === '[') {
+      } else if (s[i] === ']' && !stack.isEmpty() && stack.pop() === '[') {
         continue
-      } else if (s[i] === '}' && stack.pop() === '{') {
+      } else if (s[i] === '}' && !stack.isEmpty() && stack.pop() === '{') {
         continue
       } else {
         return false

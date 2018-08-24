@@ -9,6 +9,9 @@ class ArrayQueue {
     this.data.push(val)
   }
   dequeue() {
+    if (this.isEmpty()) {
+      throw new Error('queue is empty')
+    }
     return this.data.shift()
   }
   getFront() {
@@ -56,6 +59,9 @@ class LoopQueue {
     return result
   }
   getFront() {
+    if (this.isEmpty()) {
+      throw new Error('queue is Empty')
+    }
     return this.data[this.front]
   }
   getSize() {
