@@ -1,6 +1,5 @@
 // ArrayStack 使用数组实现
 // 支持 push pop peek getSize isEmpty 方法
-
 class ArrayStack {
   constructor() {
     this.data = []
@@ -29,7 +28,6 @@ class ArrayStack {
 }
 
 //LinkedListStack 使用链表实现
-
 class LinkedListStack {
   constructor() {
     this._listNode = function(val) {
