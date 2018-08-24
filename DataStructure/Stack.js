@@ -1,4 +1,4 @@
-// Stack 实现
+// Stack 使用数组实现
 // 支持 push pop peek getSize isEmpty 方法
 
 class Stack {
