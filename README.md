@@ -8,9 +8,10 @@ LeetCode 经典题目汇总 (javascript实现)
 
 ### 常用数据结构实现
 
-- [Stack](./DataStructure/Stack.js)
-- [Queue](./DataStructure/Queue.js)
-- [BST](./DataStructure/BST.js)
+- [栈 Stack](./DataStructure/Stack.js)
+- [队列 Queue](./DataStructure/Queue.js)
+- [二叉搜索树 BST](./DataStructure/BST.js)
+- [优先队列 PriorityQueue](./DataStructure/PriorityQueue.js)
 
 ### LeetCode题目
 
