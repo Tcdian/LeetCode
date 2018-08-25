@@ -7,30 +7,39 @@ class BST {
       this.left = this.right = null
     }
   }
+  //获取BST中元素个数
   getSize() {
     return this._size
   }
+  //判断BST是否为空
   isEmpty() {
     return this._size === 0
   }
+  //向BST中添加元素
   add(val) {
     this.root = this._add(this.root, val)
   }
+  //判断BST中是否包含元素
   contains(val) {
     return this._contains(this.root, val)
   }
+  //前序遍历
   preorder(func = console.log) {
     this._preorder(this.root, func)
   }
+  //中序遍历
   inorder(func = console.log) {
     this._inorder(this.root, func)
   }
+  //后序遍历
   postorder(func = console.log) {
     this._postorder(this.root, func)
   }
+  //层序遍历
   leverorder(func = console.log) {
     this._leverorder(this.root, func)
   }
+  //从BST中移除元素
   remove(val) {
     this.root = this._remove(this.root, val)
   }
