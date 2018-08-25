@@ -27,7 +27,7 @@ class ArrayStack {
   }
 }
 
-//LinkedListStack 使用链表实现
+// LinkedListStack 使用链表实现
 class LinkedListStack {
   constructor() {
     this._listNode = function(val) {
