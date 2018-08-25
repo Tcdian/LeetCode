@@ -41,20 +41,25 @@ class PriorityQueue {
     this._siftDown(0)
     return outElement
   }
+
   _findParent(childIndex) {
     return Math.floor((childIndex - 1) / 2)
   }
+
   _findLeftChild(parentIndex) {
     return parentIndex * 2 + 1
   }
+
   _findRightChild(parentIndex) {
     return parentIndex * 2 + 2
   }
+
   _swap(x, y) {
     let tmp = this.data[x]
     this.data[x] = this.data[y]
     this.data[y] = tmp
   }
+
   _siftUp(index) {
     let parentIndex = this._findParent(index)
     if (parentIndex >= 0 && this.compare(this.data[parentIndex], this.data[index]) < 0) {
@@ -62,6 +67,7 @@ class PriorityQueue {
       this._siftUp(parentIndex)
     }
   }
+
   _siftDown(index) {
     let leftChild = this._findLeftChild(index)
     let rightChild = this._findRightChild(index)
@@ -77,6 +83,7 @@ class PriorityQueue {
       this._siftDown(large)
     }
   }
+
   _heapify() {
     let startIndex = this._findParent(this.getSize() - 1)
     for (let i = startIndex; i >= 0; i--) {
