@@ -3,12 +3,50 @@
  * @param {number} k
  * @return {number}
  */
+
 var findKthLargest = function (nums, k) {
+  // PriorityQueue
+  // 默认堆顶为最大元素, 可传入 compare 函数定制优先级, compare(a, b) > 0 则 a 的 优先级更高
+  // PriorityQueue接收两个参数, 第一个为 compare 函数, 第二个函数为可以传入的初始数组, 会被自动处理成优先队列
   class PriorityQueue {
-    //默认最大堆
-    constructor(compare = (a, b) => a - b) {
+    constructor(compare = (a, b) => a - b, initialVal = []) {
       this.compare = compare
-      this.heap = []
+      this.data = initialVal.slice()
+      this._heapify()
+    }
+    // 获取优先队列中元素个数
+    getSize() {
+      return this.data.length
+    }
+    // 判断优先队列是非为空
+    isEmpty() {
+      return this.getSize() === 0
+    }
+    // 获取优先队列顶端元素
+    getFront() {
+      if (this.isEmpty()) {
+        throw new Error('Heap is empty')
+      }
+      return this.data[0]
+    }
+    // 添加一个元素进去优先队列
+    enqueue(element) {
+      this.data.push(element)
+      this._siftUp(this.getSize() - 1)
+    }
+    // 取出优先队列顶端元素
+    dequeue() {
+      let outElement = this.data[0]
+      this.data[0] = this.data.pop()
+      this._siftDown(0)
+      return outElement
+    }
+    // 替换掉优先队列顶端元素
+    replace(element) {
+      let outElement = this.data[0]
+      this.data[0] = element
+      this._siftDown(0)
+      return outElement
     }
     _findParent(childIndex) {
       return Math.floor((childIndex - 1) / 2)
@@ -20,14 +58,14 @@ var findKthLargest = function (nums, k) {
       return parentIndex * 2 + 2
     }
     _swap(x, y) {
-      let tmp = this.heap[x]
-      this.heap[x] = this.heap[y]
-      this.heap[y] = tmp
+      let tmp = this.data[x]
+      this.data[x] = this.data[y]
+      this.data[y] = tmp
     }
     _siftUp(index) {
       let parentIndex = this._findParent(index)
-      if (parentIndex >= 0 && this.compare(this.heap[index], this.heap[parentIndex]) > 0) {
-        this._swap(index, parentIndex)
+      if (parentIndex >= 0 && this.compare(this.data[parentIndex], this.data[index]) < 0) {
+        this._swap(parentIndex, index)
         this._siftUp(parentIndex)
       }
     }
@@ -35,58 +73,30 @@ var findKthLargest = function (nums, k) {
       let leftChild = this._findLeftChild(index)
       let rightChild = this._findRightChild(index)
       let large = index
-      if (leftChild <= this.heap.length - 1 && this.compare(this.heap[leftChild], this.heap[large]) > 0) {
+      if (leftChild < this.data.length && this.compare(this.data[large], this.data[leftChild]) < 0) {
         large = leftChild
       }
-      if (rightChild <= this.heap.length - 1 && this.compare(this.heap[rightChild], this.heap[large]) > 0) {
+      if (rightChild < this.data.length && this.compare(this.data[large], this.data[rightChild]) < 0) {
         large = rightChild
       }
       if (large !== index) {
-        this._swap(index, large)
+        this._swap(large, index)
         this._siftDown(large)
       }
     }
-    getFront() {
-      if (this.isEmpty())
-        throw new Error('priority queue is empty')
-      return this.heap[0]
-    }
-    isEmpty() {
-      return this.getSize() === 0 ? true : false
-    }
-    getSize() {
-      return this.heap.length
-    }
-    entryQueue(element) {
-      this.heap.push(element)
-      this._siftUp(this.heap.length - 1)
-    }
-    outQueue() {
-      let outElement = this.heap[0]
-      this.heap[0] = this.heap[this.heap.length - 1]
-      this.heap.pop()
-      this._siftDown(0)
-      return outElement
-    }
-    replace(element) {
-      let outElement = this.heap[0]
-      this.heap[0] = element
-      this._siftDown(0)
-      return outElement
-    }
-    heapify() {
-      let startIndex = this._findParent(this.heap.length - 1)
+    _heapify() {
+      let startIndex = this._findParent(this.getSize() - 1)
       for (let i = startIndex; i >= 0; i--) {
         this._siftDown(i)
       }
     }
   }
 
-  // k个元素最小堆
+  //最小堆
   let minHeap = new PriorityQueue((a, b) => b - a)
   for (let i = 0; i < nums.length; i++) {
     if (i < k) {
-      minHeap.entryQueue(nums[i])
+      minHeap.enqueue(nums[i])
     } else if (minHeap.getFront() < nums[i]) {
       minHeap.replace(nums[i])
     }
