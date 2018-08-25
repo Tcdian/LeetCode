@@ -12,6 +12,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [队列 Queue](./DataStructure/Queue.js)
 - [二叉搜索树 BST](./DataStructure/BST.js)
 - [优先队列 PriorityQueue](./DataStructure/PriorityQueue.js)
+- [线段树 SegmentTree](./DataStructure/SegmentTree.js)
 
 ### LeetCode题目
 
