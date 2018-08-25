@@ -1,3 +1,5 @@
+//BST
+// 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder
 class BST {
   constructor() {
     this.root = null
@@ -19,6 +21,10 @@ class BST {
   add(val) {
     this.root = this._add(this.root, val)
   }
+  //从BST中移除元素
+  remove(val) {
+    this.root = this._remove(this.root, val)
+  }
   //判断BST中是否包含元素
   contains(val) {
     return this._contains(this.root, val)
@@ -39,10 +45,6 @@ class BST {
   leverorder(func = console.log) {
     this._leverorder(this.root, func)
   }
-  //从BST中移除元素
-  remove(val) {
-    this.root = this._remove(this.root, val)
-  }
   _add(root, val) {
     if (root === null) {
       this._size++
@@ -52,6 +54,37 @@ class BST {
       root.left = this._add(root.left, val)
     } else if (root.val < val) {
       root.right = this._add(root.right, val)
+    }
+    return root
+  }
+  _minimun(root) {
+    if (root.left === null) {
+      return root
+    }
+    return this._minimun(root.left)
+  }
+  _remove(root, val) {
+    if (root === null) {
+      return null
+    } else if (root.val > val) {
+      root.left = this._remove(root.left, val)
+    } else if (root.val < val) {
+      root.right = this._remove(root.right, val)
+    } else {
+      if (root.left === null) {
+        root = root.right
+        this._size--
+      } else if (root.right === null) {
+        root = root.left
+        this._size--
+      } else {
+        let seccessor = this._minimun(root.right)
+        let leftNode = root.left
+        let rightNode = this._remove(root.right, seccessor.val)
+        root = seccessor
+        root.left = leftNode
+        root.right = rightNode
+      }
     }
     return root
   }
@@ -101,36 +134,5 @@ class BST {
         queue.push(node.right)
       }
     }
-  }
-  _minimun(root) {
-    if (root.left === null) {
-      return root
-    }
-    return this._minimun(root.left)
-  }
-  _remove(root, val) {
-    if (root === null) {
-      return null
-    } else if (root.val > val) {
-      root.left = this._remove(root.left, val)
-    } else if (root.val < val) {
-      root.right = this._remove(root.right, val)
-    } else {
-      if (root.left === null) {
-        root = root.right
-        this._size--
-      } else if (root.right === null) {
-        root = root.left
-        this._size--
-      } else {
-        let seccessor = this._minimun(root.right)
-        let leftNode = root.left
-        let rightNode = this._remove(root.right, seccessor.val)
-        root = seccessor
-        root.left = leftNode
-        root.right = rightNode
-      }
-    }
-    return root
   }
 }
