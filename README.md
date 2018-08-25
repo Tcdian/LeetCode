@@ -5,10 +5,11 @@ LeetCode 经典题目汇总 (javascript实现)
 
 ![Alt text](./img/accepted.png)
 
-### 常用数据结构
+### 常用数据结构实现
 
 - [Stack](./DataStructure/Stack.js)
 - [Queue](./DataStructure/Queue.js)
+- [BST](./DataStructure/BST.js)
 
 ### LeetCode题目
 
