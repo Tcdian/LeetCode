@@ -4,24 +4,29 @@ class ArrayQueue {
   constructor() {
     this.data = []
   }
+
   enqueue(val) {
     this.data.push(val)
   }
+
   dequeue() {
     if (this.isEmpty()) {
       throw new Error('queue is empty')
     }
     return this.data.shift()
   }
+
   getFront() {
     if (this.isEmpty()) {
       throw new Error('queue is empty')
     }
     return this.data[0]
   }
+
   getSize() {
     return this.data.length
   }
+
   isEmpty() {
     return this.getSize() === 0
   }
@@ -35,6 +40,7 @@ class LoopQueue {
     this.tail = 0
     this.size = 0
   }
+
   enqueue(val) {
     if ((this.tail + 1) % this.data.length === this.front) {
       this._resize(this.getCapacity() * 2)
@@ -43,6 +49,7 @@ class LoopQueue {
     this.tail = (this.tail + 1) % this.data.length
     this.size++
   }
+
   dequeue() {
     if (this.isEmpty()) {
       throw new Error('queue is Empty')
@@ -56,21 +63,26 @@ class LoopQueue {
     }
     return result
   }
+
   getFront() {
     if (this.isEmpty()) {
       throw new Error('queue is Empty')
     }
     return this.data[this.front]
   }
+
   getSize() {
     return this.size
   }
+
   isEmpty() {
     return this.front === this.tail
   }
+
   getCapacity() {
     return this.data.length - 1
   }
+
   _resize(newCapacity) {
     let newData = new Array(newCapacity + 1)
     for(let i = 0; i < this.size; i++) {
@@ -93,12 +105,14 @@ class LinkedListQueue {
     this.size = 0
     this.tail = this.head
   }
+
   enqueue(val) {
     let newListNode = new this._listNode(val)
     this.tail.next = newListNode
     this.tail = this.tail.next
     this.size++
   }
+
   dequeue() {
     if (this.isEmpty()) {
       throw new Error('queue is empty')
@@ -108,15 +122,18 @@ class LinkedListQueue {
     this.size--
     return result
   }
+
   getFront() {
     if (this.isEmpty()) {
       throw new Error('queue is empty')
     }
     return this.head.next.val
   }
+
   getSize() {
     return this.size
   }
+
   isEmpty() {
     return this.getSize() === 0
   }
