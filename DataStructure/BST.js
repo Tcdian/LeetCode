@@ -45,6 +45,7 @@ class BST {
   leverorder(func = console.log) {
     this._leverorder(this.root, func)
   }
+
   _add(root, val) {
     if (root === null) {
       this._size++
@@ -57,12 +58,14 @@ class BST {
     }
     return root
   }
+
   _minimun(root) {
     if (root.left === null) {
       return root
     }
     return this._minimun(root.left)
   }
+
   _remove(root, val) {
     if (root === null) {
       return null
@@ -88,6 +91,7 @@ class BST {
     }
     return root
   }
+
   _contains(root, val) {
     if (root === null)
       return false
@@ -99,6 +103,7 @@ class BST {
       return this._contains(root.right, val)
     }
   }
+
   _preorder(root, func) {
     if (root === null)
       return
@@ -106,6 +111,7 @@ class BST {
     this._preorder(root.left, func)
     this._preorder(root.right, func)
   }
+
   _inorder(root, func) {
     if (root === null)
       return
@@ -113,6 +119,7 @@ class BST {
     func(root.val)
     this._inorder(root.right, func)
   }
+
   _postorder(root, func) {
     if (root === null)
       return
@@ -120,6 +127,7 @@ class BST {
     this._postorder(root.right, func)
     func(root.val)
   }
+
   _leverorder(root, func) {
     if (root === null)
       return
