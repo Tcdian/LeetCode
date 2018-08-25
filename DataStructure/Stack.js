@@ -4,24 +4,29 @@ class ArrayStack {
   constructor() {
     this.data = []
   }
+
   push(val) {
     this.data.push(val)
   }
+
   pop() {
     if (this.isEmpty()) {
       throw new Error('stack is empty')
     }
     return this.data.pop()
   }
+
   peek() {
     if (this.isEmpty()) {
       throw new Error('stack is empty')
     }
     return this.data[this.getSize() - 1]
   }
+
   getSize() {
     return this.data.length
   }
+
   isEmpty() {
     return this.getSize() === 0
   }
@@ -37,12 +42,14 @@ class LinkedListStack {
     this.data = new this._listNode('guard')
     this.size = 0
   }
+
   push(val) {
     let newListNode = new this._listNode(val)
     newListNode.next = this.data.next
     this.data.next = newListNode
     this.size++
   }
+
   pop() {
     let result = this.peek()
     if (this.size === 0) {
@@ -52,15 +59,18 @@ class LinkedListStack {
     this.size--
     return result
   }
+
   peek() {
     if (this.size === 0) {
       throw new Error('stack is empty')
     }
     return this.data.next.val
   }
+
   getSize() {
     return this.size
   }
+
   isEmpty() {
     return this.getSize() === 0
   }
