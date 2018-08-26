@@ -3,7 +3,7 @@
 // PriorityQueue接收两个参数, 第一个为 compare 函数, 第二个函数为可以传入的初始数组, 会被自动处理成优先队列
 class PriorityQueue {
   constructor(compare = (a, b) => a - b, initialVal = []) {
-    this.compare = compare
+    this._compare = compare
     this.data = initialVal.slice()
     this._heapify()
   }
@@ -62,7 +62,7 @@ class PriorityQueue {
 
   _siftUp(index) {
     let parentIndex = this._findParent(index)
-    if (parentIndex >= 0 && this.compare(this.data[parentIndex], this.data[index]) < 0) {
+    if (parentIndex >= 0 && this._compare(this.data[parentIndex], this.data[index]) < 0) {
       this._swap(parentIndex, index)
       this._siftUp(parentIndex)
     }
@@ -72,10 +72,10 @@ class PriorityQueue {
     let leftChild = this._findLeftChild(index)
     let rightChild = this._findRightChild(index)
     let large = index
-    if (leftChild < this.data.length && this.compare(this.data[large], this.data[leftChild]) < 0) {
+    if (leftChild < this.data.length && this._compare(this.data[large], this.data[leftChild]) < 0) {
       large = leftChild
     }
-    if (rightChild < this.data.length && this.compare(this.data[large], this.data[rightChild]) < 0) {
+    if (rightChild < this.data.length && this._compare(this.data[large], this.data[rightChild]) < 0) {
       large = rightChild
     }
     if (large !== index) {

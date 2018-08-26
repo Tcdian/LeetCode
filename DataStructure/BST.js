@@ -1,9 +1,10 @@
 // BST
 // 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder
 class BST {
-  constructor() {
+  constructor(compare = (a, b) => a - b) {
     this.root = null
     this._size = 0
+    this.compare = compare
     this._treeNode = function (val) {
       this.val = val
       this.left = this.right = null
