@@ -4,7 +4,7 @@ class BST {
   constructor(compare = (a, b) => a - b) {
     this.root = null
     this._size = 0
-    this.compare = compare
+    this._compare = compare
     this._treeNode = function (val) {
       this.val = val
       this.left = this.right = null
@@ -18,13 +18,17 @@ class BST {
   isEmpty() {
     return this._size === 0
   }
-  // 向BST中添加元素
+  // 向BST中添加元素 添加橙红返回 true, 已存在返回 false
   add(val) {
+    let memoSize = this.getSize()
     this.root = this._add(this.root, val)
+    return memoSize === this.getSize() - 1
   }
-  // 从BST中移除元素
+  // 从BST中移除元素. 移除成功返回 true, 失败返回 false
   remove(val) {
+    let memoSize = this.getSize()
     this.root = this._remove(this.root, val)
+    return memoSize === this.getSize() + 1
   }
   // 判断BST中是否包含元素
   contains(val) {
@@ -47,92 +51,94 @@ class BST {
     this._leverorder(this.root, func)
   }
 
-  _add(root, val) {
-    if (root === null) {
+  _add(node, val) {
+    if (node === null) {
       this._size++
       return new this._treeNode(val)
     }
-    if (root.val > val) {
-      root.left = this._add(root.left, val)
-    } else if (root.val < val) {
-      root.right = this._add(root.right, val)
-    }
-    return root
-  }
-
-  _minimun(root) {
-    if (root.left === null) {
-      return root
-    }
-    return this._minimun(root.left)
-  }
-
-  _remove(root, val) {
-    if (root === null) {
-      return null
-    } else if (root.val > val) {
-      root.left = this._remove(root.left, val)
-    } else if (root.val < val) {
-      root.right = this._remove(root.right, val)
+    if (this._compare(node.val, val) > 0) {
+      node.left = this._add(node.left, val)
+    } else if (this._compare(node.val, val) < 0) {
+      node.right = this._add(node.right, val)
     } else {
-      if (root.left === null) {
-        root = root.right
+      node.val = val
+    }
+    return node
+  }
+
+  _minimun(node) {
+    if (node.left === null) {
+      return node
+    }
+    return this._minimun(node.left)
+  }
+
+  _remove(node, val) {
+    if (node === null) {
+      return null
+    } else if (this._compare(node.val, val) > 0) {
+      node.left = this._remove(node.left, val)
+    } else if (this._compare(node.val, val) < 0) {
+      node.right = this._remove(node.right, val)
+    } else {
+      if (node.left === null) {
+        node = node.right
         this._size--
-      } else if (root.right === null) {
-        root = root.left
+      } else if (node.right === null) {
+        node = node.left
         this._size--
       } else {
-        let seccessor = this._minimun(root.right)
-        let leftNode = root.left
-        let rightNode = this._remove(root.right, seccessor.val)
-        root = seccessor
-        root.left = leftNode
-        root.right = rightNode
+        let seccessor = this._minimun(node.right)
+        let leftNode = node.left
+        let rightNode = this._remove(node.right, seccessor.val)
+        node = seccessor
+        node.left = leftNode
+        node.right = rightNode
       }
     }
-    return root
+    return node
   }
 
-  _contains(root, val) {
-    if (root === null)
+  _contains(node, val) {
+    if (node === null)
       return false
-    if (root.val === val) {
+    if (this._compare(node.val, val) === 0) {
       return true
-    } else if (root.val > val) {
-      return this._contains(root.left, val)
+    } else if (this._compare(node.val, val) > 0) {
+      return this._contains(node.left, val)
     } else {
-      return this._contains(root.right, val)
+      return this._contains(node.right, val)
     }
   }
 
-  _preorder(root, func) {
-    if (root === null)
+  _preorder(node, func) {
+    if (node === null)
       return
-    func(root.val)
-    this._preorder(root.left, func)
-    this._preorder(root.right, func)
+    func(node.val)
+    this._preorder(node.left, func)
+    this._preorder(node.right, func)
   }
 
-  _inorder(root, func) {
-    if (root === null)
+  _inorder(node, func) {
+    if (node === null)
       return
-    this._inorder(root.left, func)
-    func(root.val)
-    this._inorder(root.right, func)
+    this._inorder(node.left, func)
+    func(node.val)
+    this._inorder(node.right, func)
   }
 
-  _postorder(root, func) {
-    if (root === null)
+  _postorder(node, func) {
+    if (node === null)
       return
-    this._postorder(root.left, func)
-    this._postorder(root.right, func)
-    func(root.val)
+    this._postorder(node.left, func)
+    this._postorder(node.right, func)
+    func(node.val)
   }
 
-  _leverorder(root, func) {
-    if (root === null)
+  _leverorder(node, func) {
+    if (node === null)
       return
-    let queue = [root]
+    let queue = [node]
     while (queue.length !== 0) {
       let node = queue.shift()
       func(node.val)
