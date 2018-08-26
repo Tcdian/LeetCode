@@ -1,4 +1,6 @@
-# LeetCode: [Tcdian](https://leetcode.com/tcdian/)
+# LeetCode
+
+### [https://leetcode.com/tcdian/](https://leetcode.com/tcdian/)
 
 LeetCode 经典题目汇总 (javascript实现)
 
