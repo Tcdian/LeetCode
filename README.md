@@ -117,6 +117,7 @@ LeetCode 经典题目汇总 (javascript实现)
 
 #### 线段树
 - [307. Range Sum Query - Mutable](./LeetCode/SegementTree/307.RangeSumQuery-Mutable.js)
+- [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### Trie 树
 - [208. Implement Trie (Prefix Tree)](./LeetCode/Trie/208.ImplementTrie(PrefixTree).js)
