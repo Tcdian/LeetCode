@@ -17,6 +17,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [线段树 SegmentTree](./DataStructure/SegmentTree.js)
 - [前缀树 Trie](./DataStructure/Trie.js)
 - [并查集 UnionFind](./DataStructure/UnionFind.js)
+- [AVL 树](./DataStructure/AVL.js)
 
 ### LeetCode题目
 
