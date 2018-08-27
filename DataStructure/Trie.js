@@ -1,3 +1,4 @@
+// Trie
 class Trie {
   constructor() {
     this._treeNode = function (isEnd) {

@@ -1,0 +1,188 @@
+// BST
+// 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder
+class AVL {
+  constructor(compare = (a, b) => a - b) {
+    this.root = null
+    this._size = 0
+    this._compare = compare
+    this._treeNode = function (val) {
+      this.val = val
+      this._height = 1
+      this.left = this.right = null
+    }
+  }
+  // 获取AVL中元素个数
+  getSize() {
+    return this._size
+  }
+  // 判断AVL是否为空
+  isEmpty() {
+    return this._size === 0
+  }
+  // 向AVL中添加元素 添加橙红返回 true, 已存在返回 false
+  add(val) {
+    let memoSize = this.getSize()
+    this.root = this._add(this.root, val)
+    return memoSize === this.getSize() - 1
+  }
+  // 从AVL中移除元素. 移除成功返回 true, 失败返回 false
+  remove(val) {
+    let memoSize = this.getSize()
+    this.root = this._remove(this.root, val)
+    return memoSize === this.getSize() + 1
+  }
+  // 判断AVL中是否包含元素
+  contains(val) {
+    return this._contains(this.root, val)
+  }
+  // 前序遍历
+  preorder(func = console.log) {
+    this._preorder(this.root, func)
+  }
+  // 中序遍历
+  inorder(func = console.log) {
+    this._inorder(this.root, func)
+  }
+  // 后序遍历
+  postorder(func = console.log) {
+    this._postorder(this.root, func)
+  }
+  // 层序遍历
+  leverorder(func = console.log) {
+    this._leverorder(this.root, func)
+  }
+  // 判断 AVL 树是不是平衡树
+  isBalanced() {
+    return this._isBalanced(this.root)
+  }
+  // 判断 AVL 树是不是BST
+  isBST() {
+    let inorderArr = []
+    this.inorder(it => inorderArr.push(it))
+    for(let i = 1; i < inorderArr.length; i++) {
+      if (this._compare(inorderArr[i], inorderArr[i - 1]) < 0) {
+        return false
+      }
+    }
+    return true
+  }
+
+  _add(node, val) {
+    if (node === null) {
+      this._size++
+        return new this._treeNode(val)
+    }
+    if (this._compare(node.val, val) > 0) {
+      node.left = this._add(node.left, val)
+    } else if (this._compare(node.val, val) < 0) {
+      node.right = this._add(node.right, val)
+    } else {
+      node.val = val
+    }
+    node._height = 1 + Math.max(this._getHeight(node.left), this._getHeight(node.right))
+    return node
+  }
+
+  _minimun(node) {
+    if (node.left === null) {
+      return node
+    }
+    return this._minimun(node.left)
+  }
+
+  _remove(node, val) {
+    if (node === null) {
+      return null
+    } else if (this._compare(node.val, val) > 0) {
+      node.left = this._remove(node.left, val)
+    } else if (this._compare(node.val, val) < 0) {
+      node.right = this._remove(node.right, val)
+    } else {
+      if (node.left === null) {
+        node = node.right
+        this._size--
+      } else if (node.right === null) {
+        node = node.left
+        this._size--
+      } else {
+        let seccessor = this._minimun(node.right)
+        let leftNode = node.left
+        let rightNode = this._remove(node.right, seccessor.val)
+        node = seccessor
+        node.left = leftNode
+        node.right = rightNode
+      }
+    }
+    return node
+  }
+
+  _contains(node, val) {
+    if (node === null)
+      return false
+    if (this._compare(node.val, val) === 0) {
+      return true
+    } else if (this._compare(node.val, val) > 0) {
+      return this._contains(node.left, val)
+    } else {
+      return this._contains(node.right, val)
+    }
+  }
+
+  _preorder(node, func) {
+    if (node === null)
+      return
+    func(node.val)
+    this._preorder(node.left, func)
+    this._preorder(node.right, func)
+  }
+
+  _inorder(node, func) {
+    if (node === null)
+      return
+    this._inorder(node.left, func)
+    func(node.val)
+    this._inorder(node.right, func)
+  }
+
+  _postorder(node, func) {
+    if (node === null)
+      return
+    this._postorder(node.left, func)
+    this._postorder(node.right, func)
+    func(node.val)
+  }
+
+  _leverorder(node, func) {
+    if (node === null)
+      return
+    let queue = [node]
+    while (queue.length !== 0) {
+      let node = queue.shift()
+      func(node.val)
+      if (node.left !== null) {
+        queue.push(node.left)
+      }
+      if (node.right !== null) {
+        queue.push(node.right)
+      }
+    }
+  }
+
+  _getHeight(node) {
+    return node === null ? 0 : node._height
+  }
+
+  _getBalanceFactor(node) {
+    return node === null ? 0 : this._getHeight(node.left) - this._getHeight(node.right)
+  }
+
+  _isBalanced(root) {
+    if (root === null) {
+      return true
+    }
+    if (Math.abs(this._getBalanceFactor(root)) > 1) {
+      return false
+    }
+    return this._isBalanced(root.left) && this._isBalanced(root.right)
+  }
+}
