@@ -87,35 +87,35 @@ class AVL {
 
     // LLRotate
     if (balanceFactor > 1 && this._getBalanceFactor(node.left) > 0) {
-      return this._LLRotate(node)
+      return this._LRotate(node)
     }
     // RRRotate
     if (balanceFactor < -1 && this._getBalanceFactor(node.right) < 0) {
-      return this._RRRotate(node)
+      return this._RRotate(node)
     }
     // LRRotate
     //            X                                   X
     //          /   \                               /   \                       Y
-    //        Z      T1        对 Z Y T2           Y     T1      LLRotate    /      \
-    //      /   \             执行RRRotate       /   \             =>       Z        X
+    //        Z      T1        对 Z Y T2           Y     T1      LRotate     /      \
+    //      /   \             执行RRotate        /   \             =>       Z        X
     //     T3    Y                =>           Z     T2                  /   \    /   \
     //         /   \                         /   \                     T3     T4 T2    T1
     //       T4     T2                     T3     T4
     if (balanceFactor > 1 && this._getBalanceFactor(node.left) < 0) {
-      node.left = this._RRRotate(node.left)
-      return this._LLRotate(node)
+      node.left = this._RRotate(node.left)
+      return this._LRotate(node)
     }
     // RLRotate
     //          X                                      X
     //        /   \                                  /   \                      Y
-    //       T1    Z           对 Z Y T2            T1    Y      RRRotate    /      \
-    //           /   \        执行LLRotate               /  \       =>      X        Z
+    //       T1    Z           对 Z Y T2            T1    Y      RRotate     /      \
+    //           /   \        执行LRotate                /  \       =>      X        Z
     //          Y     T4         =>                    T2   Z             /   \    /   \
     //        /   \                                       /   \          T1    T2 T3   T4
     //      T2     T3                                    T3    T4
     if (balanceFactor < -1 && this._getBalanceFactor(node.right) > 0) {
-      node.right = this._LLRotate(node.right)
-      return this._RRRotate(node)
+      node.right = this._LRotate(node.right)
+      return this._RRotate(node)
     }
     return node
   }
@@ -162,21 +162,21 @@ class AVL {
 
     // LLRotate
     if (balanceFactor > 1 && this._getBalanceFactor(node.left) > 0) {
-      return this._LLRotate(node)
+      return this._LRotate(node)
     }
     // RRRotate
     if (balanceFactor < -1 && this._getBalanceFactor(node.right) < 0) {
-      return this._RRRotate(node)
+      return this._RRotate(node)
     }
     // LRRotate
     if (balanceFactor > 1 && this._getBalanceFactor(node.left) < 0) {
-      node.left = this._RRRotate(node.left)
-      return this._LLRotate(node)
+      node.left = this._RRotate(node.left)
+      return this._LRotate(node)
     }
     // RLRotate
     if (balanceFactor < -1 && this._getBalanceFactor(node.right) > 0) {
-      node.right = this._LLRotate(node.right)
-      return this._RRRotate(node)
+      node.right = this._LRotate(node.right)
+      return this._RRotate(node)
     }
     return node
   }
@@ -253,13 +253,13 @@ class AVL {
 
   //                  X
   //                /   \                        Y
-  //               Y     T1      LLRotate    /      \
+  //               Y     T1       LRotate    /      \
   //             /   \             =>       Z        X
   //            Z     T2                  /   \    /   \
   //          /   \                     T3     T4 T2    T1
   //        T3     T4
 
-  _LLRotate(nodeX) {
+  _LRotate(nodeX) {
     let nodeY = nodeX.left
     let tmp = nodeY.right
     nodeY.right = nodeX
@@ -273,13 +273,13 @@ class AVL {
 
   //                  X
   //                /   \                       Y
-  //               T1    Y      RRRotate    /      \
+  //               T1    Y       RRotate    /      \
   //                   /  \         =>     X        Z
   //                  T2   Z             /   \    /   \
   //                     /   \          T1    T2 T3   T4
   //                   T3     T4
 
-  _RRRotate(nodeX) {
+  _RRotate(nodeX) {
     let nodeY = nodeX.right
     let tmp = nodeY.left
     nodeY.left = nodeX
