@@ -96,11 +96,12 @@ class AVL {
     // LRRotate
     //            X                                   X
     //          /   \                               /   \                       Y
-    //        Z      T1        对 Z Y T2           Y     T1      LRotate     /      \
-    //      /   \             执行RRotate        /   \             =>       Z        X
-    //     T3    Y                =>           Z     T2                  /   \    /   \
-    //         /   \                         /   \                     T3     T4 T2    T1
+    //        Z      T1        对 Z Y T2           Y     T1      LRotate     /     \
+    //      /   \             执行RRotate        /   \             =>       Z       X
+    //     T3    Y                =>           Z     T2                   /  \    /  \
+    //         /   \                         /   \                      T3   T4 T2   T1
     //       T4     T2                     T3     T4
+
     if (balanceFactor > 1 && this._getBalanceFactor(node.left) < 0) {
       node.left = this._RRotate(node.left)
       return this._LRotate(node)
@@ -108,11 +109,12 @@ class AVL {
     // RLRotate
     //          X                                      X
     //        /   \                                  /   \                      Y
-    //       T1    Z           对 Z Y T2            T1    Y      RRotate     /      \
-    //           /   \        执行LRotate                /  \       =>      X        Z
-    //          Y     T4         =>                    T2   Z             /   \    /   \
-    //        /   \                                       /   \          T1    T2 T3   T4
+    //       T1    Z           对 Z Y T2            T1    Y      RRotate      /    \
+    //           /   \        执行LRotate                /  \       =>       X      Z
+    //          Y     T4         =>                    T2   Z              /  \   /  \
+    //        /   \                                       /   \          T1   T2 T3  T4
     //      T2     T3                                    T3    T4
+
     if (balanceFactor < -1 && this._getBalanceFactor(node.right) > 0) {
       node.right = this._LRotate(node.right)
       return this._RRotate(node)
@@ -251,13 +253,11 @@ class AVL {
     return this._isBalanced(root.left) && this._isBalanced(root.right)
   }
 
-  //                  X
-  //                /   \                        Y
-  //               Y     T1       LRotate    /      \
-  //             /   \             =>       Z        X
-  //            Z     T2                  /   \    /   \
-  //          /   \                     T3     T4 T2    T1
-  //        T3     T4
+  //                  X                          Y
+  //                /   \                      /  \
+  //               Y     T1       LRotate    T3    X
+  //             /   \             =>            /   \
+  //           T3     T2                        T2   T1
 
   _LRotate(nodeX) {
     let nodeY = nodeX.left
@@ -270,13 +270,11 @@ class AVL {
     return nodeY
   }
 
-  //                  X
-  //                /   \                       Y
-  //               T1    Y       RRotate    /      \
-  //                   /  \         =>     X        Z
-  //                  T2   Z             /   \    /   \
-  //                     /   \          T1    T2 T3   T4
-  //                   T3     T4
+  //                  X                       Y
+  //                /   \     RRotate       /   \
+  //               T1    Y      =>         X    T3
+  //                   /  \              /  \
+  //                  T2   T3           T1   T2
 
   _RRotate(nodeX) {
     let nodeY = nodeX.right

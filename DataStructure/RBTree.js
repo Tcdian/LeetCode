@@ -132,8 +132,18 @@ class RBTree {
     }
   }
 
-  _RRotate(nodex) {
-    let nodeY = nodeX.right
+  //                  X                       Y
+  //                /   \     RRotate       /   \
+  //               T1    Y      =>         X    T3
+  //                   /  \              /  \
+  //                  T2   T3           T1   T2
 
+  _RRotate(nodeX) {
+    let nodeY = nodeX.right
+    nodeX.right = nodeY.left
+    nodeY.left = nodeX
+
+    nodeY._color = nodeX._color
+    nodeX._color = RBTree.RED
   }
 }
