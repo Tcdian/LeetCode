@@ -75,7 +75,15 @@ class RBTree {
     }
 
     // 根据不同阶段, 执行不同的操作
-
+    if(this._isRed(node.right) && !this._isRed(node.left)) {
+      node = this._RRotate(node)
+    }
+    if(this._isRed(node.left) && this._isRed(node.left.left)) {
+      node = this._LRotate(node)
+    }
+    if(this._isRed(node.left) && this._isRed(node.right)) {
+      this._flipColor(node)
+    }
 
     return node
   }
@@ -132,6 +140,23 @@ class RBTree {
     }
   }
 
+  //                  X                          Y
+  //                /   \                      /  \
+  //               Y     T1       LRotate    T3    X
+  //             /   \             =>            /   \
+  //           T3     T2                        T2   T1
+
+  _LRotate(nodeX) {
+    let nodeY = nodeX.left
+    nodeX.left = nodeY.right
+    nodeY.right = nodeX
+
+    nodeY._color = nodeX._color
+    nodeX._color = RBTree.RED
+
+    return nodeY
+  }
+
   //                  X                       Y
   //                /   \     RRotate       /   \
   //               T1    Y      =>         X    T3
@@ -145,5 +170,20 @@ class RBTree {
 
     nodeY._color = nodeX._color
     nodeX._color = RBTree.RED
+
+    return nodeY
+  }
+
+  _flipColor(node) {
+    node._color = RBTree.RED
+    node.left._color = RBTree.BLACK
+    node.right._color = RBTree.BLACK
+  }
+
+  _isRed(node) {
+    if(node === null) {
+      return false
+    }
+    return node._color
   }
 }

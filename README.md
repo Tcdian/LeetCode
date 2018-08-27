@@ -13,11 +13,12 @@ LeetCode 经典题目汇总 (javascript实现)
 - [栈 Stack](./DataStructure/Stack.js)
 - [队列 Queue](./DataStructure/Queue.js)
 - [二叉搜索树 BST](./DataStructure/BST.js)
-- [优先队列 PriorityQueue](./DataStructure/PriorityQueue.js)
-- [线段树 SegmentTree](./DataStructure/SegmentTree.js)
+- [优先队列 Priority Queue](./DataStructure/PriorityQueue.js)
+- [线段树 Segment Tree](./DataStructure/SegmentTree.js)
 - [前缀树 Trie](./DataStructure/Trie.js)
 - [并查集 UnionFind](./DataStructure/UnionFind.js)
 - [AVL 树](./DataStructure/AVL.js)
+- [红黑树 Red-black Tree](./DataStructure/RBTree.js)
 
 ### LeetCode题目
 
