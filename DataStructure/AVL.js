@@ -1,5 +1,5 @@
-// BST
-// 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder
+// AVL
+// 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder isBalanced isBST
 class AVL {
   constructor(compare = (a, b) => a - b) {
     this.root = null
@@ -79,7 +79,44 @@ class AVL {
     } else {
       node.val = val
     }
+    // 更新 height
     node._height = 1 + Math.max(this._getHeight(node.left), this._getHeight(node.right))
+
+    // 计算平衡因子
+    let balanceFactor = this._getBalanceFactor(node)
+
+    // LLRotate
+    if (balanceFactor > 1 && this._getBalanceFactor(node.left) > 0) {
+      return this._LLRotate(node)
+    }
+    // RRRotate
+    if (balanceFactor < -1 && this._getBalanceFactor(node.right) < 0) {
+      return this._RRRotate(node)
+    }
+    // LRRotate
+    //            X                                   X
+    //          /   \                               /   \                       Y
+    //        Z      T1        对 Z Y T2           Y     T1      LLRotate    /      \
+    //      /   \             执行RRRotate       /   \             =>       Z        X
+    //     T3    Y                =>           Z     T2                  /   \    /   \
+    //         /   \                         /   \                     T3     T4 T2    T1
+    //       T4     T2                     T3     T4
+    if (balanceFactor > 1 && this._getBalanceFactor(node.left) < 0) {
+      node.left = this._RRRotate(node.left)
+      return this._LLRotate(node)
+    }
+    // RLRotate
+    //          X                                      X
+    //        /   \                                  /   \                      Y
+    //       T1    Z           对 Z Y T2            T1    Y      RRRotate    /      \
+    //           /   \        执行LLRotate               /  \       =>      X        Z
+    //          Y     T4         =>                    T2   Z             /   \    /   \
+    //        /   \                                       /   \          T1    T2 T3   T4
+    //      T2     T3                                    T3    T4
+    if (balanceFactor < -1 && this._getBalanceFactor(node.right) > 0) {
+      node.right = this._LLRotate(node.right)
+      return this._RRRotate(node)
+    }
     return node
   }
 
@@ -112,6 +149,34 @@ class AVL {
         node.left = leftNode
         node.right = rightNode
       }
+    }
+    // 当 node 为 null 时, 直接返回
+    if (node === null) {
+      return node
+    }
+    // 更新 height
+    node._height = 1 + Math.max(this._getHeight(node.left), this._getHeight(node.right))
+
+    // 计算平衡因子
+    let balanceFactor = this._getBalanceFactor(node)
+
+    // LLRotate
+    if (balanceFactor > 1 && this._getBalanceFactor(node.left) > 0) {
+      return this._LLRotate(node)
+    }
+    // RRRotate
+    if (balanceFactor < -1 && this._getBalanceFactor(node.right) < 0) {
+      return this._RRRotate(node)
+    }
+    // LRRotate
+    if (balanceFactor > 1 && this._getBalanceFactor(node.left) < 0) {
+      node.left = this._RRRotate(node.left)
+      return this._LLRotate(node)
+    }
+    // RLRotate
+    if (balanceFactor < -1 && this._getBalanceFactor(node.right) > 0) {
+      node.right = this._LLRotate(node.right)
+      return this._RRRotate(node)
     }
     return node
   }
@@ -184,5 +249,45 @@ class AVL {
       return false
     }
     return this._isBalanced(root.left) && this._isBalanced(root.right)
+  }
+
+  //                  X
+  //                /   \                        Y
+  //               Y     T1      LLRotate    /      \
+  //             /   \             =>       Z        X
+  //            Z     T2                  /   \    /   \
+  //          /   \                     T3     T4 T2    T1
+  //        T3     T4
+
+  _LLRotate(nodeX) {
+    let nodeY = nodeX.left
+    let T2 = nodeY.right
+    nodeY.right = nodeX
+    nodeX.left = T2
+
+    nodeX._height = 1 + Math.max(this._getHeight(nodeX.left), this._getHeight(nodeX.right))
+    nodeY._height = 1 + Math.max(this._getHeight(nodeY.left), this._getHeight(nodeY.right))
+
+    return nodeY
+  }
+
+  //                  X
+  //                /   \                       Y
+  //               T1    Y      RRRotate    /      \
+  //                   /  \         =>     X        Z
+  //                  T2   Z             /   \    /   \
+  //                     /   \          T1    T2 T3   T4
+  //                   T3     T4
+
+  _RRRotate(nodeX) {
+    let nodeY = nodeX.right
+    let T2 = nodeY.left
+    nodeY.left = nodeX
+    nodeX.right = T2
+
+    nodeX._height = 1 + Math.max(this._getHeight(nodeX.left), this._getHeight(nodeX.right))
+    nodeY._height = 1 + Math.max(this._getHeight(nodeY.left), this._getHeight(nodeY.right))
+
+    return nodeY
   }
 }
