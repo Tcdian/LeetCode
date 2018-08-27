@@ -261,9 +261,8 @@ class AVL {
 
   _LRotate(nodeX) {
     let nodeY = nodeX.left
-    let tmp = nodeY.right
+    nodeX.left = nodeY.right
     nodeY.right = nodeX
-    nodeX.left = tmp
 
     nodeX._height = 1 + Math.max(this._getHeight(nodeX.left), this._getHeight(nodeX.right))
     nodeY._height = 1 + Math.max(this._getHeight(nodeY.left), this._getHeight(nodeY.right))
@@ -281,9 +280,8 @@ class AVL {
 
   _RRotate(nodeX) {
     let nodeY = nodeX.right
-    let tmp = nodeY.left
+    nodeX.right = nodeY.left
     nodeY.left = nodeX
-    nodeX.right = tmp
 
     nodeX._height = 1 + Math.max(this._getHeight(nodeX.left), this._getHeight(nodeX.right))
     nodeY._height = 1 + Math.max(this._getHeight(nodeY.left), this._getHeight(nodeY.right))
