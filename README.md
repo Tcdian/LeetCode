@@ -144,5 +144,6 @@ LeetCode 经典题目汇总 (javascript实现)
 - [407. Trapping Rain Water II](./LeetCode/BFS/407.TrappingRainWaterII.js)
 
 #### Design
+- [380. Insert Delete GetRandom O(1)](./LeetCode/Design/380.InsertDeleteGetRandomO(1).js)
 - [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
 
