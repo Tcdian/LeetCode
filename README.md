@@ -37,6 +37,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 - [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)
 - [224. Basic Calculator](./LeetCode/Stack&Queue&Heap/224.BasicCalculator.js)
+- [239. Sliding Window Maximum](./LeetCode/Stack&Queue&Heap/239.SlidingWindowMaximum.js)
 - [300. Longest Increasing Subsequence](./LeetCode/DP/300.LongestIncreasingSubsequence.js)
 - [215. Kth Largest Element in an Array](./LeetCode/Stack&Queue&Heap/215.KthLargestElementInAnArray.js)
 - [295. Find Median from Data Stream](./LeetCode/Stack&Queue&Heap/295.FindMedianFromDataStream.js)
@@ -143,7 +144,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [126. Word Ladder II](./LeetCode/BFS/126.WordLadderII.js)
 - [407. Trapping Rain Water II](./LeetCode/BFS/407.TrappingRainWaterII.js)
 
-#### Design[
+#### Design
 - [380. Insert Delete GetRandom O(1)](./LeetCode/Design/380.InsertDeleteGetRandomO(1).js)
 - [381. Insert Delete GetRandom O(1) - Duplicates allowed](./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js)
 - [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
