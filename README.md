@@ -130,6 +130,7 @@ LeetCode 经典题目汇总 (javascript实现)
 
 #### 深度优先搜索
 - [200. Number of Islands](./LeetCode/DFS/200.NumberOfIslands.js)
+- [79. Word Search](./LeetCode/DFS/79.WordSearch.js)
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
 
 #### 广度优先搜索
