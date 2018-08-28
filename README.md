@@ -74,6 +74,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [297. Serialize and Deserialize Binary Tree](./LeetCode/Tree/297.SerializeAndDeserializeBinaryTree.js)
 
 #### 哈希表和字符串
+- [1. Two Sum](./LeetCode/Hash&String/1.TwoSum.js)
 - [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 - [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
 - [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
