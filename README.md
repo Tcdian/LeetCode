@@ -143,7 +143,8 @@ LeetCode 经典题目汇总 (javascript实现)
 - [126. Word Ladder II](./LeetCode/BFS/126.WordLadderII.js)
 - [407. Trapping Rain Water II](./LeetCode/BFS/407.TrappingRainWaterII.js)
 
-#### Design
+#### Design[
 - [380. Insert Delete GetRandom O(1)](./LeetCode/Design/380.InsertDeleteGetRandomO(1).js)
+- [381. Insert Delete GetRandom O(1) - Duplicates allowed](./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js)
 - [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
 
