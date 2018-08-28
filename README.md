@@ -135,6 +135,7 @@ LeetCode 经典题目汇总 (javascript实现)
 #### 深度优先搜索
 - [200. Number of Islands](./LeetCode/DFS/200.NumberOfIslands.js)
 - [337. House Robber III](./LeetCode/DFS/337.HouseRobberIII.js)
+- [124. Binary Tree Maximum Path Sum](./LeetCode/DFS/124.BinaryTreeMaximumPathSum.js)
 - [79. Word Search](./LeetCode/DFS/79.WordSearch.js)
 - [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
 
