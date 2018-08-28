@@ -66,6 +66,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [23. Merge k Sorted Lists](./LeetCode/BinarySearch&DivideAndConquer/23.MergeKSortedLists.js)
 
 #### 二叉树
+- [101. Symmetric Tree](./LeetCode/Tree/101.SymmetricTree.js)
 - [113. Path Sum II](./LeetCode/Tree/113.PathSumII.js)
 - [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree/236.LowestCommonAncestorOfABinaryTree.js)
 - [114. Flatten Binary Tree to Linked List](./LeetCode/Tree/114.FlattenBinaryTreeToLinkedList.js)
