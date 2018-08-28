@@ -15,9 +15,7 @@ var levelOrder = function (root) {
     return []
   }
   let result = []
-  let queue = [
-    [0, root]
-  ]
+  let queue = [[0, root]]
   while (queue.length !== 0) {
     let pairs = queue.shift()
     let node = pairs[1]
