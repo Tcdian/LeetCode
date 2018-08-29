@@ -72,6 +72,7 @@ LeetCode 经典题目汇总 (javascript实现)
 - [114. Flatten Binary Tree to Linked List](./LeetCode/Tree/114.FlattenBinaryTreeToLinkedList.js)
 - [199. Binary Tree Right Side View](./LeetCode/Tree/199.BinaryTreeRightSideView.js)
 - [144. Binary Tree Preorder Traversal](./LeetCode/Tree/144.BinaryTreePreorderTraversal.js)
+- [94. Binary Tree Inorder Traversal](./LeetCode/Tree/94.BinaryTreeInorderTraversal.js)
 - [687. Longest Univalue Path](./LeetCode/Tree/687.LongestUnivaluePath.js)
 - [297. Serialize and Deserialize Binary Tree](./LeetCode/Tree/297.SerializeAndDeserializeBinaryTree.js)
 
