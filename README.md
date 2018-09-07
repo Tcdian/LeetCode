@@ -1,12 +1,12 @@
 # LeetCode
 
-### [https://leetcode.com/tcdian/](https://leetcode.com/tcdian/)
-
-LeetCode 经典题目汇总 (javascript实现)
+LeetCode 经典题目汇总 ( javascript实现 )
 
 刷LeetCode有一段时间了,下面记录一些经典的题目, 用来以后复习回顾使用.
 
-[![Alt text](./img/accepted.png)](https://leetcode.com/tcdian/)
+### LeetCode: [https://leetcode.com/tcdian/](https://leetcode.com/tcdian/)
+
+[![Alt text](./img/20180907.png)](https://leetcode.com/tcdian/)
 
 ### 常用数据结构实现
 
