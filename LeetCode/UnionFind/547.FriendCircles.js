@@ -7,8 +7,8 @@ var findCircleNum = function (M) {
   class UnionFind {
     constructor(size = 0) {
       this._size = size
-      this.rank = new Array(size).fill(1)
-      this.parent = new Array(size).fill(1).map((it, index) => index)
+      this._rank = new Array(size).fill(1)
+      this._parent = new Array(size).fill(1).map((it, index) => index)
     }
 
     getSize() {
@@ -18,13 +18,13 @@ var findCircleNum = function (M) {
     union(p, q) {
       let pRoot = this._find(p)
       let qRoot = this._find(q)
-      if (this.rank[pRoot] > this.rank[qRoot]) {
-        this.parent[qRoot] = pRoot
-      } else if (this.rank[pRoot] < this.rank[qRoot]) {
-        this.parent[pRoot] = qRoot
+      if (this._rank[pRoot] > this._rank[qRoot]) {
+        this._parent[qRoot] = pRoot
+      } else if (this._rank[pRoot] < this._rank[qRoot]) {
+        this._parent[pRoot] = qRoot
       } else {
-        this.parent[pRoot] = qRoot
-        this.rank[qRoot]++
+        this._parent[pRoot] = qRoot
+        this._rank[qRoot]++
       }
     }
 
@@ -38,9 +38,9 @@ var findCircleNum = function (M) {
       if (p >= this.getSize() || p < 0) {
         throw new Error('out of bound')
       }
-      while (this.parent[p] !== p) {
-        this.parent[p] = this.parent[this.parent[p]]
-        p = this.parent[p]
+      while (this._parent[p] !== p) {
+        this._parent[p] = this._parent[this._parent[p]]
+        p = this._parent[p]
       }
       return p
     }
@@ -55,5 +55,5 @@ var findCircleNum = function (M) {
       }
     }
   }
-  return friendCircles.parent.filter((it, index) => it === index).length
+  return friendCircles._parent.filter((it, index) => it === index).length
 }

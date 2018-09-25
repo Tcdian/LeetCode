@@ -4,12 +4,12 @@
 class PriorityQueue {
   constructor(compare = (a, b) => a - b, initialVal = []) {
     this._compare = compare
-    this.data = initialVal.slice()
+    this._data = initialVal.slice()
     this._heapify()
   }
   // 获取优先队列中元素个数
   getSize() {
-    return this.data.length
+    return this._data.length
   }
   // 判断优先队列是非为空
   isEmpty() {
@@ -20,24 +20,29 @@ class PriorityQueue {
     if (this.isEmpty()) {
       throw new Error('Heap is empty')
     }
-    return this.data[0]
+    return this._data[0]
   }
   // 添加一个元素进去优先队列
   enqueue(element) {
-    this.data.push(element)
+    this._data.push(element)
     this._siftUp(this.getSize() - 1)
   }
   // 取出优先队列顶端元素
   dequeue() {
-    let outElement = this.data[0]
-    this.data[0] = this.data.pop()
-    this._siftDown(0)
+    let outElement = this._data[0]
+    // 注意 : 如果当前 _data 内只有一个元素, this._data[0] = this._data.pop() 会产生 bug
+    // 并不会 pop 出一个元素
+    let siftElement = this._data.pop()
+    if (!this.isEmpty()) {
+      this._data[0] = siftElement
+      this._siftDown(0)
+    }
     return outElement
   }
   // 替换掉优先队列顶端元素
   replace(element) {
-    let outElement = this.data[0]
-    this.data[0] = element
+    let outElement = this._data[0]
+    this._data[0] = element
     this._siftDown(0)
     return outElement
   }
@@ -55,14 +60,14 @@ class PriorityQueue {
   }
 
   _swap(x, y) {
-    let tmp = this.data[x]
-    this.data[x] = this.data[y]
-    this.data[y] = tmp
+    let tmp = this._data[x]
+    this._data[x] = this._data[y]
+    this._data[y] = tmp
   }
 
   _siftUp(index) {
     let parentIndex = this._findParent(index)
-    if (parentIndex >= 0 && this._compare(this.data[parentIndex], this.data[index]) < 0) {
+    if (parentIndex >= 0 && this._compare(this._data[parentIndex], this._data[index]) < 0) {
       this._swap(parentIndex, index)
       this._siftUp(parentIndex)
     }
@@ -72,10 +77,10 @@ class PriorityQueue {
     let leftChild = this._findLeftChild(index)
     let rightChild = this._findRightChild(index)
     let large = index
-    if (leftChild < this.data.length && this._compare(this.data[large], this.data[leftChild]) < 0) {
+    if (leftChild < this._data.length && this._compare(this._data[large], this._data[leftChild]) < 0) {
       large = leftChild
     }
-    if (rightChild < this.data.length && this._compare(this.data[large], this.data[rightChild]) < 0) {
+    if (rightChild < this._data.length && this._compare(this._data[large], this._data[rightChild]) < 0) {
       large = rightChild
     }
     if (large !== index) {

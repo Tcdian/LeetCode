@@ -1,14 +1,19 @@
 // BST
 // 支持 getSize isEmpty add remove contains preorder inorder postorder leverorder
+
+class TreeNode {
+  constructor(val) {
+    this.val = val
+    this.left = this.right = null
+  }
+}
+
 class BST {
   constructor(compare = (a, b) => a - b) {
-    this.root = null
+    this._root = null
     this._size = 0
     this._compare = compare
-    this._treeNode = function (val) {
-      this.val = val
-      this.left = this.right = null
-    }
+    this._treeNode = TreeNode
   }
   // 获取BST中元素个数
   getSize() {
@@ -21,34 +26,34 @@ class BST {
   // 向BST中添加元素 添加橙红返回 true, 已存在返回 false
   add(val) {
     let memoSize = this.getSize()
-    this.root = this._add(this.root, val)
+    this._root = this._add(this._root, val)
     return memoSize === this.getSize() - 1
   }
   // 从BST中移除元素. 移除成功返回 true, 失败返回 false
   remove(val) {
     let memoSize = this.getSize()
-    this.root = this._remove(this.root, val)
+    this._root = this._remove(this._root, val)
     return memoSize === this.getSize() + 1
   }
   // 判断BST中是否包含元素
   contains(val) {
-    return this._contains(this.root, val)
+    return this._contains(this._root, val)
   }
   // 前序遍历
   preorder(func = console.log) {
-    this._preorder(this.root, func)
+    this._preorder(this._root, func)
   }
   // 中序遍历
   inorder(func = console.log) {
-    this._inorder(this.root, func)
+    this._inorder(this._root, func)
   }
   // 后序遍历
   postorder(func = console.log) {
-    this._postorder(this.root, func)
+    this._postorder(this._root, func)
   }
   // 层序遍历
   leverorder(func = console.log) {
-    this._leverorder(this.root, func)
+    this._leverorder(this._root, func)
   }
 
   _add(node, val) {

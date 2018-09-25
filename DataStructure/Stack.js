@@ -2,29 +2,29 @@
 // 支持 push pop peek getSize isEmpty 方法
 class ArrayStack {
   constructor() {
-    this.data = []
+    this._data = []
   }
 
   push(val) {
-    this.data.push(val)
+    this._data.push(val)
   }
 
   pop() {
     if (this.isEmpty()) {
       throw new Error('stack is empty')
     }
-    return this.data.pop()
+    return this._data.pop()
   }
 
   peek() {
     if (this.isEmpty()) {
       throw new Error('stack is empty')
     }
-    return this.data[this.getSize() - 1]
+    return this._data[this.getSize() - 1]
   }
 
   getSize() {
-    return this.data.length
+    return this._data.length
   }
 
   isEmpty() {
@@ -33,42 +33,47 @@ class ArrayStack {
 }
 
 // LinkedListStack 使用链表实现
+
+class ListNode {
+  constructor(val) {
+    this.val = val
+    this.next = null
+  }
+}
+
 class LinkedListStack {
   constructor() {
-    this._listNode = function(val) {
-      this.val = val
-      this.next = null
-    }
-    this.data = new this._listNode('guard')
-    this.size = 0
+    this._listNode = ListNode
+    this._data = new this._listNode('guard')
+    this._size = 0
   }
 
   push(val) {
     let newListNode = new this._listNode(val)
-    newListNode.next = this.data.next
-    this.data.next = newListNode
-    this.size++
+    newListNode.next = this._data.next
+    this._data.next = newListNode
+    this._size++
   }
 
   pop() {
     let result = this.peek()
-    if (this.size === 0) {
+    if (this._size === 0) {
       throw new Error('stack is empty')
     }
-    this.data.next = this.data.next.next
-    this.size--
+    this._data.next = this._data.next.next
+    this._size--
     return result
   }
 
   peek() {
-    if (this.size === 0) {
+    if (this._size === 0) {
       throw new Error('stack is empty')
     }
-    return this.data.next.val
+    return this._data.next.val
   }
 
   getSize() {
-    return this.size
+    return this._size
   }
 
   isEmpty() {

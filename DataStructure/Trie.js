@@ -1,10 +1,14 @@
 // Trie
+class TreeNode {
+  constructor(isEnd) {
+    this.isEnd = isEnd
+  }
+}
+
 class Trie {
   constructor() {
-    this._treeNode = function (isEnd) {
-      this.isEnd = isEnd
-    }
-    this.root = new this._treeNode(false)
+    this._treeNode = TreeNode
+    this._root = new this._treeNode(false)
     this._size = 0
   }
   // 获取 Trie 中元素个数
@@ -20,12 +24,12 @@ class Trie {
   // 删除 Trie 中 word, 成功返回 true, 不存在返回 false
   delete(word) {
     let memoSize = this.getSize()
-    this._delete(word, this.root)
+    this._delete(word, this._root)
     return this.getSize() === memoSize - 1
   }
   // 判断 Trie 中 是非存在以提供的 prefix 为前缀的 word
   startWith(prefix) {
-    let patrol = this.root
+    let patrol = this._root
     for (let i = 0; i < prefix.length; i++) {
       if (!patrol.hasOwnProperty(prefix[i])) {
         return false
@@ -36,11 +40,11 @@ class Trie {
   }
   // 查询 Trie 中是否包含提供的 word, 支持 . 作为占位符
   search(word) {
-    return this._search(word, this.root, 0)
+    return this._search(word, this._root, 0)
   }
 
   _insert(word) {
-    let patrol = this.root
+    let patrol = this._root
     for (let i = 0; i < word.length; i++) {
       if (!patrol.hasOwnProperty(word[i])) {
         patrol[word[i]] = new this._treeNode(false)
