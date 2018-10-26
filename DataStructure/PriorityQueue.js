@@ -29,6 +29,9 @@ class PriorityQueue {
   }
   // 取出优先队列顶端元素
   dequeue() {
+    if (this.isEmpty()) {
+      throw new Error('queue is empty')
+    }
     let outElement = this._data[0]
     // 注意 : 如果当前 _data 内只有一个元素, this._data[0] = this._data.pop() 会产生 bug
     // 并不会 pop 出一个元素

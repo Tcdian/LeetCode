@@ -13,16 +13,15 @@
 // 先右子树的中序遍历
 var convertBST = function (root) {
   let sum = 0
-
-  function postorderTravel(root) {
+  function inorderTravel(root) {
     if (root === null) {
-      return root
+      return null
     }
-    postorderTravel(root.right)
+    inorderTravel(root.right)
     sum += root.val
     root.val = sum
-    postorderTravel(root.left)
+    inorderTravel(root.left)
     return root
   }
-  return postorderTravel(root)
+  return inorderTravel(root)
 }

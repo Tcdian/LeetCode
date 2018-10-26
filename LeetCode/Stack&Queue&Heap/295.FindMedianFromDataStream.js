@@ -2,7 +2,7 @@
  * initialize your data structure here.
  */
 
-// 解法一: 维持两个元素个数相差不超过1的最大堆和最小堆, 时间复杂度 0(n.logn)
+// 解法一: 维持两个元素个数相差不超过1的最大堆和最小堆, 时间复杂度 O(n.logn)
 var MedianFinder = function () {
   // PriorityQueue
   // 默认堆顶为最大元素, 可传入 compare 函数定制优先级, compare(a, b) > 0 则 a 的 优先级更高
@@ -151,7 +151,7 @@ MedianFinder.prototype.findMedian = function () {
   return minHeap.getSize() < maxHeap.getSize() ? maxHeap.getFront() : minHeap.getFront()
 }
 
-// 解法二 : 二分法维持一个有序的数组, 时间复杂度 0(n.logn)
+// 解法二 : 二分法维持一个有序的数组, 时间复杂度 O(n.logn)
 /**
  * initialize your data structure here.
  */

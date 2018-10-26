@@ -6,7 +6,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 
 ### LeetCode: [https://leetcode.com/tcdian/](https://leetcode.com/tcdian/)
 
-[![Alt text](./img/20180907.png)](https://leetcode.com/tcdian/)
+[![Alt text](./img/20181026132353.png)](https://leetcode.com/tcdian/)
 
 ### 常用数据结构实现
 
