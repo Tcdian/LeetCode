@@ -6,7 +6,7 @@
 // 解法一: dp
 // dp[i] 表示以 nums[i] 为结尾的最长递增子序列
 // 状态转移方程 dp[i] = Math.max(dp[i], dp[j] + 1)
-// 时间复杂度 O(n)
+// 时间复杂度 O(n^2)
 var lengthOfLIS = function (nums) {
   let dp = new Array(nums.length).fill(1)
   let max = 0
