@@ -82,7 +82,6 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 - [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
 - [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
-- [3. Longest Substring Without Repeating Characters](./LeetCode/Hash&String/3.LongestSubstringWithoutRepeatingCharacters.js)
 - [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
 - [128. Longest Consecutive Sequence](./LeetCode/Hash&String/128.LongestConsecutiveSequence.js)
 
@@ -92,7 +91,6 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [209. Minimum Size Subarray Sum](./LeetCode/TwoPointers/209.MinimumSizeSubarraySum.js)
 - [76. Minimum Window Substring](./LeetCode/TwoPointers/76.MinimumWindowSubstring.js)
 - [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
-- [3. Longest Substring Without Repeating Characters](./LeetCode/TwoPointers/3.LongestSubstringWithoutRepeatingCharacters.js)
 - [11. Container With Most Water](./LeetCode/TwoPointers/11.ContainerWithMostWater.js)
 - [42. Trapping Rain Water](./LeetCode/TwoPointers/42.TrappingRainWater.js)
 
@@ -117,7 +115,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [312. Burst Balloons](./LeetCode/DP/312.BurstBalloons.js)
 
 #### 二叉搜索树
-- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
+- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.minimum_absolute_difference_in_BST.md)
 - [108. Convert Sorted Array to Binary Search Tree](./LeetCode/BST/108.ConvertSortedArrayToBinarySearchTree.js)
 - [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 - [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
@@ -155,3 +153,6 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [381. Insert Delete GetRandom O(1) - Duplicates allowed](./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js)
 - [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
 
+#### Sliding Window
+
+- [3. Longest Substring Without Repeating Characters](./leetcode_awake/sliding_window/3.longest_substring_without_repeating_characters.md)
