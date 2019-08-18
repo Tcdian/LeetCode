@@ -117,6 +117,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [312. Burst Balloons](./LeetCode/DP/312.BurstBalloons.js)
 
 #### 二叉搜索树
+- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 - [108. Convert Sorted Array to Binary Search Tree](./LeetCode/BST/108.ConvertSortedArrayToBinarySearchTree.js)
 - [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 - [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
