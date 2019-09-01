@@ -1,0 +1,116 @@
+## [581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
+
+给定一个整数数组，你需要寻找一个连续的子数组，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
+
+你找到的子数组应是最短的，请输出它的长度。
+
+#### Example :
+
+```text
+Input: [2, 6, 4, 8, 10, 9, 15]
+Output: 5
+Explanation: You need to sort [6, 4, 8, 10, 9] in ascending order to make the whole array 
+             sorted in ascending order.
+```
+#### Note :
+
+```text
+1. 输入的数组长度范围在 [1, 10,000]。
+2. 输入的数组可能包含重复元素 ，所以升序的意思是<=。
+```
+
+#### Solution ( __Stack__ )
+
+- Javascript
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+// 利用单调栈，从数组两端，找出需要调整位置的两端 index 。
+var findUnsortedSubarray = function(nums) {
+  const len = nums.length;
+  let leftBound = len - 1;
+  let rightBound = 0;
+  const incrementStack = [];
+  const decrementStack = [];
+  // 从左侧遍历，维护一个记录 index 的单调栈。
+  for (let i = 0; i < len; i++) {
+    if (incrementStack.length === 0 
+      || nums[i] >= nums[incrementStack[incrementStack.length - 1]]) {
+      incrementStack.push(i);
+    } else {
+      leftBound = Math.min(leftBound, incrementStack.pop());
+      i--;
+    }
+  }
+  // 右侧
+  for (let j = len - 1; j >= 0; j--) {
+    if (decrementStack.length === 0
+      || nums[j] <= nums[decrementStack[decrementStack.length - 1]] ) {
+      decrementStack.push(j);
+    } else {
+      rightBound = Math.max(rightBound, decrementStack.pop());
+      j++;
+    }
+  }
+  if (rightBound - leftBound > 0) {
+    return rightBound - leftBound + 1;
+  }
+  return 0;
+};
+```
+
+- Go
+
+```go
+// 利用单调栈，从数组两端，找出需要调整位置的两端 index 。
+func findUnsortedSubarray(nums []int) int {
+  length := len(nums);
+  leftBound := len(nums) - 1;
+  rightBound := 0;
+  incrementStack := make([]int, length);
+  decrementStack := make([]int, length);
+  // 左侧
+  for i := 0; i < length; i++ {
+    if len(incrementStack) == 0 || nums[i] >= nums[incrementStack[len(incrementStack) - 1]] {
+      incrementStack = append(incrementStack, i);
+    } else {
+      incrementStackLen := len(incrementStack);
+      leftBound = min(leftBound, incrementStack[incrementStackLen - 1]);
+      incrementStack = incrementStack[0:incrementStackLen - 1];
+      i--;
+    }
+  }
+  // 右侧
+  for j := length - 1; j >= 0; j-- {
+    if len(decrementStack) == 0 || nums[j] <= nums[decrementStack[len(decrementStack) - 1]] {
+      decrementStack = append(decrementStack, j);
+    } else {
+      decrementStackLen := len(decrementStack);
+      rightBound = max(rightBound, decrementStack[decrementStackLen - 1]);
+      decrementStack = decrementStack[0:decrementStackLen - 1];
+      j++;
+    }
+  }
+  if rightBound - leftBound > 0 {
+    return rightBound - leftBound + 1;
+  }
+  return 0;
+}
+
+func min(a int, b int) int {
+  if a > b {
+    return b;
+  }
+  return a;
+}
+
+func max (a int, b int) int {
+  if a > b {
+    return a;
+  }
+  return b;
+}
+```

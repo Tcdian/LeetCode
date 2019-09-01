@@ -55,24 +55,24 @@ Output: true
  */
 // 使用 stack ，当遍历到左括号的时候入栈，出现右括号查看 stack 中的是否匹配。
 var isValid = function(s) {
-    const stack = [];
-    for (let i = 0; i < s.length; i++) {
-        // Unicode 编码中 '('与')'相差 1， '['与']'、'{'与'}'相差 2
-        switch (s[i]) {
-            case '(':
-                stack.push(s.charCodeAt(i) + 1);
-                break;
-            case '[':
-            case '{':
-                stack.push(s.charCodeAt(i) + 2);
-                break;
-            default:
-                if (stack.length === 0 || stack.pop() !== s.charCodeAt(i)) {
-                    return false;
-                }
+  const stack = [];
+  for (let i = 0; i < s.length; i++) {
+    // Unicode 编码中 '('与')'相差 1， '['与']'、'{'与'}'相差 2
+    switch (s[i]) {
+      case '(':
+        stack.push(s.charCodeAt(i) + 1);
+        break;
+      case '[':
+      case '{':
+        stack.push(s.charCodeAt(i) + 2);
+        break;
+      default:
+        if (stack.length === 0 || stack.pop() !== s.charCodeAt(i)) {
+          return false;
         }
     }
-    return stack.length === 0;
+  }
+  return stack.length === 0;
 };
 ```
 
@@ -84,21 +84,21 @@ func isValid(s string) bool {
     stack := make([]byte, size);
     top := 0
     for i := 0 ; i < size; i++ {
-        currentByte := s[i]
-        switch currentByte {
-            case '(':
-                stack[top] = currentByte + 1;
-                top++;
-            case '[', '{':
-                stack[top] = currentByte + 2;
-                top++;
-            case ')', ']', '}':
-            if top > 0 && stack[top - 1] == currentByte {
-                top--;
-            } else {
-                return false;
-            }
+      currentByte := s[i]
+      switch currentByte {
+        case '(':
+          stack[top] = currentByte + 1;
+          top++;
+        case '[', '{':
+          stack[top] = currentByte + 2;
+          top++;
+        case ')', ']', '}':
+        if top > 0 && stack[top - 1] == currentByte {
+          top--;
+        } else {
+          return false;
         }
+      }
     }
     return top == 0;
 }

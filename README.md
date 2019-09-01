@@ -28,7 +28,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [138. Copy List with Random Pointer](./LeetCode/LinkedList/138.CopyListWithRandomPointer.js)
 
 #### 栈 队列 堆
-- [20. Valid Parentheses](./leetcode_awake/stack/20.valid_parentheses.md)
+- [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 - [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
 - [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 - [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)
@@ -111,7 +111,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [312. Burst Balloons](./LeetCode/DP/312.BurstBalloons.js)
 
 #### 二叉搜索树
-- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.minimum_absolute_difference_in_BST.md)
+- [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 - [108. Convert Sorted Array to Binary Search Tree](./LeetCode/BST/108.ConvertSortedArrayToBinarySearchTree.js)
 - [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 - [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
@@ -154,13 +154,13 @@ LeetCode 经典题目汇总 ( javascript实现 )
 
 ### Stack
 
-- [20. Valid Parentheses](./leetcode_awake/stack/20.valid_parentheses.md)
-- [581. Shortest Unsorted Continuous Subarray](./leetcode_awake/stack/581.shortest_unsorted-continuous_subarray.md)
+- [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
+- [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
 
 ### BST
 
-- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.minimum_absolute_difference_in_BST.md)
+- [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
 ### Sliding Window
 
-- [3. Longest Substring Without Repeating Characters](./leetcode_awake/sliding_window/3.longest_substring_without_repeating_characters.md)
+- [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
