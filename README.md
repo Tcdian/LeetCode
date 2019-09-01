@@ -4,10 +4,6 @@ LeetCode 经典题目汇总 ( javascript实现 )
 
 刷LeetCode有一段时间了, 个人认为题目不在于多, 很多题目需要反复做, 尝试不同解法, 这样可以了解不同算法在不同场景的优劣, 下面记录了一些个人认为比较经典的题目, 方便以后学习回顾.
 
-### LeetCode: [https://leetcode.com/tcdian/](https://leetcode.com/tcdian/)
-
-&nbsp;&nbsp;&nbsp;&nbsp;[![Alt text](./README_IMG/20181029103518.png)](https://leetcode.com/tcdian/)
-
 ### 常用数据结构实现
 
 - [栈 Stack](./DataStructure/Stack.js)
@@ -153,6 +149,17 @@ LeetCode 经典题目汇总 ( javascript实现 )
 - [381. Insert Delete GetRandom O(1) - Duplicates allowed](./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js)
 - [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
 
-#### Sliding Window
+## 后续的计划做一些更新，主要是一些题目的调整，以及分类的细化，还有就是增加了 Go 语言的解答（我自己是 Go 语言的初学者，仅供参考，如果能帮忙指正错误，不胜感激），也是我现在对之前题目的回顾，可能有很多题目是重复的，后续更新完成后会替换掉上面的目录。
+
+### Stack
+
+- [20. Valid Parentheses](./leetcode_awake/stack/20.valid_parentheses.md)
+- [581. Shortest Unsorted Continuous Subarray](./leetcode_awake/stack/581.shortest_unsorted-continuous_subarray.md)
+
+### BST
+
+- [530. Minimum Absolute Difference in BST](./leetcode_awake/BST/530.minimum_absolute_difference_in_BST.md)
+
+### Sliding Window
 
 - [3. Longest Substring Without Repeating Characters](./leetcode_awake/sliding_window/3.longest_substring_without_repeating_characters.md)
