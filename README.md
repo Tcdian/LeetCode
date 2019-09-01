@@ -167,7 +167,7 @@ LeetCode 经典题目汇总 ( javascript实现 )
 
 ### Divide And Conquer
 
-- [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/96.Unique_Binary_Search_Trees.md)
+- [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 
 ### Backtracking
 
