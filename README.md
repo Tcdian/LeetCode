@@ -1,6 +1,6 @@
 # LeetCode
 
-LeetCode 经典题目汇总 ( javascript实现 )
+LeetCode 经典题目汇总 ( JavaScript实现 )
 
 刷LeetCode有一段时间了, 个人认为题目不在于多, 很多题目需要反复做, 尝试不同解法, 这样可以了解不同算法在不同场景的优劣, 下面记录了一些个人认为比较经典的题目, 方便以后学习回顾.
 
