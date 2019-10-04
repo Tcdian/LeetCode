@@ -159,6 +159,7 @@ LeetCode 经典题目汇总 ( JavaScript实现 )
 
 ### Divide And Conquer
 
+- [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 - [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 
 ### Backtracking
@@ -183,5 +184,6 @@ LeetCode 经典题目汇总 ( JavaScript实现 )
 
 ### DP
 
+- [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 - [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 - [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
