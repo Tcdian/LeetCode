@@ -1,4 +1,4 @@
-# LeetCode
+# [LeetCode](https://leetcode.com/tcdian/)
 
 LeetCode 经典题目汇总 ( JavaScript实现 )
 
