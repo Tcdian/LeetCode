@@ -187,6 +187,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
+#### 二分查找 <font size=1>( Binary Search )</font>
+
+-   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
@@ -216,6 +220,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
+-   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
 
 #### 设计 <font size=1>( Design )</font>
