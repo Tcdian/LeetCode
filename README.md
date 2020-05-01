@@ -221,6 +221,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
+-   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
 
 #### 设计 <font size=1>( Design )</font>
 
