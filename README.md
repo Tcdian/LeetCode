@@ -183,7 +183,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 
-#### 广度优先搜索 <font size=1>( BST )</font>
+#### 二叉搜索树 <font size=1>( BST )</font>
 
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
@@ -199,6 +199,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 深度优先搜索 <font size=1>( DFS )</font>
 
 -   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
+
+#### 广度优先搜索 <font size=1>( BFS )</font>
+
+-   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
 
 #### 滑动窗口 <font size=1>( Sliding Window )</font>
 
