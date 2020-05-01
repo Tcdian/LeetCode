@@ -192,6 +192,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
+-   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
 
 #### 回溯算法 <font size=1>( Backtracking )</font>
 
