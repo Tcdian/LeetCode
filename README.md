@@ -178,10 +178,13 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
+#### 哈希表 <font size=1>( Hash Table )</font>
+
+-   [560. Subarray Sum Equals K](./LeetCode_Awake/Hash_Table/560.Subarray_Sum_Equals_K.md)
+
 #### 二分查找 <font size=1>( Binary Search )</font>
 
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
-
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
