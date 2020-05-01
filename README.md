@@ -95,7 +95,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [76. Minimum Window Substring](./LeetCode/TwoPointers/76.MinimumWindowSubstring.js)
 -   [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
 -   [11. Container With Most Water](./LeetCode/TwoPointers/11.ContainerWithMostWater.js)
--   [42. Trapping Rain Water](./LeetCode/TwoPointers/42.TrappingRainWater.js)
 
 #### 动态规划
 
@@ -222,3 +221,4 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 设计 <font size=1>( Design )</font>
 
 -   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
+-   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
