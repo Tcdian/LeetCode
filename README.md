@@ -43,7 +43,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [455. Assign Cookies](./LeetCode/Greedy/455.AssignCookies.js)
 -   [376. Wiggle Subsequence](./LeetCode/Greedy/376.WiggleSubsequence.js)
 -   [402. Remove K Digits](./LeetCode/Greedy/402.RemoveKDigits.js)
--   [55. Jump Game](./LeetCode/Greedy/55.JumpGame.js)
 -   [45. Jump Game II](./LeetCode/Greedy/45.JumpGameII.js)
 -   [452. Minimum Number of Arrows to Burst Balloons](./LeetCode/Greedy/452.MinimumNumberOfArrowsToBurstBalloons.js)
 
@@ -138,7 +137,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 深度优先搜索
 
--   [200. Number of Islands](./LeetCode/DFS/200.NumberOfIslands.js)
 -   [337. House Robber III](./LeetCode/DFS/337.HouseRobberIII.js)
 -   [124. Binary Tree Maximum Path Sum](./LeetCode/DFS/124.BinaryTreeMaximumPathSum.js)
 -   [79. Word Search](./LeetCode/DFS/79.WordSearch.js)
@@ -147,7 +145,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 广度优先搜索
 
 -   [102. Binary Tree Level Order Traversal](./LeetCode/BFS/102.BinaryTreeLevelOrderTraversal.js)
--   [200. Number of Islands](./LeetCode/DFS/200.NumberOfIslands.js)
 -   [127. Word Ladder](./LeetCode/BFS/127.WordLadder.js)
 -   [126. Word Ladder II](./LeetCode/BFS/126.WordLadderII.js)
 -   [407. Trapping Rain Water II](./LeetCode/BFS/407.TrappingRainWaterII.js)
@@ -201,10 +198,12 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 深度优先搜索 <font size=1>( DFS )</font>
 
+-   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
 -   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
 
 #### 广度优先搜索 <font size=1>( BFS )</font>
 
+-   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
 -   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
 -   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
 
