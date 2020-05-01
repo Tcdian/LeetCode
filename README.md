@@ -58,7 +58,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [35. Search Insert Position](./LeetCode/BinarySearch&DivideAndConquer/35.SearchInsertPosition.js)
 -   [34. Find First and Last Position of Element in Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/34.FindFirstAndLastPositionOfElementInSortedArray.js)
--   [33. Search in Rotated Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/33.SearchInRotatedSortedArray.js)
 -   [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### 二叉树
@@ -181,6 +180,8 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
 #### 二分查找 <font size=1>( Binary Search )</font>
+
+-   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
 
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 
