@@ -150,7 +150,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [380. Insert Delete GetRandom O(1)](<./LeetCode/Design/380.InsertDeleteGetRandomO(1).js>)
 -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](<./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js>)
--   [146. LRU Cache](./LeetCode/Design/146.LRUCache.js)
 
 ## 后续的计划做一些更新，主要是一些题目的调整，以及分类的细化，也是我现在对之前题目的回顾，可能有很多题目是重复的，后续更新完成后会替换掉上面的目录。
 
@@ -235,4 +234,5 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 设计 <font size=1>( Design )</font>
 
 -   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
+-   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
 -   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
