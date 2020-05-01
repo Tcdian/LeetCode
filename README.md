@@ -61,7 +61,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [34. Find First and Last Position of Element in Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/34.FindFirstAndLastPositionOfElementInSortedArray.js)
 -   [33. Search in Rotated Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/33.SearchInRotatedSortedArray.js)
 -   [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
--   [23. Merge k Sorted Lists](./LeetCode/BinarySearch&DivideAndConquer/23.MergeKSortedLists.js)
 
 #### 二叉树
 
@@ -206,6 +205,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 广度优先搜索 <font size=1>( BFS )</font>
 
 -   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
+-   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
 
 #### 双指针 <font size=1>( Two Pointers )</font>
 
