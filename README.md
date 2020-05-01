@@ -167,37 +167,37 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 ## 后续的计划做一些更新，主要是一些题目的调整，以及分类的细化，也是我现在对之前题目的回顾，可能有很多题目是重复的，后续更新完成后会替换掉上面的目录。
 
-### 栈 <font size=2>( stack )</font>
+### 栈 <font size=1>( stack )</font>
 
 -   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 -   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
 
-### 分治算法 <font size=2>( Divide And Conquer )</font>
+### 分治算法 <font size=1>( Divide And Conquer )</font>
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 
-### 回溯算法 <font size=2>( Backtracking )</font>
+### 回溯算法 <font size=1>( Backtracking )</font>
 
 -   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
 
-### 树 <font size=2>( Tree )</font>
+### 树 <font size=1>( Tree )</font>
 
 -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 
-### 广度优先搜索 <font size=2>( BST )</font>
+### 广度优先搜索 <font size=1>( BST )</font>
 
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 
-### 深度优先搜索 <font size=2>( DST )</font>
+### 深度优先搜索 <font size=1>( DST )</font>
 
 -   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
 
-### 滑动窗口 <font size=2>( Sliding Window )</font>
+### 滑动窗口 <font size=1>( Sliding Window )</font>
 
 -   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
 
-### 动态规划 <font size=2>( DP )</font>
+### 动态规划 <font size=1>( DP )</font>
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
