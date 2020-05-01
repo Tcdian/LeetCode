@@ -20,7 +20,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 链表
 
--   [206. Reverse Linked List](./LeetCode/LinkedList/206.ReverseLinkedList.js)
 -   [92. Reverse Linked List II](./LeetCode/LinkedList/92.ReverseLinkedListII.js)
 -   [21. Merge Two Sorted Lists](./LeetCode/LinkedList/21.MergeTwoSortedLists.js)
 -   [160. Intersection of Two Linked Lists](./LeetCode/LinkedList/160.IntersectionofTwoLinkedLists.js)
@@ -170,6 +169,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 ### 数组 <font size=1>( Array )</font>
 
 -   [945. Minimum Increment to Make Array Unique](./LeetCode_Awake/Array/945.Minimum_Increment_to_Make_Array_Unique.md)
+
+### 链表 <font size=1>( Linked List )</font>
+
+-   [206. Reverse Linked List](./LeetCode_Awake/Linked_List/206.Reverse_Linked_List.md)
 
 ### 栈 <font size=1>( Stack )</font>
 
