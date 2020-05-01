@@ -135,7 +135,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 深度优先搜索
 
 -   [337. House Robber III](./LeetCode/DFS/337.HouseRobberIII.js)
--   [124. Binary Tree Maximum Path Sum](./LeetCode/DFS/124.BinaryTreeMaximumPathSum.js)
 -   [79. Word Search](./LeetCode/DFS/79.WordSearch.js)
 -   [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
 
@@ -201,6 +200,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
 -   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
+-   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
 
 #### 广度优先搜索 <font size=1>( BFS )</font>
 
