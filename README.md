@@ -205,6 +205,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
 
+#### 双指针 <font size=1>( Two Pointers )</font>
+
+-   [42. Trapping Rain Water](./LeetCode_Awake/Two_Pointers/42.Trapping_Rain_Water.md)
+
 #### 滑动窗口 <font size=1>( Sliding Window )</font>
 
 -   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
