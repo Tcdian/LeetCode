@@ -66,7 +66,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [113. Path Sum II](./LeetCode/Tree/113.PathSumII.js)
 -   [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree/236.LowestCommonAncestorOfABinaryTree.js)
 -   [114. Flatten Binary Tree to Linked List](./LeetCode/Tree/114.FlattenBinaryTreeToLinkedList.js)
--   [199. Binary Tree Right Side View](./LeetCode/Tree/199.BinaryTreeRightSideView.js)
 -   [144. Binary Tree Preorder Traversal](./LeetCode/Tree/144.BinaryTreePreorderTraversal.js)
 -   [94. Binary Tree Inorder Traversal](./LeetCode/Tree/94.BinaryTreeInorderTraversal.js)
 -   [145. Binary Tree Postorder Traversal](./LeetCode/Tree/145.BinaryTreePostorderTraversal.js)
@@ -206,6 +205,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
 -   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
 -   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
+-   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
 
 #### 双指针 <font size=1>( Two Pointers )</font>
 
