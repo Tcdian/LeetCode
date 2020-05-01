@@ -167,7 +167,11 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 ## 后续的计划做一些更新，主要是一些题目的调整，以及分类的细化，也是我现在对之前题目的回顾，可能有很多题目是重复的，后续更新完成后会替换掉上面的目录。
 
-### 栈 <font size=1>( stack )</font>
+### 数组 <font size=1>( Array )</font>
+
+-   [945. Minimum Increment to Make Array Unique](./LeetCode_Awake/Array/945.Minimum_Increment_to_Make_Array_Unique.md)
+
+### 栈 <font size=1>( Stack )</font>
 
 -   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 -   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
