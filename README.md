@@ -213,3 +213,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
+
+#### 设计 <font size=1>( Design )</font>
+
+-   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
