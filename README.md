@@ -168,6 +168,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 数组 <font size=1>( Array )</font>
 
+-   [169. Majority Element](./LeetCode_Awake/Array/169.Majority_Element.md)
 -   [945. Minimum Increment to Make Array Unique](./LeetCode_Awake/Array/945.Minimum_Increment_to_Make_Array_Unique.md)
 
 #### 链表 <font size=1>( Linked List )</font>
