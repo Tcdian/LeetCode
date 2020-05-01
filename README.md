@@ -52,7 +52,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [78. Subsets](./LeetCode/Recursion&Backtracking/78.Subsets.js)
 -   [90. Subsets II](./LeetCode/Recursion&Backtracking/90.SubsetsII.js)
 -   [40. Combination Sum II](./LeetCode/Recursion&Backtracking/40.CombinationSumII.js)
--   [22. Generate Parentheses](./LeetCode/Recursion&Backtracking/22.GenerateParentheses.js)
 -   [51. N-Queens](./LeetCode/Recursion&Backtracking/51.N-Queens.js)
 -   [473. Matchsticks to Square](./LeetCode/Recursion&Backtracking/473.MatchsticksToSquare.js)
 
@@ -196,6 +195,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 回溯算法 <font size=1>( Backtracking )</font>
 
+-   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
 -   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
 
 #### 深度优先搜索 <font size=1>( DFS )</font>
