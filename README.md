@@ -183,6 +183,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 
+#### 广度优先搜索 <font size=1>( BST )</font>
+
+-   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
+
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
 -   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
@@ -192,11 +196,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
 
-#### 广度优先搜索 <font size=1>( BST )</font>
-
--   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
-
-#### 深度优先搜索 <font size=1>( DST )</font>
+#### 深度优先搜索 <font size=1>( DFS )</font>
 
 -   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
 
