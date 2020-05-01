@@ -225,6 +225,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
 -   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
 
+#### 贪心算法 <font size=1>( Greedy )</font>
+
+-   [55. Jump Game](./LeetCode_Awake/Greedy/55.Jump_Game.md)
+
 #### 设计 <font size=1>( Design )</font>
 
 -   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
