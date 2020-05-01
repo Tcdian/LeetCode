@@ -21,7 +21,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 链表
 
 -   [92. Reverse Linked List II](./LeetCode/LinkedList/92.ReverseLinkedListII.js)
--   [21. Merge Two Sorted Lists](./LeetCode/LinkedList/21.MergeTwoSortedLists.js)
 -   [160. Intersection of Two Linked Lists](./LeetCode/LinkedList/160.IntersectionofTwoLinkedLists.js)
 -   [142. Linked List Cycle II](./LeetCode/LinkedList/142.LinkedListCycleII.js)
 -   [86. Partition List](./LeetCode/LinkedList/86.PartitionList.js)
@@ -160,6 +159,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 链表 <font size=1>( Linked List )</font>
 
+-   [21. Merge Two Sorted Lists](./LeetCode_Awake/Linked_List/21.Merge_Two_Sorted_Lists.md)
 -   [206. Reverse Linked List](./LeetCode_Awake/Linked_List/206.Reverse_Linked_List.md)
 
 #### 栈 <font size=1>( Stack )</font>
