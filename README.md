@@ -96,7 +96,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [309. Best Time to Buy and Sell Stock with Cooldown](./LeetCode/DP/309.BestTimeToBuyAndSellStockWithCooldown.js)
 -   [714. Best Time to Buy and Sell Stock with Transaction Fee](./LeetCode/DP/714.BestTimeToBuyAndSellStockWithTransactionFee.js)
 -   [486. Predict the Winner](./LeetCode/DP/486.PredictTheWinner.js)
--   [53. Maximum Subarray](./LeetCode/DP/53.MaximumSubarray.js)
 -   [120. Triangle](./LeetCode/DP/120.Triangle.js)
 -   [139. Word Break](./LeetCode/DP/139.WordBreak.js)
 -   [5. Longest Palindromic Substring](./LeetCode/DP/5.LongestPalindromicSubstring.js)
@@ -187,7 +186,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
--   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
+-   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 -   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
 
@@ -220,7 +219,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 动态规划 <font size=1>( DP )</font>
 
--   [53. Maximum Subarray](./LeetCode_Awake/Divide_And_Conquer/53.Maximum_Subarray.md)
+-   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
 -   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
