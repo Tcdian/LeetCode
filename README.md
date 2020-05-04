@@ -230,6 +230,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 贪心算法 <font size=1>( Greedy )</font>
 
 -   [55. Jump Game](./LeetCode_Awake/Greedy/55.Jump_Game.md)
+-   [45. Jump Game II](./LeetCode_Awake/Greedy/45.Jump_Game_II.md)
 
 #### 设计 <font size=1>( Design )</font>
 
