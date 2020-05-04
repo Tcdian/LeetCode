@@ -42,7 +42,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [455. Assign Cookies](./LeetCode/Greedy/455.AssignCookies.js)
 -   [376. Wiggle Subsequence](./LeetCode/Greedy/376.WiggleSubsequence.js)
 -   [402. Remove K Digits](./LeetCode/Greedy/402.RemoveKDigits.js)
--   [45. Jump Game II](./LeetCode/Greedy/45.JumpGameII.js)
 -   [452. Minimum Number of Arrows to Burst Balloons](./LeetCode/Greedy/452.MinimumNumberOfArrowsToBurstBalloons.js)
 
 #### 递归与回溯
