@@ -167,8 +167,9 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 树 <font size=1>( Tree )</font>
 
--   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 -   [543. Diameter of Binary Tree](./LeetCode_Awake/Tree/543.Diameter_of_Binary_Tree.md)
+-   [572. Subtree of Another Tree](./LeetCode_Awake/Tree/572.Subtree_of_Another_Tree.md)
+-   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 
 #### 二叉搜索树 <font size=1>( BST )</font>
 
