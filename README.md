@@ -31,7 +31,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 -   [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
 -   [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
--   [155. Min Stack](./LeetCode/Stack&Queue&Heap/155.MinStack.js)
 -   [224. Basic Calculator](./LeetCode/Stack&Queue&Heap/224.BasicCalculator.js)
 -   [239. Sliding Window Maximum](./LeetCode/Stack&Queue&Heap/239.SlidingWindowMaximum.js)
 -   [215. Kth Largest Element in an Array](./LeetCode/Stack&Queue&Heap/215.KthLargestElementInAnArray.js)
@@ -239,6 +238,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 设计 <font size=1>( Design )</font>
 
+-   [155. Min Stack](./LeetCode_Awake/Design/155.Min_Stack.md)
 -   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
 -   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
 -   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
