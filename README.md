@@ -120,7 +120,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### Trie 树
 
--   [208. Implement Trie (Prefix Tree)](<./LeetCode/Trie/208.ImplementTrie(PrefixTree).js>)
 -   [211. Add and Search Word - Data structure design](./LeetCode/Trie/211.AddAndSearchWord-DataStructureDesign.js)
 -   [677. Map Sum Pairs](./LeetCode/Trie/677.MapSumPairs.js)
 
@@ -173,6 +172,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 二叉搜索树 <font size=1>( BST )</font>
 
 -   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
+
+#### 字典树（前缀树） <font size=1>( Trie )</font>
+
+-   [208. Implement Trie (Prefix Tree)](./LeetCode_Awake/Trie/208.Implement_Trie.md)
 
 #### 哈希表 <font size=1>( Hash Table )</font>
 
