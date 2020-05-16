@@ -219,7 +219,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 动态规划 <font size=1>( DP )</font>
 
--   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
 -   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
@@ -227,6 +226,11 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
 -   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
+
+#### Kanade <font size=1>( Kanade )</font>
+
+-   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
+-   [918. Maximum Sum Circular Subarray](./LeetCode_Awake/Kanade/918.Maximum_Sum_Circular_Subarray.md)
 
 #### 贪心算法 <font size=1>( Greedy )</font>
 
