@@ -2,7 +2,7 @@
 
 最近在进行 LeetCode 和力扣中国的每日一题，并将题目进行了标签分类，如果有共同刷题的小伙伴可以点击 [**这里**](https://github.com/Tcdian/keep/issues) 一起参与。
 
-你也可以点击标签（如下图），按标签分类进行刷题。
+你也可以点击 [**标签分类**](https://github.com/Tcdian/keep/labels) 进行刷题。
 
 [<img src="./static/display.jpg" width="800">](https://github.com/Tcdian/keep/issues?q=is%3Aissue+is%3Aopen+label%3AClassic)
 
