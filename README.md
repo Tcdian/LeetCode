@@ -1,22 +1,118 @@
-# [LeetCode](https://leetcode.com/tcdian/)
+# LeetCode
 
-LeetCode 经典题目汇总 ( JavaScript 实现 )
+最近在进行 LeetCode 和力扣中国的每日一题，并将题目进行了标签分类，如果有共同刷题的小伙伴可以点击 [**这里**](https://github.com/Tcdian/keep/issues) 一起参与。
 
-刷 LeetCode 有一段时间了, 个人认为题目不在于多, 很多题目需要反复做, 尝试不同解法, 这样可以了解不同算法在不同场景的优劣, 下面记录了一些个人认为比较经典的题目, 方便以后学习回顾.
+你也可以点击标签（如下图），按标签分类进行刷题。
 
-### 常用数据结构实现
+[<img src="./static/display.jpg" width="800">](https://github.com/Tcdian/keep/issues?q=is%3Aissue+is%3Aopen+label%3AClassic)
 
--   [栈 Stack](./DataStructure/Stack.js)
--   [队列 Queue](./DataStructure/Queue.js)
--   [二叉搜索树 BST](./DataStructure/BST.js)
--   [优先队列 Priority Queue](./DataStructure/PriorityQueue.js)
--   [线段树 Segment Tree](./DataStructure/SegmentTree.js)
--   [前缀树 Trie](./DataStructure/Trie.js)
--   [并查集 UnionFind](./DataStructure/UnionFind.js)
--   [AVL 树](./DataStructure/AVL.js)
--   [红黑树 Red-black Tree](./DataStructure/RBTree.js)
+#### 数组 <font size=1>( Array )</font>
 
-### LeetCode 题目
+-   [169. Majority Element](./LeetCode_Awake/Array/169.Majority_Element.md)
+-   [238. Product of Array Except Self](./LeetCode_Awake/Array/238.Product_of_Array_Except_Self.md)
+-   [945. Minimum Increment to Make Array Unique](./LeetCode_Awake/Array/945.Minimum_Increment_to_Make_Array_Unique.md)
+
+#### 链表 <font size=1>( Linked List )</font>
+
+-   [21. Merge Two Sorted Lists](./LeetCode_Awake/Linked_List/21.Merge_Two_Sorted_Lists.md)
+-   [206. Reverse Linked List](./LeetCode_Awake/Linked_List/206.Reverse_Linked_List.md)
+
+#### 栈 <font size=1>( Stack )</font>
+
+-   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
+-   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
+
+#### 树 <font size=1>( Tree )</font>
+
+-   [543. Diameter of Binary Tree](./LeetCode_Awake/Tree/543.Diameter_of_Binary_Tree.md)
+-   [572. Subtree of Another Tree](./LeetCode_Awake/Tree/572.Subtree_of_Another_Tree.md)
+-   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
+
+#### 二叉搜索树 <font size=1>( BST )</font>
+
+-   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
+
+#### 字典树（前缀树） <font size=1>( Trie )</font>
+
+-   [208. Implement Trie (Prefix Tree)](./LeetCode_Awake/Trie/208.Implement_Trie.md)
+
+#### 哈希表 <font size=1>( Hash Table )</font>
+
+#### 二分查找 <font size=1>( Binary Search )</font>
+
+-   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
+-   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+
+#### 分治算法 <font size=1>( Divide And Conquer )</font>
+
+-   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
+-   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
+-   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
+
+#### 回溯算法 <font size=1>( Backtracking )</font>
+
+-   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
+-   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
+
+#### 深度优先搜索 <font size=1>( DFS )</font>
+
+-   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
+-   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
+-   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
+
+#### 广度优先搜索 <font size=1>( BFS )</font>
+
+-   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
+-   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
+-   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
+-   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
+
+#### 双指针 <font size=1>( Two Pointers )</font>
+
+-   [11. Container With Most Water](./LeetCode_Awake/Two_Pointers/11.Container_With_Most_Water.md)
+-   [42. Trapping Rain Water](./LeetCode_Awake/Two_Pointers/42.Trapping_Rain_Water.md)
+
+#### 滑动窗口 <font size=1>( Sliding Window )</font>
+
+-   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
+-   [76. Minimum Window Substring](./LeetCode_Awake/Sliding_Window/76.Minimum_Window_Substring.md)
+
+#### 动态规划 <font size=1>( DP )</font>
+
+-   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
+-   [152. Maximum Product Subarray](./LeetCode_Awake/DP/152.Maximum_Product_Subarray.md)
+-   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
+-   [5. Longest Palindromic Substring](./LeetCode_Awake/DP/5.Longest_Palindromic_Substring.md)
+-   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
+-   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
+-   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+-   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
+-   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
+
+#### Kanade <font size=1>( Kanade )</font>
+
+-   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
+-   [918. Maximum Sum Circular Subarray](./LeetCode_Awake/Kanade/918.Maximum_Sum_Circular_Subarray.md)
+
+#### 前缀和 <font size=1>( Prefix Sum )</font>
+
+-   [560. Subarray Sum Equals K](./LeetCode_Awake/Prefix_Sum/560.Subarray_Sum_Equals_K.md)
+-   [1248. Count Number of Nice Subarrays](./LeetCode_Awake/Prefix_Sum/1248.Count_Number_of_Nice_Subarrays.md)
+-   [1371. Find the Longest Substring Containing Vowels in Even Counts](./LeetCode_Awake/Prefix_Sum/1371.Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts.md)
+
+#### 贪心算法 <font size=1>( Greedy )</font>
+
+-   [55. Jump Game](./LeetCode_Awake/Greedy/55.Jump_Game.md)
+-   [45. Jump Game II](./LeetCode_Awake/Greedy/45.Jump_Game_II.md)
+
+#### 设计 <font size=1>( Design )</font>
+
+-   [155. Min Stack](./LeetCode_Awake/Design/155.Min_Stack.md)
+-   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
+-   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
+-   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
+
+## 下面是之前整理的目录，我目前正在进行重新整理，主要是题目标签的细化，所以前面的题目可能偏少，慢慢会把题目整合，工作原因可能比较慢，欢迎大家一起来参与 [每日一题](https://github.com/Tcdian/keep/issues)。
 
 #### 链表
 
@@ -142,110 +238,14 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [380. Insert Delete GetRandom O(1)](<./LeetCode/Design/380.InsertDeleteGetRandomO(1).js>)
 -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](<./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js>)
 
-## 后续的计划做一些更新，主要是一些题目的调整，以及分类的细化，也是我现在对之前题目的回顾，可能有很多题目是重复的，后续更新完成后会替换掉上面的目录。
+### 常用数据结构实现
 
-#### 数组 <font size=1>( Array )</font>
-
--   [169. Majority Element](./LeetCode_Awake/Array/169.Majority_Element.md)
--   [238. Product of Array Except Self](./LeetCode_Awake/Array/238.Product_of_Array_Except_Self.md)
--   [945. Minimum Increment to Make Array Unique](./LeetCode_Awake/Array/945.Minimum_Increment_to_Make_Array_Unique.md)
-
-#### 链表 <font size=1>( Linked List )</font>
-
--   [21. Merge Two Sorted Lists](./LeetCode_Awake/Linked_List/21.Merge_Two_Sorted_Lists.md)
--   [206. Reverse Linked List](./LeetCode_Awake/Linked_List/206.Reverse_Linked_List.md)
-
-#### 栈 <font size=1>( Stack )</font>
-
--   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
--   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
-
-#### 树 <font size=1>( Tree )</font>
-
--   [543. Diameter of Binary Tree](./LeetCode_Awake/Tree/543.Diameter_of_Binary_Tree.md)
--   [572. Subtree of Another Tree](./LeetCode_Awake/Tree/572.Subtree_of_Another_Tree.md)
--   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
-
-#### 二叉搜索树 <font size=1>( BST )</font>
-
--   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
-
-#### 字典树（前缀树） <font size=1>( Trie )</font>
-
--   [208. Implement Trie (Prefix Tree)](./LeetCode_Awake/Trie/208.Implement_Trie.md)
-
-#### 哈希表 <font size=1>( Hash Table )</font>
-
-#### 二分查找 <font size=1>( Binary Search )</font>
-
--   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
--   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
-
-#### 分治算法 <font size=1>( Divide And Conquer )</font>
-
--   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
--   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
--   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
-
-#### 回溯算法 <font size=1>( Backtracking )</font>
-
--   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
--   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
-
-#### 深度优先搜索 <font size=1>( DFS )</font>
-
--   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
--   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
--   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
-
-#### 广度优先搜索 <font size=1>( BFS )</font>
-
--   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
--   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
--   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
--   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
-
-#### 双指针 <font size=1>( Two Pointers )</font>
-
--   [11. Container With Most Water](./LeetCode_Awake/Two_Pointers/11.Container_With_Most_Water.md)
--   [42. Trapping Rain Water](./LeetCode_Awake/Two_Pointers/42.Trapping_Rain_Water.md)
-
-#### 滑动窗口 <font size=1>( Sliding Window )</font>
-
--   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
--   [76. Minimum Window Substring](./LeetCode_Awake/Sliding_Window/76.Minimum_Window_Substring.md)
-
-#### 动态规划 <font size=1>( DP )</font>
-
--   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
--   [152. Maximum Product Subarray](./LeetCode_Awake/DP/152.Maximum_Product_Subarray.md)
--   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
--   [5. Longest Palindromic Substring](./LeetCode_Awake/DP/5.Longest_Palindromic_Substring.md)
--   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
--   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
--   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
--   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
--   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
-
-#### Kanade <font size=1>( Kanade )</font>
-
--   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
--   [918. Maximum Sum Circular Subarray](./LeetCode_Awake/Kanade/918.Maximum_Sum_Circular_Subarray.md)
-
-#### 前缀和 <font size=1>( Prefix Sum )</font>
-
--   [560. Subarray Sum Equals K](./LeetCode_Awake/Prefix_Sum/560.Subarray_Sum_Equals_K.md)
--   [1248. Count Number of Nice Subarrays](./LeetCode_Awake/Prefix_Sum/1248.Count_Number_of_Nice_Subarrays.md)
--   [1371. Find the Longest Substring Containing Vowels in Even Counts](./LeetCode_Awake/Prefix_Sum/1371.Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts.md)
-
-#### 贪心算法 <font size=1>( Greedy )</font>
-
--   [55. Jump Game](./LeetCode_Awake/Greedy/55.Jump_Game.md)
--   [45. Jump Game II](./LeetCode_Awake/Greedy/45.Jump_Game_II.md)
-
-#### 设计 <font size=1>( Design )</font>
-
--   [155. Min Stack](./LeetCode_Awake/Design/155.Min_Stack.md)
--   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
--   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
--   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
+-   [栈 Stack](./DataStructure/Stack.js)
+-   [队列 Queue](./DataStructure/Queue.js)
+-   [二叉搜索树 BST](./DataStructure/BST.js)
+-   [优先队列 Priority Queue](./DataStructure/PriorityQueue.js)
+-   [线段树 Segment Tree](./DataStructure/SegmentTree.js)
+-   [前缀树 Trie](./DataStructure/Trie.js)
+-   [并查集 UnionFind](./DataStructure/UnionFind.js)
+-   [AVL 树](./DataStructure/AVL.js)
+-   [红黑树 Red-black Tree](./DataStructure/RBTree.js)
