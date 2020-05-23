@@ -75,7 +75,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 -   [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
 -   [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
--   [76. Minimum Window Substring](./LeetCode/Hash&String/76.MinimumWindowSubstring.js)
 -   [128. Longest Consecutive Sequence](./LeetCode/Hash&String/128.LongestConsecutiveSequence.js)
 
 #### Two Pointers
@@ -83,7 +82,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 -   [283. Move Zeroes](./LeetCode/TwoPointers/283.MoveZeroes.js)
 -   [75. Sort Colors](./LeetCode/TwoPointers/75.SortColors.js)
 -   [209. Minimum Size Subarray Sum](./LeetCode/TwoPointers/209.MinimumSizeSubarraySum.js)
--   [76. Minimum Window Substring](./LeetCode/TwoPointers/76.MinimumWindowSubstring.js)
 -   [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
 
 #### 动态规划
@@ -217,6 +215,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 滑动窗口 <font size=1>( Sliding Window )</font>
 
 -   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
+-   [76. Minimum Window Substring](./LeetCode_Awake/Sliding_Window/76.Minimum_Window_Substring.md)
 
 #### 动态规划 <font size=1>( DP )</font>
 
