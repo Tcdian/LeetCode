@@ -222,6 +222,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 #### 动态规划 <font size=1>( DP )</font>
 
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
+-   [152. Maximum Product Subarray](./LeetCode_Awake/DP/152.Maximum_Product_Subarray.md)
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
 -   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
 -   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
