@@ -6,9 +6,7 @@
 
 [<img src="./static/display.jpg" width="800">](https://github.com/Tcdian/keep/issues?q=is%3Aissue+is%3Aopen+label%3AClassic)
 
----
-
-### LeetCode 经典题目分类汇总
+#
 
 #### 数组 <font size=1>( Array )</font>
 
