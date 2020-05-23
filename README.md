@@ -176,8 +176,6 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 #### 哈希表 <font size=1>( Hash Table )</font>
 
--   [560. Subarray Sum Equals K](./LeetCode_Awake/Hash_Table/560.Subarray_Sum_Equals_K.md)
-
 #### 二分查找 <font size=1>( Binary Search )</font>
 
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
@@ -233,6 +231,10 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [918. Maximum Sum Circular Subarray](./LeetCode_Awake/Kanade/918.Maximum_Sum_Circular_Subarray.md)
+
+#### 前缀和 <font size=1>( Prefix Sum )</font>
+
+-   [560. Subarray Sum Equals K](./LeetCode_Awake/Prefix_Sum/560.Subarray_Sum_Equals_K.md)
 
 #### 贪心算法 <font size=1>( Greedy )</font>
 
