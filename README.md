@@ -1,8 +1,8 @@
 # LeetCode
 
-最近在进行 LeetCode 和力扣中国的每日一题，并将题目进行了标签分类，如果有共同刷题的小伙伴可以点击 [**这里**](https://github.com/Tcdian/keep/issues) 一起参与。
+最近在进行 LeetCode 和力扣中国的每日一题，如果有共同刷题的小伙伴可以点击 [**这里**](https://github.com/Tcdian/keep/issues) 一起参与。
 
-你也可以点击 [**标签分类**](https://github.com/Tcdian/keep/labels) 进行刷题。
+我对题目进行了标签分类，你也可以按 [**标签分类**](https://github.com/Tcdian/keep/labels) 进行刷题。
 
 [<img src="./static/display.jpg" width="800">](https://github.com/Tcdian/keep/issues?q=is%3Aissue+is%3Aopen+label%3AClassic)
 
@@ -114,7 +114,7 @@
 -   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
 -   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
 
-## 下面是之前整理的目录，我目前正在进行重新整理，主要是题目标签的细化，所以前面的题目可能偏少，慢慢会把题目整合，工作原因可能比较慢，欢迎大家一起来参与 [每日一题](https://github.com/Tcdian/keep/issues)。
+## 下面是之前整理的目录，我目前正在进行重新整理，主要是题目标签的细化，所以前面的题目可能偏少，后面会慢慢把题目整合，工作原因可能比较慢，欢迎大家一起来参与 [每日一题](https://github.com/Tcdian/keep/issues)。
 
 #### 链表
 
