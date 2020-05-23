@@ -236,6 +236,7 @@ LeetCode 经典题目汇总 ( JavaScript 实现 )
 
 -   [560. Subarray Sum Equals K](./LeetCode_Awake/Prefix_Sum/560.Subarray_Sum_Equals_K.md)
 -   [1248. Count Number of Nice Subarrays](./LeetCode_Awake/Prefix_Sum/1248.Count_Number_of_Nice_Subarrays.md)
+-   [1371. Find the Longest Substring Containing Vowels in Even Counts](./LeetCode_Awake/Prefix_Sum/1371.Find_the_Longest_Substring_Containing_Vowels_in_Even_Counts.md)
 
 #### 贪心算法 <font size=1>( Greedy )</font>
 
