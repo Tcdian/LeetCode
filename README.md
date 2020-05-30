@@ -23,6 +23,7 @@
 
 -   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 -   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
+-   [84. Largest Rectangle in Histogram](./LeetCode_Awake/Stack/84.Largest_Rectangle_in_Histogram.md)
 
 #### 树 <font size=1>( Tree )</font>
 
