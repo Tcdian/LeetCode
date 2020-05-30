@@ -52,6 +52,10 @@
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 -   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
 
+#### 位运算 <font size=1>( Bit Manipulation )</font>
+
+-   [338. Counting Bits](./LeetCode_Awake/Bit_Manipulation/338.Counting_Bits.md)
+
 #### 回溯算法 <font size=1>( Backtracking )</font>
 
 -   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
