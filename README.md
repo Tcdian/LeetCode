@@ -44,6 +44,7 @@
 
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+-   [4. Median of Two Sorted Arrays](./LeetCode_Awake/Binary_Search/4.Median_of_Two_Sorted_Arrays.md)
 
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
