@@ -29,6 +29,7 @@
 
 -   [543. Diameter of Binary Tree](./LeetCode_Awake/Tree/543.Diameter_of_Binary_Tree.md)
 -   [572. Subtree of Another Tree](./LeetCode_Awake/Tree/572.Subtree_of_Another_Tree.md)
+-   [101. Symmetric Tree](./LeetCode_Awake/Tree/101.Symmetric_Tree.md)
 -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
 
 #### 二叉搜索树 <font size=1>( BST )</font>
@@ -167,7 +168,6 @@
 
 #### 二叉树
 
--   [101. Symmetric Tree](./LeetCode/Tree/101.SymmetricTree.js)
 -   [113. Path Sum II](./LeetCode/Tree/113.PathSumII.js)
 -   [236. Lowest Common Ancestor of a Binary Tree](./LeetCode/Tree/236.LowestCommonAncestorOfABinaryTree.js)
 -   [114. Flatten Binary Tree to Linked List](./LeetCode/Tree/114.FlattenBinaryTreeToLinkedList.js)
