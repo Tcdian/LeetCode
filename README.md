@@ -42,6 +42,8 @@
 
 #### 哈希表 <font size=1>( Hash Table )</font>
 
+-   [128. Longest Consecutive Sequence](./LeetCode_Awake/Hash_Table/128.Longest_Consecutive_Sequence.md)
+
 #### 二分查找 <font size=1>( Binary Search )</font>
 
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
@@ -183,7 +185,6 @@
 -   [409. Longest Palindrome](./LeetCode/Hash&String/409.LongestPalindrome.js)
 -   [290. Word Pattern](./LeetCode/Hash&String/290.WordPattern.js)
 -   [49. Group Anagrams](./LeetCode/Hash&String/49.GroupAnagrams.js)
--   [128. Longest Consecutive Sequence](./LeetCode/Hash&String/128.LongestConsecutiveSequence.js)
 
 #### Two Pointers
 
