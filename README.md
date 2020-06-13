@@ -102,6 +102,7 @@
 
 #### 动态规划 <font size=1>( DP )</font>
 
+-   [70. Climbing Stairs](./LeetCode_Awake/DP/70.Climbing_Stairs.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 -   [152. Maximum Product Subarray](./LeetCode_Awake/DP/152.Maximum_Product_Subarray.md)
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
@@ -202,7 +203,6 @@
 
 #### 动态规划
 
--   [70. Climbing Stairs](./LeetCode/DP/70.ClimbingStairs.js)
 -   [198. House Robber](./LeetCode/DP/198.HouseRobber.js)
 -   [213. House Robber II](./LeetCode/DP/213.HouseRobberII.js)
 -   [309. Best Time to Buy and Sell Stock with Cooldown](./LeetCode/DP/309.BestTimeToBuyAndSellStockWithCooldown.js)
