@@ -90,6 +90,7 @@
 
 #### 双指针 <font size=1>( Two Pointers )</font>
 
+-   [75. Sort Colors](./LeetCode_Awake/Two_Pointers/75.Sort_Colors.md)
 -   [11. Container With Most Water](./LeetCode_Awake/Two_Pointers/11.Container_With_Most_Water.md)
 -   [42. Trapping Rain Water](./LeetCode_Awake/Two_Pointers/42.Trapping_Rain_Water.md)
 
@@ -195,7 +196,6 @@
 #### Two Pointers
 
 -   [283. Move Zeroes](./LeetCode/TwoPointers/283.MoveZeroes.js)
--   [75. Sort Colors](./LeetCode/TwoPointers/75.SortColors.js)
 -   [209. Minimum Size Subarray Sum](./LeetCode/TwoPointers/209.MinimumSizeSubarraySum.js)
 -   [15. 3Sum](./LeetCode/TwoPointers/15.3Sum.js)
 
