@@ -22,6 +22,7 @@
 #### 栈 <font size=1>( Stack )</font>
 
 -   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
+-   [739. Daily Temperatures](./LeetCode_Awake/Stack/739.Daily_Temperatures.md)
 -   [581. Shortest Unsorted Continuous Subarray](./LeetCode_Awake/Stack/581.Shortest_Unsorted_Continuous_Subarray.md)
 -   [84. Largest Rectangle in Histogram](./LeetCode_Awake/Stack/84.Largest_Rectangle_in_Histogram.md)
 
