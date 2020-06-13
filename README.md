@@ -45,12 +45,24 @@
 
 -   [128. Longest Consecutive Sequence](./LeetCode_Awake/Hash_Table/128.Longest_Consecutive_Sequence.md)
 
+#### 堆 <font size=1>( Heap )</font>
+
+-   [23. Merge k Sorted Lists](./LeetCode_Awake/Heap/23.Merge_k_Sorted_Lists.md)
+
+#### 图 <font size=1>( Graph )</font>
+
+-   [126. Word Ladder II](./LeetCode_Awake/Graph/126.Word_Ladder_II.md)
+
 #### 二分查找 <font size=1>( Binary Search )</font>
 
 -   [35. Search Insert Position](./LeetCode_Awake/Binary_Search/35.Search_Insert_Position.md)
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [4. Median of Two Sorted Arrays](./LeetCode_Awake/Binary_Search/4.Median_of_Two_Sorted_Arrays.md)
+
+#### 位运算 <font size=1>( Bit Manipulation )</font>
+
+-   [338. Counting Bits](./LeetCode_Awake/Bit_Manipulation/338.Counting_Bits.md)
 
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
@@ -61,39 +73,10 @@
 
 -   [912. Sort an Array](./LeetCode_Awake/sort/912.Sort_an_Array.md)
 
-#### 位运算 <font size=1>( Bit Manipulation )</font>
-
--   [338. Counting Bits](./LeetCode_Awake/Bit_Manipulation/338.Counting_Bits.md)
-
 #### 回溯算法 <font size=1>( Backtracking )</font>
 
 -   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
 -   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
-
-#### 图 <font size=1>( Graph )</font>
-
--   [126. Word Ladder II](./LeetCode_Awake/Graph/126.Word_Ladder_II.md)
-
-#### 深度优先搜索 <font size=1>( DFS )</font>
-
--   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
--   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
--   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
-
-#### 广度优先搜索 <font size=1>( BFS )</font>
-
--   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
--   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
--   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
--   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
-
-#### 堆 <font size=1>( Heap )</font>
-
--   [23. Merge k Sorted Lists](./LeetCode_Awake/Heap/23.Merge_k_Sorted_Lists.md)
-
-#### 拓扑排序 <font size=1>( Topological Sort )</font>
-
--   [207. Course Schedule](./LeetCode_Awake/Topological_Sort/207.Course_Schedule.md)
 
 #### 双指针 <font size=1>( Two Pointers )</font>
 
@@ -136,6 +119,22 @@
 
 -   [55. Jump Game](./LeetCode_Awake/Greedy/55.Jump_Game.md)
 -   [45. Jump Game II](./LeetCode_Awake/Greedy/45.Jump_Game_II.md)
+
+#### 深度优先搜索 <font size=1>( DFS )</font>
+
+-   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
+-   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/DFS/114.Flatten_Binary_Tree_to_Linked_List.md)
+-   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
+
+#### 广度优先搜索 <font size=1>( BFS )</font>
+
+-   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
+-   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
+-   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
+
+#### 拓扑排序 <font size=1>( Topological Sort )</font>
+
+-   [207. Course Schedule](./LeetCode_Awake/Topological_Sort/207.Course_Schedule.md)
 
 #### 设计 <font size=1>( Design )</font>
 
