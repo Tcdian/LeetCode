@@ -56,7 +56,6 @@
 
 -   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
--   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
 
 #### 排序 <font size=1>( Sort )</font>
 
@@ -87,6 +86,10 @@
 -   [994. Rotting Oranges](./LeetCode_Awake/BFS/994.Rotting_Oranges.md)
 -   [542. 01 Matrix](./LeetCode_Awake/BFS/542.01_Matrix.md)
 -   [199. Binary Tree Right Side View](./LeetCode_Awake/BFS/199.Binary_Tree_Right_Side_View.md)
+
+#### 堆 <font size=1>( Heap )</font>
+
+-   [23. Merge k Sorted Lists](./LeetCode_Awake/Heap/23.Merge_k_Sorted_Lists.md)
 
 #### 拓扑排序 <font size=1>( Topological Sort )</font>
 
