@@ -133,6 +133,7 @@
 
 -   [155. Min Stack](./LeetCode_Awake/Design/155.Min_Stack.md)
 -   [《剑指 Offer（第 2 版）》59 - II. 队列的最大值](./LeetCode_Awake/Design/59-II.队列的最大值.md)
+-   [380. Insert Delete GetRandom O(1)](<./LeetCode_Awake/Design/380.Insert_Delete_GetRandom_O(1).md>)
 -   [146. LRU Cache](./LeetCode_Awake/Design/146.LRU_Cache.md)
 -   [460. LFU Cache](./LeetCode_Awake/Design/460.LFU_Cache.md)
 
@@ -253,7 +254,6 @@
 
 #### Design
 
--   [380. Insert Delete GetRandom O(1)](<./LeetCode/Design/380.InsertDeleteGetRandomO(1).js>)
 -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](<./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js>)
 
 ### 常用数据结构实现
