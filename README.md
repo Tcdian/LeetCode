@@ -58,6 +58,10 @@
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
 -   [23. Merge k Sorted Lists](./LeetCode_Awake/Divide_And_Conquer/23.Merge_k_Sorted_Lists.md)
 
+#### 排序 <font size=1>( Sort )</font>
+
+-   [912. Sort an Array](./LeetCode_Awake/sort/912.Sort_an_Array.md)
+
 #### 位运算 <font size=1>( Bit Manipulation )</font>
 
 -   [338. Counting Bits](./LeetCode_Awake/Bit_Manipulation/338.Counting_Bits.md)
