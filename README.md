@@ -136,6 +136,10 @@
 
 -   [207. Course Schedule](./LeetCode_Awake/Topological_Sort/207.Course_Schedule.md)
 
+#### Rabin Karp <font size=1>( Rabin Karp )</font>
+
+-   [1044. Longest Duplicate Substring](./LeetCode_Awake/RabinKarp/1044.Longest_Duplicate_Substring.md)
+
 #### 设计 <font size=1>( Design )</font>
 
 -   [155. Min Stack](./LeetCode_Awake/Design/155.Min_Stack.md)
@@ -156,7 +160,6 @@
 
 #### 栈 队列 堆
 
--   [20. Valid Parentheses](./LeetCode_Awake/Stack/20.Valid_Parentheses.md)
 -   [225. Implement Stack using Queues](./LeetCode/Stack&Queue&Heap/225.ImplementStackUsingQueues.js)
 -   [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 -   [224. Basic Calculator](./LeetCode/Stack&Queue&Heap/224.BasicCalculator.js)
