@@ -102,6 +102,7 @@
 -   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
+-   [10. Regular Expression Matching](./LeetCode_Awake/DP/10.Regular_Expression_Matching.md)
 -   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
 
 #### Kanade <font size=1>( Kanade )</font>
