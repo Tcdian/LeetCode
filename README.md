@@ -78,6 +78,7 @@
 
 #### 回溯算法 <font size=1>( Backtracking )</font>
 
+-   [78. Subsets](./LeetCode_Awake/Backtracking/78.Subsets.md)
 -   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
 -   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
 
@@ -185,7 +186,6 @@
 
 #### 递归与回溯
 
--   [78. Subsets](./LeetCode/Recursion&Backtracking/78.Subsets.js)
 -   [90. Subsets II](./LeetCode/Recursion&Backtracking/90.SubsetsII.js)
 -   [40. Combination Sum II](./LeetCode/Recursion&Backtracking/40.CombinationSumII.js)
 -   [51. N-Queens](./LeetCode/Recursion&Backtracking/51.N-Queens.js)
@@ -219,9 +219,7 @@
 
 #### 动态规划
 
--   [198. House Robber](./LeetCode/DP/198.HouseRobber.js)
 -   [213. House Robber II](./LeetCode/DP/213.HouseRobberII.js)
--   [309. Best Time to Buy and Sell Stock with Cooldown](./LeetCode/DP/309.BestTimeToBuyAndSellStockWithCooldown.js)
 -   [714. Best Time to Buy and Sell Stock with Transaction Fee](./LeetCode/DP/714.BestTimeToBuyAndSellStockWithTransactionFee.js)
 -   [486. Predict the Winner](./LeetCode/DP/486.PredictTheWinner.js)
 -   [120. Triangle](./LeetCode/DP/120.Triangle.js)
