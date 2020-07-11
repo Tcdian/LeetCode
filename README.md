@@ -67,8 +67,8 @@
 
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
--   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
+-   [215. Kth Largest Element in an Array](./LeetCode_Awake/Divide_And_Conquer/215.Kth_Largest_Element_in_an_Array.md)
 
 #### 排序 <font size=1>( Sort )</font>
 
@@ -112,7 +112,7 @@
 
 #### Kanade <font size=1>( Kanade )</font>
 
--   [53. Maximum Subarray](./LeetCode_Awake/DP/53.Maximum_Subarray.md)
+-   [53. Maximum Subarray](./LeetCode_Awake/Kanade/53.Maximum_Subarray.md)
 -   [918. Maximum Sum Circular Subarray](./LeetCode_Awake/Kanade/918.Maximum_Sum_Circular_Subarray.md)
 
 #### 前缀和 <font size=1>( Prefix Sum )</font>
@@ -170,7 +170,6 @@
 -   [232. Implement Queue using Stacks](./LeetCode/Stack&Queue&Heap/232.ImplementQueueUsingStacks.js)
 -   [224. Basic Calculator](./LeetCode/Stack&Queue&Heap/224.BasicCalculator.js)
 -   [239. Sliding Window Maximum](./LeetCode/Stack&Queue&Heap/239.SlidingWindowMaximum.js)
--   [215. Kth Largest Element in an Array](./LeetCode/Stack&Queue&Heap/215.KthLargestElementInAnArray.js)
 -   [295. Find Median from Data Stream](./LeetCode/Stack&Queue&Heap/295.FindMedianFromDataStream.js)
 
 #### 贪心算法
