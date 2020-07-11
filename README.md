@@ -41,6 +41,7 @@
 #### 字典树（前缀树） <font size=1>( Trie )</font>
 
 -   [208. Implement Trie (Prefix Tree)](./LeetCode_Awake/Trie/208.Implement_Trie.md)
+-   [212. Word Search II](./LeetCode_Awake/Trie/212.Word_Search_II.md)
 
 #### 哈希表 <font size=1>( Hash Table )</font>
 
