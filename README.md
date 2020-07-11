@@ -59,7 +59,7 @@
 
 -   [35. Search Insert Position](./LeetCode_Awake/Binary_Search/35.Search_Insert_Position.md)
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
--   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+-   [378. Kth Smallest Element in a Sorted Matrix](./LeetCode_Awake/Binary_Search/378.Kth_Smallest_Element_in_a_Sorted_Matrix.md)
 -   [4. Median of Two Sorted Arrays](./LeetCode_Awake/Binary_Search/4.Median_of_Two_Sorted_Arrays.md)
 
 #### 位运算 <font size=1>( Bit Manipulation )</font>
@@ -103,7 +103,7 @@
 -   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
 -   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
 -   [279. Perfect Squares](./LeetCode_Awake/dp/279.Perfect_Squares.md)
--   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
+-   [300. Longest Increasing Subsequence](./LeetCode_Awake/DP/300.Longest_Increasing_Subsequence.md)
 -   [718. Maximum Length of Repeated Subarray](./LeetCode_Awake/DP/718.Maximum_Length_of_Repeated_Subarray.md)
 -   [5. Longest Palindromic Substring](./LeetCode_Awake/DP/5.Longest_Palindromic_Substring.md)
 -   [139. Word Break](./LeetCode_Awake/DP/139.Word_Break.md)
