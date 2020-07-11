@@ -103,6 +103,7 @@
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
 -   [10. Regular Expression Matching](./LeetCode_Awake/DP/10.Regular_Expression_Matching.md)
+-   [174. Dungeon Game](./LeetCode_Awake/DP/174.Dungeon_Game.md)
 -   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
 
 #### Kanade <font size=1>( Kanade )</font>
@@ -222,14 +223,12 @@
 -   [139. Word Break](./LeetCode/DP/139.WordBreak.js)
 -   [718. Maximum Length of Repeated Subarray](./LeetCode/DP/718.MaximumLengthOfRepeatedSubarray.js)
 -   [64. Minimum Path Sum](./LeetCode/DP/64.MinimumPathSum.js)
--   [174. Dungeon Game](./LeetCode/DP/174.DungeonGame.js)
 -   [96. Unique Binary Search Trees](./LeetCode/DP/96.UniqueBinarySearchTrees.js)
 -   [329. Longest Increasing Path in a Matrix](./LeetCode/DP/329.LongestIncreasingPathInAMatrix.js)
 -   [312. Burst Balloons](./LeetCode/DP/312.BurstBalloons.js)
 
 #### 二叉搜索树
 
--   [530. Minimum Absolute Difference in BST](./LeetCode_Awake/BST/530.Minimum_Absolute_Difference_in_BST.md)
 -   [108. Convert Sorted Array to Binary Search Tree](./LeetCode/BST/108.ConvertSortedArrayToBinarySearchTree.js)
 -   [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 -   [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
