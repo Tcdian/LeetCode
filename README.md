@@ -69,6 +69,7 @@
 #### 分治算法 <font size=1>( Divide And Conquer )</font>
 
 -   [95. Unique Binary Search Trees II](./LeetCode_Awake/Divide_And_Conquer/95.Unique_Binary_Search_Trees_II.md)
+-   [315. Count of Smaller Numbers After Self](./LeetCode_Awake/Divide_And_Conquer/315.Count_of_Smaller_Numbers_After_Self.md)
 -   [215. Kth Largest Element in an Array](./LeetCode_Awake/Divide_And_Conquer/215.Kth_Largest_Element_in_an_Array.md)
 
 #### 排序 <font size=1>( Sort )</font>
@@ -193,7 +194,6 @@
 #### 二分查找与分治算法
 
 -   [34. Find First and Last Position of Element in Sorted Array](./LeetCode/BinarySearch&DivideAndConquer/34.FindFirstAndLastPositionOfElementInSortedArray.js)
--   [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### 二叉树
 
@@ -236,12 +236,10 @@
 -   [450. Delete Node in a BST](./LeetCode/BST/450.DeleteNodeInABST.js)
 -   [538. Convert BST to Greater Tree](./LeetCode/BST/538.ConvertBSTToGreaterTree.js)
 -   [449. Serialize and Deserialize BST](./LeetCode/BST/449.SerializeAndDeserializeBST.js)
--   [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### 线段树
 
 -   [307. Range Sum Query - Mutable](./LeetCode/SegementTree/307.RangeSumQuery-Mutable.js)
--   [315. Count of Smaller Numbers After Self](./LeetCode/BinarySearch&DivideAndConquer/315.CountOfSmallerNumbersAfterSelf.js)
 
 #### Trie 树
 
