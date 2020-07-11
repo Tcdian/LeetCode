@@ -101,6 +101,7 @@
 -   [518. Coin Change 2](./LeetCode_Awake/DP/518.Coin_Change_2.md)
 -   [983. Minimum Cost For Tickets](./LeetCode_Awake/DP/983.Minimum_Cost_For_Tickets.md)
 -   [221. Maximal Square](./LeetCode_Awake/DP/221.Maximal_Square.md)
+-   [279. Perfect Squares](./LeetCode_Awake/dp/279.Perfect_Squares.md)
 -   [300. Longest Increasing Subsequence](./LeetCode_Awake/Binary_Search/300.Longest_Increasing_Subsequence.md)
 -   [5. Longest Palindromic Substring](./LeetCode_Awake/DP/5.Longest_Palindromic_Substring.md)
 -   [139. Word Break](./LeetCode_Awake/DP/139.Word_Break.md)
