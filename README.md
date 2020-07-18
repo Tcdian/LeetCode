@@ -98,6 +98,7 @@
 #### 动态规划 <font size=1>( DP )</font>
 
 -   [70. Climbing Stairs](./LeetCode_Awake/DP/70.Climbing_Stairs.md)
+-   [120. Triangle](./LeetCode_Awake/DP/120.Triangle.md)
 -   [198. House Robber](./LeetCode_Awake/DP/198.House_Robber.md)
 -   [152. Maximum Product Subarray](./LeetCode_Awake/DP/152.Maximum_Product_Subarray.md)
 -   [322. Coin Change](./LeetCode_Awake/DP/322.Coin_Change.md)
@@ -222,7 +223,6 @@
 -   [213. House Robber II](./LeetCode/DP/213.HouseRobberII.js)
 -   [714. Best Time to Buy and Sell Stock with Transaction Fee](./LeetCode/DP/714.BestTimeToBuyAndSellStockWithTransactionFee.js)
 -   [486. Predict the Winner](./LeetCode/DP/486.PredictTheWinner.js)
--   [120. Triangle](./LeetCode/DP/120.Triangle.js)
 -   [64. Minimum Path Sum](./LeetCode/DP/64.MinimumPathSum.js)
 -   [96. Unique Binary Search Trees](./LeetCode/DP/96.UniqueBinarySearchTrees.js)
 -   [329. Longest Increasing Path in a Matrix](./LeetCode/DP/329.LongestIncreasingPathInAMatrix.js)
