@@ -58,6 +58,7 @@
 #### 二分查找 <font size=1>( Binary Search )</font>
 
 -   [35. Search Insert Position](./LeetCode_Awake/Binary_Search/35.Search_Insert_Position.md)
+-   [154. Find Minimum in Rotated Sorted Array II](./LeetCode_Awake/Binary_Search/154.Find_Minimum_in_Rotated_Sorted_Array_II.md)
 -   [33. Search in Rotated Sorted Array](./LeetCode_Awake/Binary_Search/33.Search_in_Rotated_Sorted_Array.md)
 -   [378. Kth Smallest Element in a Sorted Matrix](./LeetCode_Awake/Binary_Search/378.Kth_Smallest_Element_in_a_Sorted_Matrix.md)
 -   [4. Median of Two Sorted Arrays](./LeetCode_Awake/Binary_Search/4.Median_of_Two_Sorted_Arrays.md)
