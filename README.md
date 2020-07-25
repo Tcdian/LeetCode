@@ -115,6 +115,7 @@
 -   [72. Edit Distance](./LeetCode_Awake/DP/72.Edit_Distance.md)
 -   [10. Regular Expression Matching](./LeetCode_Awake/DP/10.Regular_Expression_Matching.md)
 -   [174. Dungeon Game](./LeetCode_Awake/DP/174.Dungeon_Game.md)
+-   [312. Burst Balloons](./LeetCode_Awake/DP/312.Burst_Balloons.md)
 -   [887. Super Egg Drop](./LeetCode_Awake/DP/887.Super_Egg_Drop.md)
 
 #### Kanade <font size=1>( Kanade )</font>
@@ -228,7 +229,6 @@
 -   [64. Minimum Path Sum](./LeetCode/DP/64.MinimumPathSum.js)
 -   [96. Unique Binary Search Trees](./LeetCode/DP/96.UniqueBinarySearchTrees.js)
 -   [329. Longest Increasing Path in a Matrix](./LeetCode/DP/329.LongestIncreasingPathInAMatrix.js)
--   [312. Burst Balloons](./LeetCode/DP/312.BurstBalloons.js)
 
 #### 二叉搜索树
 
