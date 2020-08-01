@@ -96,6 +96,7 @@
 
 -   [3. Longest Substring Without Repeating Characters](./LeetCode_Awake/Sliding_Window/3.Longest_Substring_Without_Repeating_Characters.md)
 -   [76. Minimum Window Substring](./LeetCode_Awake/Sliding_Window/76.Minimum_Window_Substring.md)
+-   [632. Smallest Range Covering Elements from K Lists](./LeetCode_Awake/Sliding_Window/632.Smallest_Range_Covering_Elements_from_K_Lists.md)
 
 #### 动态规划 <font size=1>( DP )</font>
 
