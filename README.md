@@ -82,7 +82,7 @@
 -   [78. Subsets](./LeetCode_Awake/Backtracking/78.Subsets.md)
 -   [22. Generate Parentheses](./LeetCode_Awake/Backtracking/22.Generate_Parentheses.md)
 -   [79. Word Search](./LeetCode_Awake/Backtracking/79.Word_Search.md)
--   [784. Letter Case Permutation](./LeetCode_Awake/Backtracking/784.Letter_Case_Permutation.md)
+-   [140. Word Break II](./LeetCode_Awake/Backtracking/140.Word_Break_II.md)
 
 #### 双指针 <font size=1>( Two Pointers )</font>
 
@@ -255,7 +255,6 @@
 #### 深度优先搜索
 
 -   [337. House Robber III](./LeetCode/DFS/337.HouseRobberIII.js)
--   [140. Word Break II](./LeetCode/DFS/140.WordBreakII.js)
 
 #### 广度优先搜索
 
