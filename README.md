@@ -32,6 +32,7 @@
 -   [572. Subtree of Another Tree](./LeetCode_Awake/Tree/572.Subtree_of_Another_Tree.md)
 -   [101. Symmetric Tree](./LeetCode_Awake/Tree/101.Symmetric_Tree.md)
 -   [105. Construct Binary Tree from Preorder and Inorder Traversal](./LeetCode_Awake/Tree/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md)
+-   [114. Flatten Binary Tree to Linked List](./LeetCode_Awake/Tree/114.Flatten_Binary_Tree_to_Linked_List.md)
 -   [222. Count Complete Tree Nodes](./LeetCode_Awake/Tree/222.Count_Complete_Tree_Nodes.md)
 
 #### 二叉搜索树 <font size=1>( BST )</font>
