@@ -246,7 +246,6 @@
 
 #### Trie 树
 
--   [211. Add and Search Word - Data structure design](./LeetCode/Trie/211.AddAndSearchWord-DataStructureDesign.js)
 -   [677. Map Sum Pairs](./LeetCode/Trie/677.MapSumPairs.js)
 
 #### 并查集
