@@ -143,6 +143,7 @@
 -   [200. Number of Islands](./LeetCode_Awake/DFS/200.Number_of_Islands.md)
 -   [337. House Robber III](./LeetCode_Awake/DFS/337.House_Robber_III.md)
 -   [124. Binary Tree Maximum Path Sum](./LeetCode_Awake/DFS/124.Binary_Tree_Maximum_Path_Sum.md)
+-   [437. Path Sum III](./LeetCode_Awake/DFS/437.Path_Sum_III.md)
 
 #### 广度优先搜索 <font size=1>( BFS )</font>
 
