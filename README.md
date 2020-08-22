@@ -18,6 +18,7 @@
 
 -   [21. Merge Two Sorted Lists](./LeetCode_Awake/Linked_List/21.Merge_Two_Sorted_Lists.md)
 -   [206. Reverse Linked List](./LeetCode_Awake/Linked_List/206.Reverse_Linked_List.md)
+-   [143. Reorder List](./LeetCode_Awake/Linked_List/143.Reorder_List.md)
 
 #### 栈 <font size=1>( Stack )</font>
 
