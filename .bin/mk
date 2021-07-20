@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const _ = require('lodash');
+
+main();
+
+async function main() {
+    const basisCatalog = await getCatalog('basis');
+    appendBasis(basisCatalog);
+}
+
+async function getCatalog(dirPath) {
+    const absolutePath = path.resolve('.', dirPath);
+    const stat = await fs.promises.stat(absolutePath);
+    if (stat.isFile()) {
+        return path.relative('.', dirPath);
+    }
+    const dirs = await fs.promises.readdir(absolutePath);
+    return await Promise.all(_.map(dirs, (dir) => getCatalog(path.join(dirPath, dir))));
+}
+
+async function appendBasis(catalog) {
+    await fs.promises.appendFile(
+        './README.md',
+        `#
+### 数据结构与算法基础
+${_.map(
+    reduceCatalog(catalog),
+    (files, name) => `-  ${_.upperFirst(name)} ${_.map(files, ([t, p]) => `[ [${_.upperCase(t)}](<${p}>) ]`).join(' ')}`
+)}
+
+    `
+    );
+}
+
+function reduceCatalog(catalog) {
+    return _.reduce(
+        catalog,
+        (prev, current) => {
+            if (_.isArray(current)) {
+                return reduceCatalog(current);
+            }
+            const matched = current.match(/\/([^\/]+)\.(js|ts)$/);
+            if (matched) {
+                prev[matched[1]] = prev[matched[1]] || [];
+                prev[matched[1]].push([matched[2], current]);
+            }
+            return prev;
+        },
+        {}
+    );
+}

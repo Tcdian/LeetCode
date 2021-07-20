@@ -267,5 +267,8 @@
 #### Design
 
 -   [381. Insert Delete GetRandom O(1) - Duplicates allowed](<./LeetCode/Design/381.InsertDeleteGetRandomO(1)-DuplicatesAllowed.js>)
-
+#
 ### 数据结构与算法基础
+-  Sort [ [JS](<basis/js/sort.js>) ] [ [TS](<basis/sort.ts>) ]
+
+    
