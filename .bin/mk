@@ -7,48 +7,48 @@ const _ = require('lodash');
 main();
 
 async function main() {
-    const basisCatalog = await getCatalog('basis');
-    appendBasis(basisCatalog);
+    const basisTs = await getCatalog('basisTs');
+    const basisJs = await getCatalog('basisJs');
+    appendBasis(basisTs, basisJs);
 }
 
-async function getCatalog(dirPath) {
-    const absolutePath = path.resolve('.', dirPath);
+async function getCatalog(fileOrDirPath) {
+    const absolutePath = path.resolve('.', fileOrDirPath);
+    const relativePath = path.relative('.', fileOrDirPath);
+    const name = fileOrDirPath.match(/([^\/]+?)(\.(js|ts|md)){0,1}$/i)[1];
     const stat = await fs.promises.stat(absolutePath);
     if (stat.isFile()) {
-        return path.relative('.', dirPath);
+        return { type: 'file', name: name, path: relativePath };
     }
     const dirs = await fs.promises.readdir(absolutePath);
-    return await Promise.all(_.map(dirs, (dir) => getCatalog(path.join(dirPath, dir))));
+    const files = await Promise.all(_.map(dirs, (dir) => getCatalog(path.join(fileOrDirPath, dir))));
+    return { type: 'directory', name: name, path: relativePath, child: files };
 }
 
-async function appendBasis(catalog) {
+async function appendBasis(basisTs, basisJs) {
     await fs.promises.appendFile(
         './README.md',
-        `#
+        `
+#
+
 ### 数据结构与算法基础
-${_.map(
-    reduceCatalog(catalog),
-    (files, name) => `-  ${_.upperFirst(name)} ${_.map(files, ([t, p]) => `[ [${_.upperCase(t)}](<${p}>) ]`).join(' ')}`
-)}
 
-    `
+${renderCatalog(basisTs, basisJs)}
+`
     );
-}
 
-function reduceCatalog(catalog) {
-    return _.reduce(
-        catalog,
-        (prev, current) => {
-            if (_.isArray(current)) {
-                return reduceCatalog(current);
-            }
-            const matched = current.match(/\/([^\/]+)\.(js|ts)$/);
-            if (matched) {
-                prev[matched[1]] = prev[matched[1]] || [];
-                prev[matched[1]].push([matched[2], current]);
-            }
-            return prev;
-        },
-        {}
-    );
+    function renderCatalog(basisTsCatalog, basisJsCatalog) {
+        if (basisTsCatalog.type === 'file') {
+            return `-   ${_.upperFirst(basisTsCatalog.name)} [[JavaScript](<${basisJsCatalog.path}>)] [[TypeScript](<${
+                basisTsCatalog.path
+            }>)]\n`;
+        } else {
+            return _.map(basisTsCatalog.child, (t) =>
+                renderCatalog(
+                    t,
+                    basisJsCatalog.child.find((j) => j.name === t.name)
+                )
+            );
+        }
+    }
 }
