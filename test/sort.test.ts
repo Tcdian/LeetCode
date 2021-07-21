@@ -1,4 +1,4 @@
-import { selectionSort, insertionSort } from '../basis/sort';
+import { selectionSort, insertionSort } from '../basisTs/sort';
 
 describe('selectionSort', () => {
     test('默认排序', () => {
