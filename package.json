@@ -4,7 +4,6 @@
     "description": "LeetCode 经典题目（ JavaScript, TypeScript 实现 ）",
     "main": "",
     "scripts": {
-        "test": "jest",
         "mk": "./.bin/mk"
     },
     "repository": {
@@ -23,15 +22,6 @@
     },
     "homepage": "https://github.com/Tcdian/LeetCode#readme",
     "devDependencies": {
-        "@types/jest": "^26.0.24",
-        "@typescript-eslint/eslint-plugin": "^4.28.3",
-        "@typescript-eslint/parser": "^4.28.3",
-        "eslint": "^7.30.0",
-        "eslint-config-prettier": "^8.3.0",
-        "jest": "^27.0.6",
-        "lodash": "^4.17.21",
-        "prettier": "2.3.2",
-        "ts-jest": "^27.0.3",
-        "typescript": "^4.3.5"
+        "lodash": "^4.17.21"
     }
 }
