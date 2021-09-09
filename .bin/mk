@@ -24,7 +24,28 @@ async function getDirectory(fileOrDirPath) {
     return { type: 'directory', name: name, path: relativePath, child: files };
 }
 
-const topics = ['栈与队列'，];
+const topics = [
+    '链表',
+    '栈与队列',
+    '哈希',
+    '数组',
+    '二分查找',
+    '排序',
+    '双指针',
+    '滑动窗口',
+    '二叉树',
+    '回溯',
+    '贪心',
+    '动态规划',
+    '并查集',
+    '字典树',
+    '线段树',
+    '深度优先搜索',
+    '广度优先搜索',
+    '拓扑排序',
+    '前缀和',
+    '设计',
+];
 
 async function renderMD(source) {
     console.log(source);
