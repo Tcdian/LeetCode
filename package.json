@@ -1,7 +1,7 @@
 {
     "name": "leetcode",
     "version": "1.0.0",
-    "description": "LeetCode 经典题目（ JavaScript, TypeScript 实现 ）",
+    "description": "",
     "main": "",
     "scripts": {
         "mk": "./.bin/mk"
