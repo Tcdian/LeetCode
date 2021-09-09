@@ -7,12 +7,11 @@ const _ = require('lodash');
 main();
 
 async function main() {
-    const basisTs = await getCatalog('basisTs');
-    const basisJs = await getCatalog('basisJs');
-    appendBasis(basisTs, basisJs);
+    const source = await getDirectory('problems');
+    renderMD(source);
 }
 
-async function getCatalog(fileOrDirPath) {
+async function getDirectory(fileOrDirPath) {
     const absolutePath = path.resolve('.', fileOrDirPath);
     const relativePath = path.relative('.', fileOrDirPath);
     const name = fileOrDirPath.match(/([^\/]+?)(\.(js|ts|md)){0,1}$/i)[1];
@@ -21,34 +20,12 @@ async function getCatalog(fileOrDirPath) {
         return { type: 'file', name: name, path: relativePath };
     }
     const dirs = await fs.promises.readdir(absolutePath);
-    const files = await Promise.all(_.map(dirs, (dir) => getCatalog(path.join(fileOrDirPath, dir))));
+    const files = await Promise.all(_.map(dirs, (dir) => getDirectory(path.join(fileOrDirPath, dir))));
     return { type: 'directory', name: name, path: relativePath, child: files };
 }
 
-async function appendBasis(basisTs, basisJs) {
-    await fs.promises.appendFile(
-        './README.md',
-        `
-#
+const topics = ['栈与队列'，];
 
-### 数据结构与算法基础
-
-${renderCatalog(basisTs, basisJs)}
-`
-    );
-
-    function renderCatalog(basisTsCatalog, basisJsCatalog) {
-        if (basisTsCatalog.type === 'file') {
-            return `-   ${_.upperFirst(basisTsCatalog.name)} [[JavaScript](<${basisJsCatalog.path}>)] [[TypeScript](<${
-                basisTsCatalog.path
-            }>)]\n`;
-        } else {
-            return _.map(basisTsCatalog.child, (t) =>
-                renderCatalog(
-                    t,
-                    basisJsCatalog.child.find((j) => j.name === t.name)
-                )
-            );
-        }
-    }
+async function renderMD(source) {
+    console.log(source);
 }
