@@ -11,7 +11,7 @@ async function main() {
     const directory = await getDirectory('leetcode');
     render(directory, './README.md');
     const dt = await getDirectory('others/typescript');
-    render(dt, './others/typescript.md');
+    render(dt, './ts.README.md');
 }
 
 async function getDirectory(fileOrDirPath) {
