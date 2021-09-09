@@ -72,7 +72,7 @@ async function render(directory, path) {
 
 function renderDirectory(fileOrDir, level = '##') {
     if (fileOrDir.type === 'file') {
-        return `-   [${fileOrDir.introduction}](<${fileOrDir.path}>) \n`;
+        return `-   [${fileOrDir.introduction}](<${fileOrDir.path}>)\n`;
     } else if (fileOrDir.type === 'directory') {
         return `${level} ${topics.get(fileOrDir.name)}
 
@@ -81,7 +81,7 @@ ${fileOrDir.child
         const topicKeys = [...topics.keys()];
         return topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
     })
-    .map((item) => renderDirectory(item, level + '#'))
+    .map((item) => renderDirectory(item, level + '##'))
     .join('')}
 `;
     }
