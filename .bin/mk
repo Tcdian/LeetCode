@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const readline = require('readline');
 const path = require('path');
 const _ = require('lodash');
 
@@ -8,56 +9,75 @@ main();
 
 async function main() {
     const directory = await getDirectory('leetcode');
+    const dt = await getDirectory('others/typescript');
     render(directory);
 }
 
 async function getDirectory(fileOrDirPath) {
     const absolutePath = path.resolve('.', fileOrDirPath);
     const relativePath = path.relative('.', fileOrDirPath);
-    const name = fileOrDirPath.match(/([^\/]+?)(\.(js|ts)\.md){0,1}$/i)[1];
+    const name = path.basename(fileOrDirPath);
     const stat = await fs.promises.stat(absolutePath);
     if (stat.isFile()) {
-        return { type: 'file', name: name, path: relativePath };
+        const firstLine = await readFirstLine(absolutePath);
+        return { type: 'file', name: name, path: relativePath, introduction: _.trim(firstLine, '# ') };
     }
     const dirs = await fs.promises.readdir(absolutePath);
     const files = await Promise.all(_.map(dirs, (dir) => getDirectory(path.join(fileOrDirPath, dir))));
     return { type: 'directory', name: name, path: relativePath, child: files };
 }
 
-const topics = [
-    '链表',
-    '栈与队列',
-    '哈希',
-    '数组',
-    '二分查找',
-    '排序',
-    '双指针',
-    '滑动窗口',
-    '二叉树',
-    '回溯',
-    '贪心',
-    '动态规划',
-    '并查集',
-    '字典树',
-    '线段树',
-    '深度优先搜索',
-    '广度优先搜索',
-    '拓扑排序',
-    '前缀和',
-    '设计',
-];
+async function readFirstLine(pathToFile) {
+    const readable = fs.createReadStream(pathToFile);
+    const reader = readline.createInterface({ input: readable });
+    const line = await new Promise((resolve) => {
+        reader.on('line', (line) => {
+            reader.close();
+            resolve(line);
+        });
+    });
+    readable.close();
+    return line;
+}
+
+const topics = new Map([
+    ['leetcode', 'LeetCode 经典题目（JavaScript 实现）'],
+    ['Linked List', '链表 (Linked List)'],
+    ['Stack and Queue', '栈与队列（Stack and Queue）'],
+    ['Hash', '哈希（Hash）'],
+    ['Array', '数组（Array）'],
+    ['Binary Search', '二分查找（Binary Search）'],
+    ['Sorting', '排序（Sorting）'],
+    ['Two Pointers', '双指针（Two Pointers）'],
+    ['Sliding Window', '滑动窗口（Sliding Window）'],
+    ['Binary Tree', '二叉树（Binary Tree）'],
+    ['Backtracking', '回溯（Backtracking）'],
+    ['Greedy', '贪心（Greedy）'],
+    ['Dynamic Programming', '动态规划（Dynamic Programming）'],
+    ['Union Find', '并查集（Union Find）'],
+    ['Trie', '字典树（Trie）'],
+    ['Segment Tree', '线段树（Segment Tree）'],
+    ['Depth-First Search', '深度优先搜索（Depth-First Search）'],
+    ['Breadth-First Search', '广度优先搜索（Depth-First Search）'],
+    ['Topological Sort', '拓扑排序（Topological Sort）'],
+    ['Prefix Sum', '前缀和（Prefix Sum）'],
+    ['Design', '设计（Design）'],
+]);
 
 async function render(directory) {
     await fs.promises.writeFile('./README.md', `${renderDirectory(directory)}`);
 
-    function renderDirectory(fileOrDir, level = '###') {
+    function renderDirectory(fileOrDir, level = '##') {
         if (fileOrDir.type === 'file') {
-            return `-   [${fileOrDir.name}](<${fileOrDir.path}>) \n`;
+            return `-   [${fileOrDir.introduction}](<${fileOrDir.path}>) \n`;
         } else if (fileOrDir.type === 'directory') {
-            return `${level} ${fileOrDir.name}
+            return `${level} ${topics.get(fileOrDir.name)}
     
 ${fileOrDir.child
-    .sort((a, b) => topics.indexOf(a.name) - topics.indexOf(b.name))
+    .sort((a, b) => {
+        const topicKeys = [...topics.keys()];
+        return topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
+    })
     .map((item) => renderDirectory(item, level + '#'))
     .join('')}
 `;
