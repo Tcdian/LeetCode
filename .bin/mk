@@ -7,8 +7,8 @@ const _ = require('lodash');
 main();
 
 async function main() {
-    const directory = await getDirectory('problems');
-    renderMD(directory);
+    const directory = await getDirectory('leetcode');
+    render(directory);
 }
 
 async function getDirectory(fileOrDirPath) {
@@ -47,6 +47,20 @@ const topics = [
     '设计',
 ];
 
-async function renderMD(directory) {
-    console.log(directory);
+async function render(directory) {
+    await fs.promises.writeFile('./README.md', `${renderDirectory(directory)}`);
+
+    function renderDirectory(fileOrDir, level = '###') {
+        if (fileOrDir.type === 'file') {
+            return `-   [${fileOrDir.name}](<${fileOrDir.path}>) \n`;
+        } else if (fileOrDir.type === 'directory') {
+            return `${level} ${fileOrDir.name}
+    
+${fileOrDir.child
+    .sort((a, b) => topics.indexOf(a.name) - topics.indexOf(b.name))
+    .map((item) => renderDirectory(item, level + '#'))
+    .join('')}
+`;
+        }
+    }
 }
