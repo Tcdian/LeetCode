@@ -7,14 +7,14 @@ const _ = require('lodash');
 main();
 
 async function main() {
-    const source = await getDirectory('problems');
-    renderMD(source);
+    const directory = await getDirectory('problems');
+    renderMD(directory);
 }
 
 async function getDirectory(fileOrDirPath) {
     const absolutePath = path.resolve('.', fileOrDirPath);
     const relativePath = path.relative('.', fileOrDirPath);
-    const name = fileOrDirPath.match(/([^\/]+?)(\.(js|ts|md)){0,1}$/i)[1];
+    const name = fileOrDirPath.match(/([^\/]+?)(\.(js|ts)\.md){0,1}$/i)[1];
     const stat = await fs.promises.stat(absolutePath);
     if (stat.isFile()) {
         return { type: 'file', name: name, path: relativePath };
@@ -47,6 +47,6 @@ const topics = [
     '设计',
 ];
 
-async function renderMD(source) {
-    console.log(source);
+async function renderMD(directory) {
+    console.log(directory);
 }
