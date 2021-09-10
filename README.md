@@ -1,6 +1,6 @@
-### LeetCode 经典题目（JavaScript 实现）
+## LeetCode 经典题目（JavaScript 实现）
 
-#
+<img src="static/leetcode.jpg" />
 
 #### 链表 (Linked List)
 
@@ -190,5 +190,3 @@
 -   [146. LRU 缓存机制](<leetcode/Design/146. LRU Cache.js.md>)
 -   [155. 最小栈](<leetcode/Design/155. Min Stack.js.md>)
 -   [460. LFU 缓存](<leetcode/Design/460. LFU Cache.js.md>)
-
-

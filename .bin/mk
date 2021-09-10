@@ -10,8 +10,8 @@ main();
 async function main() {
     const directory = await getDirectory('leetcode');
     render(directory, './README.md');
-    const dt = await getDirectory('others/typescript');
-    render(dt, './ts.README.md');
+    const dt = await getDirectory('leetcode-ts');
+    render(dt, 'leetcode-ts.md');
 }
 
 async function getDirectory(fileOrDirPath) {
@@ -66,19 +66,19 @@ const topics = new Map([
     ['Design', '设计（Design）'],
 ]);
 
-async function render(directory, path) {
-    await fs.promises.writeFile(path, `${renderDirectory(directory)}`);
+async function render(directory, p) {
+    await fs.promises.writeFile(p, `${renderDirectory(directory)}`);
 }
 
-function renderDirectory(fileOrDir, level = '###') {
+function renderDirectory(fileOrDir, level = '##') {
     if (fileOrDir.type === 'file') {
         return `-   [${fileOrDir.introduction}](<${fileOrDir.path}>)\n`;
     } else if (fileOrDir.type === 'directory') {
-        return `${level} ${topics.get(fileOrDir.name)}
+        return `${level} ${topics.get(fileOrDir.name) || fileOrDir.name}
 ${
-    level === '###'
+    level === '##'
         ? `
-#
+<img src="${path.relative('.', 'static/leetcode.jpg')}" />
 `
         : ''
 }
@@ -91,7 +91,7 @@ ${fileOrDir.child
         }
         return parseInt(a.name) - parseInt(b.name);
     })
-    .map((item) => renderDirectory(item, level + '#'))
+    .map((item) => renderDirectory(item, level + '##'))
     .join('')}
 `;
     }
