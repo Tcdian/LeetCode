@@ -78,7 +78,7 @@ function renderDirectory(fileOrDir, level = '##') {
 ${
     level === '##'
         ? `
-<img src="${path.relative('.', 'static/leetcode.jpg')}" />
+<img src="${path.relative('.', 'static/leetcode.png')}" />
 `
         : ''
 }
