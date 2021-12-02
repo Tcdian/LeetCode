@@ -40,6 +40,10 @@
 -   [41. First Missing Positive](<leetcode/Array/41. First Missing Positive.js.md>)
 -   [54. Spiral Matrix](<leetcode/Array/54. Spiral Matrix.js.md>)
 
+#### 字符串（String）
+
+-   [28. Implement strStr()](<leetcode/String/28. Implement strStr().js.md>)
+
 #### 二分查找（Binary Search）
 
 -   [4. Median of Two Sorted Arrays](<leetcode/Binary Search/4. Median of Two Sorted Arrays.js.md>)

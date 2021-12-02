@@ -40,6 +40,10 @@
 -   [41. First Missing Positive](<leetcode-ts/Array/41. First Missing Positive.ts.md>)
 -   [54. Spiral Matrix](<leetcode-ts/Array/54. Spiral Matrix.ts.md>)
 
+#### 字符串（String）
+
+-   [28. Implement strStr()](<leetcode-ts/String/28. Implement strStr().ts.md>)
+
 #### 二分查找（Binary Search）
 
 -   [4. Median of Two Sorted Arrays](<leetcode-ts/Binary Search/4. Median of Two Sorted Arrays.ts.md>)

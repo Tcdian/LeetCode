@@ -48,6 +48,7 @@ const topics = new Map([
     ['Stack and Queue', '栈与队列（Stack and Queue）'],
     ['Hash', '哈希（Hash）'],
     ['Array', '数组（Array）'],
+    ['String', '字符串（String）'],
     ['Binary Search', '二分查找（Binary Search）'],
     ['Sorting', '排序（Sorting）'],
     ['Two Pointers', '双指针（Two Pointers）'],
