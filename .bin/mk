@@ -8,10 +8,9 @@ const _ = require('lodash');
 main();
 
 async function main() {
-    const directory = await getDirectory('leetcode');
-    render(directory, './README.md');
-    const dt = await getDirectory('leetcode-ts');
-    render(dt, 'leetcode-ts.md');
+    const directory = await getDirectory('LeetCode');
+    writeMarkdown(directory, 'README.md', _.partial(renderDirectory, renderFileAsLink));
+    writeMarkdown(directory, 'static/mind.md', _.partial(renderDirectory, renderFileAsTitle));
 }
 
 async function getDirectory(fileOrDirPath) {
@@ -21,11 +20,18 @@ async function getDirectory(fileOrDirPath) {
     const stat = await fs.promises.stat(absolutePath);
     if (stat.isFile()) {
         const firstLine = await readFirstLine(absolutePath);
-        return { type: 'file', name: name, path: relativePath, introduction: _.trim(firstLine, '# ') };
+        return {
+            type: 'file',
+            name: name,
+            path: relativePath,
+            title: name.replace(/(\.js|\.ts)\.md/, ''),
+            introduction: _.trim(firstLine, '# '),
+        };
+    } else {
+        const dirs = await fs.promises.readdir(absolutePath);
+        const files = await Promise.all(_.map(dirs, (dir) => getDirectory(path.join(fileOrDirPath, dir))));
+        return { type: 'directory', name: name, path: relativePath, child: files };
     }
-    const dirs = await fs.promises.readdir(absolutePath);
-    const files = await Promise.all(_.map(dirs, (dir) => getDirectory(path.join(fileOrDirPath, dir))));
-    return { type: 'directory', name: name, path: relativePath, child: files };
 }
 
 async function readFirstLine(pathToFile) {
@@ -42,8 +48,7 @@ async function readFirstLine(pathToFile) {
 }
 
 const topics = new Map([
-    ['leetcode', 'LeetCode 经典题目（JavaScript 实现）'],
-    ['typescript', 'LeetCode 经典题目（TypeScript 实现）'],
+    ['LeetCode', 'LeetCode 经典题目（JavaScript 实现）'],
     ['Linked List', '链表 (Linked List)'],
     ['Stack and Queue', '栈与队列（Stack and Queue）'],
     ['Hash', '哈希（Hash）'],
@@ -67,33 +72,32 @@ const topics = new Map([
     ['Design', '设计（Design）'],
 ]);
 
-async function render(directory, p) {
-    await fs.promises.writeFile(p, `${renderDirectory(directory)}`);
+async function writeMarkdown(directory, file, render) {
+    await fs.promises.writeFile(file, `${render(directory)}`);
 }
 
-function renderDirectory(fileOrDir, level = '##') {
-    if (fileOrDir.type === 'file') {
-        return `-   [${fileOrDir.introduction}](<${fileOrDir.path}>)\n`;
-    } else if (fileOrDir.type === 'directory') {
+function renderDirectory(renderFile, fileOrDir, level = '##') {
+    if (fileOrDir.type === 'directory') {
         return `${level} ${topics.get(fileOrDir.name) || fileOrDir.name}
-${
-    level === '##'
-        ? `
-<img src="${path.relative('.', 'static/leetcode.png')}" />
-`
-        : ''
-}
+
 ${fileOrDir.child
     .sort((a, b) => {
         const topicKeys = [...topics.keys()];
         const comparison = topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
-        if (comparison !== 0) {
-            return comparison;
-        }
-        return parseInt(a.name) - parseInt(b.name);
+        return comparison === 0 ? parseInt(a.name) - parseInt(b.name) : comparison;
     })
-    .map((item) => renderDirectory(item, level + '##'))
+    .map((item) => renderDirectory(renderFile, item, level + '#'))
     .join('')}
 `;
+    } else if (fileOrDir.type === 'file') {
+        return `${renderFile(fileOrDir, level)}\n`;
     }
+}
+
+function renderFileAsLink(file) {
+    return `-   [${file.title}](<${file.path}>)`;
+}
+
+function renderFileAsTitle(file, level) {
+    return `${level} ${file.name}`;
 }
