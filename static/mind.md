@@ -1,6 +1,6 @@
 ## LeetCode 经典题目（JavaScript 实现）
     
-    ### 链表 (Linked List)
+### 链表 (Linked List)
 
 #### 2. Add Two Numbers.js.md
 #### 19. Remove Nth Node From End of List.js.md

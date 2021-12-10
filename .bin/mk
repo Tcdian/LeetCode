@@ -86,7 +86,7 @@ async function writeMarkdown(target, title, directory, render) {
         target,
         `## ${title}
     
-    ${render(directory.child, '###')}
+${render(directory.child, '###')}
     `
     );
 }
