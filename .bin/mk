@@ -9,8 +9,18 @@ main();
 
 async function main() {
     const directory = await getDirectory('LeetCode');
-    writeMarkdown(directory, 'README.md', _.partial(renderDirectory, renderFileAsLink));
-    writeMarkdown(directory, 'static/mind.md', _.partial(renderDirectory, renderFileAsTitle));
+    writeMarkdown(
+        'README.md',
+        'LeetCode 经典题目（JavaScript 实现）',
+        directory,
+        _.partialRight(renderDirectories, renderFileAsLink)
+    );
+    writeMarkdown(
+        'static/mind.md',
+        'LeetCode 经典题目（JavaScript 实现）',
+        directory,
+        _.partialRight(renderDirectories, renderFileAsTitle)
+    );
 }
 
 async function getDirectory(fileOrDirPath) {
@@ -48,7 +58,6 @@ async function readFirstLine(pathToFile) {
 }
 
 const topics = new Map([
-    ['LeetCode', 'LeetCode 经典题目（JavaScript 实现）'],
     ['Linked List', '链表 (Linked List)'],
     ['Stack and Queue', '栈与队列（Stack and Queue）'],
     ['Hash', '哈希（Hash）'],
@@ -72,26 +81,35 @@ const topics = new Map([
     ['Design', '设计（Design）'],
 ]);
 
-async function writeMarkdown(directory, file, render) {
-    await fs.promises.writeFile(file, `${render(directory)}`);
+async function writeMarkdown(target, title, directory, render) {
+    await fs.promises.writeFile(
+        target,
+        `## ${title}
+    
+    ${render(directory.child, '###')}
+    `
+    );
 }
 
-function renderDirectory(renderFile, fileOrDir, level = '##') {
-    if (fileOrDir.type === 'directory') {
-        return `${level} ${topics.get(fileOrDir.name) || fileOrDir.name}
+function renderDirectories(directories, level, renderFile) {
+    return directories
+        .filter((fileOrDir) => !fileOrDir.name.startsWith('_'))
+        .sort((a, b) => {
+            const topicKeys = [...topics.keys()];
+            const comparison = topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
+            return comparison === 0 ? parseInt(a.name) - parseInt(b.name) : comparison;
+        })
+        .map((fileOrDir) => {
+            if (fileOrDir.type === 'directory') {
+                return `${level} ${topics.get(fileOrDir.name) || fileOrDir.name}
 
-${fileOrDir.child
-    .sort((a, b) => {
-        const topicKeys = [...topics.keys()];
-        const comparison = topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
-        return comparison === 0 ? parseInt(a.name) - parseInt(b.name) : comparison;
-    })
-    .map((item) => renderDirectory(renderFile, item, level + '#'))
-    .join('')}
-`;
-    } else if (fileOrDir.type === 'file') {
-        return `${renderFile(fileOrDir, level)}\n`;
-    }
+${renderDirectories(fileOrDir.child, level + '#', renderFile)}
+                `;
+            } else {
+                return renderFile(fileOrDir, level);
+            }
+        })
+        .join('\n');
 }
 
 function renderFileAsLink(file) {
