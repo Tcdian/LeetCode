@@ -41,7 +41,7 @@
                 
 ### 字符串（String）
 
-#### 28. Implement strStr().js.md
+#### 686. Repeated String Match.js.md
                 
 ### 二分查找（Binary Search）
 
