@@ -156,6 +156,7 @@
 #### 718. Maximum Length of Repeated Subarray.js.md
 #### 879. Profitable Schemes.js.md
 #### 887. Super Egg Drop.js.md
+#### 918. Maximum Sum Circular Subarray.js.md
 #### 968. Binary Tree Cameras.js.md
 #### 1049. Last Stone Weight II.js.md
 #### 1143. Longest Common Subsequence.js.md
