@@ -55,7 +55,6 @@
                 
 ### 排序（Sorting）
 
-#### 75. Sort Colors.js.md
 #### 215. Kth Largest Element in an Array.js.md
 #### 315. Count of Smaller Numbers After Self.js.md
 #### 912. Sort an Array.js.md
@@ -65,6 +64,7 @@
 #### 11. Container With Most Water.js.md
 #### 15. 3Sum.js.md
 #### 42. Trapping Rain Water.js.md
+#### 75. Sort Colors.js.md
 #### 209. Minimum Size Subarray Sum.js.md
 #### 283. Move Zeroes.js.md
                 

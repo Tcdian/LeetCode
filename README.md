@@ -55,7 +55,6 @@
                 
 ### 排序（Sorting）
 
--   [75. Sort Colors](<LeetCode/Sorting/75. Sort Colors.js.md>)
 -   [215. Kth Largest Element in an Array](<LeetCode/Sorting/215. Kth Largest Element in an Array.js.md>)
 -   [315. Count of Smaller Numbers After Self](<LeetCode/Sorting/315. Count of Smaller Numbers After Self.js.md>)
 -   [912. Sort an Array](<LeetCode/Sorting/912. Sort an Array.js.md>)
@@ -65,6 +64,7 @@
 -   [11. Container With Most Water](<LeetCode/Two Pointers/11. Container With Most Water.js.md>)
 -   [15. 3Sum](<LeetCode/Two Pointers/15. 3Sum.js.md>)
 -   [42. Trapping Rain Water](<LeetCode/Two Pointers/42. Trapping Rain Water.js.md>)
+-   [75. Sort Colors](<LeetCode/Two Pointers/75. Sort Colors.js.md>)
 -   [209. Minimum Size Subarray Sum](<LeetCode/Two Pointers/209. Minimum Size Subarray Sum.js.md>)
 -   [283. Move Zeroes](<LeetCode/Two Pointers/283. Move Zeroes.js.md>)
                 
