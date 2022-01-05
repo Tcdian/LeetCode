@@ -46,7 +46,9 @@
 ### 二分查找（Binary Search）
 
 -   [4. Median of Two Sorted Arrays](<LeetCode/Binary Search/4. Median of Two Sorted Arrays.js.md>)
+-   [33. Search in Rotated Sorted Array](<LeetCode/Binary Search/33. Search in Rotated Sorted Array.js.md>)
 -   [35. Search Insert Position](<LeetCode/Binary Search/35. Search Insert Position.js.md>)
+-   [81. Search in Rotated Sorted Array II](<LeetCode/Binary Search/81. Search in Rotated Sorted Array II.js.md>)
 -   [153. Find Minimum in Rotated Sorted Array](<LeetCode/Binary Search/153. Find Minimum in Rotated Sorted Array.js.md>)
 -   [154. Find Minimum in Rotated Sorted Array II](<LeetCode/Binary Search/154. Find Minimum in Rotated Sorted Array II.js.md>)
 -   [378. Kth Smallest Element in a Sorted Matrix](<LeetCode/Binary Search/378. Kth Smallest Element in a Sorted Matrix.js.md>)
@@ -156,6 +158,7 @@
 -   [718. Maximum Length of Repeated Subarray](<LeetCode/Dynamic Programming/718. Maximum Length of Repeated Subarray.js.md>)
 -   [879. Profitable Schemes](<LeetCode/Dynamic Programming/879. Profitable Schemes.js.md>)
 -   [887. Super Egg Drop](<LeetCode/Dynamic Programming/887. Super Egg Drop.js.md>)
+-   [913. Cat and Mouse](<LeetCode/Dynamic Programming/913. Cat and Mouse.js.md>)
 -   [918. Maximum Sum Circular Subarray](<LeetCode/Dynamic Programming/918. Maximum Sum Circular Subarray.js.md>)
 -   [968. Binary Tree Cameras](<LeetCode/Dynamic Programming/968. Binary Tree Cameras.js.md>)
 -   [1049. Last Stone Weight II](<LeetCode/Dynamic Programming/1049. Last Stone Weight II.js.md>)
