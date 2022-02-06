@@ -60,7 +60,7 @@ async function readFirstLine(pathToFile) {
 const topics = new Map([
     ['Linked List', '链表 (Linked List)'],
     ['Stack and Queue', '栈与队列（Stack and Queue）'],
-    ['Hash', '哈希（Hash）'],
+    ['Hash Table', '哈希表 (Hash Table)'],
     ['Array', '数组（Array）'],
     ['String', '字符串（String）'],
     ['Binary Search', '二分查找（Binary Search）'],

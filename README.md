@@ -27,10 +27,10 @@
 -   [581. Shortest Unsorted Continuous Subarray](<LeetCode/Stack and Queue/581. Shortest Unsorted Continuous Subarray.js.md>)
 -   [739. Daily Temperatures](<LeetCode/Stack and Queue/739. Daily Temperatures.js.md>)
                 
-### 哈希（Hash）
+### 哈希表 (Hash Table)
 
--   [1. Two Sum](<LeetCode/Hash/1. Two Sum.js.md>)
--   [169. Majority Element](<LeetCode/Hash/169. Majority Element.js.md>)
+-   [1. Two Sum](<LeetCode/Hash Table/1. Two Sum.js.md>)
+-   [169. Majority Element](<LeetCode/Hash Table/169. Majority Element.js.md>)
                 
 ### 数组（Array）
 

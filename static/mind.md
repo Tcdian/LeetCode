@@ -27,7 +27,7 @@
 #### 581. Shortest Unsorted Continuous Subarray.js.md
 #### 739. Daily Temperatures.js.md
                 
-### 哈希（Hash）
+### 哈希表 (Hash Table)
 
 #### 1. Two Sum.js.md
 #### 169. Majority Element.js.md
