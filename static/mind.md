@@ -1,6 +1,5 @@
 ## LeetCode 经典题目（JavaScript 实现）
     
-### .DS_Store
 ### 链表 (Linked List)
 
 #### 2. Add Two Numbers.js.md

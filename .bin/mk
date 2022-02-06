@@ -93,7 +93,7 @@ ${render(directory.child, '###')}
 
 function renderDirectories(directories, level, renderFile) {
     return directories
-        .filter((fileOrDir) => !fileOrDir.name.startsWith('_'))
+        .filter((fileOrDir) => !fileOrDir.name.startsWith('_') && !fileOrDir.name.startsWith('.'))
         .sort((a, b) => {
             const topicKeys = [...topics.keys()];
             const comparison = topicKeys.indexOf(a.name) - topicKeys.indexOf(b.name);
