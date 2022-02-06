@@ -199,6 +199,7 @@
 
 #### 146. LRU Cache.js.md
 #### 155. Min Stack.js.md
+#### 380. Insert Delete GetRandom O(1).js.md
 #### 460. LFU Cache.js.md
                 
     
