@@ -31,7 +31,6 @@
 
 #### 1. Two Sum.js.md
 #### 169. Majority Element.js.md
-#### 1044. Longest Duplicate Substring.js.md
                 
 ### 数组（Array）
 
@@ -42,6 +41,7 @@
 ### 字符串（String）
 
 #### 686. Repeated String Match.js.md
+#### 1044. Longest Duplicate Substring.js.md
                 
 ### 二分查找（Binary Search）
 
