@@ -30,6 +30,7 @@
 ### 哈希表 (Hash Table)
 
 #### 1. Two Sum.js.md
+#### 15. 3Sum.js.md
 #### 169. Majority Element.js.md
                 
 ### 数组（Array）
@@ -64,7 +65,6 @@
 ### 双指针（Two Pointers）
 
 #### 11. Container With Most Water.js.md
-#### 15. 3Sum.js.md
 #### 42. Trapping Rain Water.js.md
 #### 75. Sort Colors.js.md
 #### 209. Minimum Size Subarray Sum.js.md
