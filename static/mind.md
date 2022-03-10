@@ -38,6 +38,7 @@
 #### 31. Next Permutation.js.md
 #### 41. First Missing Positive.js.md
 #### 54. Spiral Matrix.js.md
+#### 189. Rotate Array.js.md
                 
 ### 字符串（String）
 
