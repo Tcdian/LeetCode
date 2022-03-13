@@ -75,6 +75,7 @@
 
 #### 3. Longest Substring Without Repeating Characters.js.md
 #### 76. Minimum Window Substring.js.md
+#### 567. Permutation in String.js.md
                 
 ### 二叉树（Binary Tree）
 

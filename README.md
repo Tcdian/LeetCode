@@ -75,6 +75,7 @@
 
 -   [3. Longest Substring Without Repeating Characters](<LeetCode/Sliding Window/3. Longest Substring Without Repeating Characters.js.md>)
 -   [76. Minimum Window Substring](<LeetCode/Sliding Window/76. Minimum Window Substring.js.md>)
+-   [567. Permutation in String](<LeetCode/Sliding Window/567. Permutation in String.js.md>)
                 
 ### 二叉树（Binary Tree）
 
