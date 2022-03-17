@@ -187,6 +187,8 @@
 ### 广度优先搜索（Depth-First Search）
 
 #### 407. Trapping Rain Water II.js.md
+#### 542. 01 Matrix.js.md
+#### 994. Rotting Oranges.js.md
                 
 ### 拓扑排序（Topological Sort）
 
