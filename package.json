@@ -22,6 +22,7 @@
     },
     "homepage": "https://github.com/Tcdian/LeetCode#readme",
     "devDependencies": {
-        "lodash": "^4.17.21"
+        "lodash": "^4.17.21",
+        "prettier": "2.6.0"
     }
 }
