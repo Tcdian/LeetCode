@@ -20,7 +20,6 @@
 -   [20. Valid Parentheses](<LeetCode/Stack and Queue/20. Valid Parentheses.js.md>)
 -   [32. Longest Valid Parentheses](<LeetCode/Stack and Queue/32. Longest Valid Parentheses.js.md>)
 -   [84. Largest Rectangle in Histogram](<LeetCode/Stack and Queue/84. Largest Rectangle in Histogram.js.md>)
--   [150. Evaluate Reverse Polish Notation](<LeetCode/Stack and Queue/150. Evaluate Reverse Polish Notation.js.md>)
 -   [225. Implement Stack using Queues](<LeetCode/Stack and Queue/225. Implement Stack using Queues.js.md>)
 -   [232. Implement Queue using Stacks](<LeetCode/Stack and Queue/232. Implement Queue using Stacks.js.md>)
 -   [239. Sliding Window Maximum](<LeetCode/Stack and Queue/239. Sliding Window Maximum.js.md>)

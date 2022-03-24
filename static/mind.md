@@ -20,7 +20,6 @@
 #### 20. Valid Parentheses.js.md
 #### 32. Longest Valid Parentheses.js.md
 #### 84. Largest Rectangle in Histogram.js.md
-#### 150. Evaluate Reverse Polish Notation.js.md
 #### 225. Implement Stack using Queues.js.md
 #### 232. Implement Queue using Stacks.js.md
 #### 239. Sliding Window Maximum.js.md
