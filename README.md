@@ -48,6 +48,7 @@
 
 -   [4. Median of Two Sorted Arrays](<LeetCode/Binary Search/4. Median of Two Sorted Arrays.js.md>)
 -   [33. Search in Rotated Sorted Array](<LeetCode/Binary Search/33. Search in Rotated Sorted Array.js.md>)
+-   [34. Find First and Last Position of Element in Sorted Array](<LeetCode/Binary Search/34. Find First and Last Position of Element in Sorted Array.js.md>)
 -   [35. Search Insert Position](<LeetCode/Binary Search/35. Search Insert Position.js.md>)
 -   [81. Search in Rotated Sorted Array II](<LeetCode/Binary Search/81. Search in Rotated Sorted Array II.js.md>)
 -   [153. Find Minimum in Rotated Sorted Array](<LeetCode/Binary Search/153. Find Minimum in Rotated Sorted Array.js.md>)
