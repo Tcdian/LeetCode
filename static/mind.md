@@ -10,6 +10,7 @@
 #### 92. Reverse Linked List II.js.md
 #### 141. Linked List Cycle.js.md
 #### 142. Linked List Cycle II.js.md
+#### 143. Reorder List.js.md
 #### 148. Sort List.js.md
 #### 160. Intersection of Two Linked Lists.js.md
 #### 203. Remove Linked List Elements.js.md
