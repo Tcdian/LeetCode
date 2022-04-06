@@ -177,6 +177,7 @@
 
 #### 208. Implement Trie (Prefix Tree).js.md
 #### 211. Design Add and Search Words Data Structure.js.md
+#### 440. K-th Smallest in Lexicographical Order.js.md
 #### 677. Map Sum Pairs.js.md
                 
 ### 线段树（Segment Tree）
