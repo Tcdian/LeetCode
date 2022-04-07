@@ -75,7 +75,7 @@ const topics = new Map([
     ['Trie', '字典树（Trie）'],
     ['Segment Tree', '线段树（Segment Tree）'],
     ['Depth-First Search', '深度优先搜索（Depth-First Search）'],
-    ['Breadth-First Search', '广度优先搜索（Depth-First Search）'],
+    ['Breadth-First Search', '广度优先搜索（Breadth-First Search）'],
     ['Topological Sort', '拓扑排序（Topological Sort）'],
     ['Prefix Sum', '前缀和（Prefix Sum）'],
     ['Design', '设计（Design）'],

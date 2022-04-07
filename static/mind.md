@@ -188,10 +188,11 @@
 
 #### 200. Number of Islands.js.md
                 
-### 广度优先搜索（Depth-First Search）
+### 广度优先搜索（Breadth-First Search）
 
 #### 407. Trapping Rain Water II.js.md
 #### 542. 01 Matrix.js.md
+#### 847. Shortest Path Visiting All Nodes.js.md
 #### 994. Rotting Oranges.js.md
                 
 ### 拓扑排序（Topological Sort）
