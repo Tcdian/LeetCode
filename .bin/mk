@@ -74,6 +74,7 @@ const topics = new Map([
     ['Union Find', '并查集（Union Find）'],
     ['Trie', '字典树（Trie）'],
     ['Segment Tree', '线段树（Segment Tree）'],
+    ['Graph', '图（Graph）'],
     ['Depth-First Search', '深度优先搜索（Depth-First Search）'],
     ['Breadth-First Search', '广度优先搜索（Breadth-First Search）'],
     ['Topological Sort', '拓扑排序（Topological Sort）'],
