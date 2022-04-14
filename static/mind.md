@@ -158,6 +158,7 @@
 #### 377. Combination Sum IV.js.md
 #### 416. Partition Equal Subset Sum.js.md
 #### 494. Target Sum.js.md
+#### 516. Longest Palindromic Subsequence.js.md
 #### 518. Coin Change 2.js.md
 #### 714. Best Time to Buy and Sell Stock with Transaction Fee.js.md
 #### 718. Maximum Length of Repeated Subarray.js.md

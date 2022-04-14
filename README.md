@@ -158,6 +158,7 @@
 -   [377. Combination Sum IV](<LeetCode/Dynamic Programming/377. Combination Sum IV.js.md>)
 -   [416. Partition Equal Subset Sum](<LeetCode/Dynamic Programming/416. Partition Equal Subset Sum.js.md>)
 -   [494. Target Sum](<LeetCode/Dynamic Programming/494. Target Sum.js.md>)
+-   [516. Longest Palindromic Subsequence](<LeetCode/Dynamic Programming/516. Longest Palindromic Subsequence.js.md>)
 -   [518. Coin Change 2](<LeetCode/Dynamic Programming/518. Coin Change 2.js.md>)
 -   [714. Best Time to Buy and Sell Stock with Transaction Fee](<LeetCode/Dynamic Programming/714. Best Time to Buy and Sell Stock with Transaction Fee.js.md>)
 -   [718. Maximum Length of Repeated Subarray](<LeetCode/Dynamic Programming/718. Maximum Length of Repeated Subarray.js.md>)
