@@ -2,7 +2,6 @@
     
 ### 链表 (Linked List)
 
--   [2. Add Two Numbers](<LeetCode/Linked List/2. Add Two Numbers.js.md>)
 -   [19. Remove Nth Node From End of List](<LeetCode/Linked List/19. Remove Nth Node From End of List.js.md>)
 -   [21. Merge Two Sorted Lists](<LeetCode/Linked List/21. Merge Two Sorted Lists.js.md>)
 -   [23. Merge k Sorted Lists](<LeetCode/Linked List/23. Merge k Sorted Lists.js.md>)
