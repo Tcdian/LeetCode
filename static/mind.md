@@ -154,7 +154,6 @@
 #### 322. Coin Change.js.md
 #### 329. Longest Increasing Path in a Matrix.js.md
 #### 337. House Robber III.js.md
-#### 377. Combination Sum IV.js.md
 #### 416. Partition Equal Subset Sum.js.md
 #### 494. Target Sum.js.md
 #### 516. Longest Palindromic Subsequence.js.md
