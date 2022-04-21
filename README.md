@@ -54,6 +54,7 @@
 -   [153. Find Minimum in Rotated Sorted Array](<LeetCode/Binary Search/153. Find Minimum in Rotated Sorted Array.js.md>)
 -   [154. Find Minimum in Rotated Sorted Array II](<LeetCode/Binary Search/154. Find Minimum in Rotated Sorted Array II.js.md>)
 -   [378. Kth Smallest Element in a Sorted Matrix](<LeetCode/Binary Search/378. Kth Smallest Element in a Sorted Matrix.js.md>)
+-   [658. Find K Closest Elements](<LeetCode/Binary Search/658. Find K Closest Elements.js.md>)
 -   [704. Binary Search](<LeetCode/Binary Search/704. Binary Search.js.md>)
 -   [875. Koko Eating Bananas](<LeetCode/Binary Search/875. Koko Eating Bananas.js.md>)
                 

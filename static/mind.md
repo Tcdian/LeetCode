@@ -54,6 +54,7 @@
 #### 153. Find Minimum in Rotated Sorted Array.js.md
 #### 154. Find Minimum in Rotated Sorted Array II.js.md
 #### 378. Kth Smallest Element in a Sorted Matrix.js.md
+#### 658. Find K Closest Elements.js.md
 #### 704. Binary Search.js.md
 #### 875. Koko Eating Bananas.js.md
                 
